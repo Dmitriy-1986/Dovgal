@@ -1,0 +1,22 @@
+@media (max-width: 700px) {
+    .header-name {height: 70px;}
+    .surname-and-name {font-size: 5em;}
+    .heading-content  {flex-direction: column; justify-content: space-evenly; height: 200px;}
+}  
+
+@media (max-width: 550px) {
+    .adress-content {flex-direction: column; justify-content: space-evenly; align-items: center;height: 54px;}
+    .surname-and-name {font-size: 4em;}
+    .heading-content {height: 150px;}
+    .header-name {height: 50px;}
+} 
+
+@media (max-width: 550px) {
+    .header-name {width: 300px;}
+} 
+
+@media (max-width: 350px) {
+    .header-name {width: 150px; height: 70px;}
+    .header-contact-call {line-height: 2.6em; }
+}
+

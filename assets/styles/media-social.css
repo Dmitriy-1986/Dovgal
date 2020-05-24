@@ -1,0 +1,20 @@
+@media (max-width: 1370px) {
+    .social-component {width: 900px;}
+}
+    
+@media (max-width: 1250px) {
+    .social-component {width: 700px; height: 200px; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly;}
+}
+    
+@media (max-width: 750px) {
+    .social-component {width: 600px; height: 200px; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly;}
+}
+    
+@media (max-width: 650px) {
+    .social-component {width: 400px; height: 300px; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly;}
+}
+    
+@media (max-width: 450px) {
+    .social-component {width: 250px; height: 350px; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly; padding: 50px 0 30px;}
+}
+    

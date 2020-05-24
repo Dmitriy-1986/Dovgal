@@ -1,0 +1,11 @@
+@media (max-width: 900px) {
+	.footer-text-widget {display: none;}
+	.footer-component {justify-content: center;}
+	
+}
+
+@media (max-width: 500px) {
+	.footer-end {justify-content: center; font-size: 12px;}
+	.footer-contacts-info {font-size: 12px;}
+	.contact-container a {font-size: 12px;}
+}

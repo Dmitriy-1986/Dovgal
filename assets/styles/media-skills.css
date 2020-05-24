@@ -1,0 +1,50 @@
+    @media (max-width: 1250px) {
+    .election-img-box{display: none;}
+    /* .skills-component {height: 700px;} */
+    .election-box {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; /* height: 600px; */}
+    .skills-component-content {display: flex; flex-direction: row; justify-content: center; align-items: flex-start;  height: 100%;}
+    /* .election-table-box {margin-top: 10px;} */
+    }
+    
+    @media (max-width: 800px) {
+        .element-elections-title {font-size: 28px;}
+        .election-table-box {margin-top: 0;}
+         h3 {font-size: 15px;}
+         p {font-size: 13px;}
+        /* .skills-component {height: 700px;} */
+      /*   .skills-component-content {height: 500px;} */
+    }
+/*     @media (max-width: 650px) {
+        .skills-component-content {width: 400px;}
+        .election-box{width: 400px}
+        .element-elections-title{width: 400px;}
+    } */
+    @media (max-width: 550px) {
+        .election-img-box{display: none;}
+       /*  .skills-component {height: 450px;} */
+        .election-box {display: flex; flex-direction: column; justify-content: flex-start; align-items: center;/*  height: 600px; */}
+        .skills-component-content {display: flex; flex-direction: row; justify-content: center; align-items: flex-start; width: 1300px; height: 100%;}
+        /* .election-table-box {margin-top: 10px; width: 400px;} */
+        /* .spoiler-links {font-size: 12px;} */
+        .element-elections-title {font-size: 16px;}
+        /* .spoiler-body {font-size: 12px; padding: 0;} */
+    }
+    
+  /*  @media (max-width: 450px) { */
+        /* .spoiler-links {font-size: 11px;} */
+        /* .election-table-box {margin-top: 10px; width: 300px;} */
+        /* .spoiler-body {font-size: 11px; padding: 0;} */
+       /*  .skills-component-content {width: 300px;} */
+        /* .election-box{width: 300px;}
+        .element-elections-title{width: 300px;} */
+    /* } */
+    
+   /* @media (max-width: 350px) { */
+      /*   .skills-component {height: 350px;}
+        .spoiler-links {font-size: 9px;}
+        .spoiler-body {font-size: 9px; padding: 0;}
+        .election-table-box {margin-top: 10px; width: 250px;}
+        .skills-component-content {width: 250px;}
+        .election-box{width: 250px;}
+        .element-elections-title{font-size: 12px;width: 250px;} */
+   /*  } */
