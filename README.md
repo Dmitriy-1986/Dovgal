@@ -1,5 +1,5 @@
-# Dovgal Dima
-# Dovgal Dmitriy
+# {Dovgal Dima}
+# {Dovgal Dmitriy}
 # Довгаль Дима
 # Довгаль Дмитрий
 # Довгаль Діма
