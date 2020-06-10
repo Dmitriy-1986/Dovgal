@@ -1,1 +1,1 @@
-https://dmitriy-1986.github.io/Dovgal_Dima/
+https://dmitriy-1986.github.io/Dovgal_Dmitriy/
