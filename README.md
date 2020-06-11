@@ -10,12 +10,21 @@
 <a title="Координаты" href="https://goo.gl/maps/AtiAA68ZdduyRFQv5">47°50′16″N 35°08′18″E &nbsp;ZP, UA </a>            
 <span class="realTimeAndYear"></span>                
 <script>
-        const progress = document.querySelector('.progress');
-        window.addEventListener('scroll', progressBar);
-        function progressBar(e) {
-            let windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            let windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            let per = windowScroll / windowHeight * 100;
-            progress.style.width = per + '%';
-         }
-     </script>            
+        function printTime(){
+    let d = new Date();
+    /*
+    let yearTime = document.getElementsByClassName("realTimeAndYear")[0];
+    yearTime.innerHTML = d.toLocaleString() + ", ";
+    */
+    let hours = d.getHours();
+    let mins = d.getMinutes();
+    //let secs = d.getSeconds();
+    let year = d.getFullYear();
+    let month = d.getMonth() + 1;
+    let day = d.getDate();
+    let yearTime = document.getElementsByClassName("realTimeAndYear")[0];
+    yearTime.innerHTML = day + ". " +  month + ". " + year + ", " + hours + ":" + mins + ", ";
+    
+   }
+   setInterval(printTime, 1000);
+</script>            
