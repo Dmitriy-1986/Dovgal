@@ -7,6 +7,15 @@
 <br><br>
 <p> Актуальные навыки в настоящее время являются верстка страниц в процессе создания веб-сайта  с выполнением элементов дизайна аналогично макету. <br> В процессе верстки страниц учитываю необходимую разницу  отображения элементов в различных браузерах и разницу в размерах рабочего пространства устройств. <br> Свою квалификацию "веб-разработчик" приобрел на курсах в компьютерной академии Шаг. Начал обучение в 2019 году с изучения HTML, CSS, JAVA SCRIPT и продолжаю повышать свой уровень знаний в этой области, углубляясь в особенности использования библиотек REACT, REDUX, программной платформы NODE.js, фреймворка web-приложений Express.js, системы управления базами данных MongoDB. <br> А также в процессе изучения основы языка программирования PHP и системы управления базами данных MySQL. В прошлом приходилось отвечать за мониторинг состояния баз данных, администрировать локальную сеть, поддерживать средства телекоммуникации и программно-технических комплексов в рабочем состоянии как системный администратор. Желаю глубинно знать технологию WEB-разработки и делать достойные проекты используя свои знания и навыки. </p>
 <h2>  tel: +380981180209 <br> mailto: dovgal.dima.86@gmail.com</h2> 
- <a title="Координаты" href="https://goo.gl/maps/AtiAA68ZdduyRFQv5">47°50′16″N 35°08′18″E &nbsp;ZP, UA </a>            
-                
-            
+<a title="Координаты" href="https://goo.gl/maps/AtiAA68ZdduyRFQv5">47°50′16″N 35°08′18″E &nbsp;ZP, UA </a>            
+<span class="realTimeAndYear"></span>                
+<script>
+        const progress = document.querySelector('.progress');
+        window.addEventListener('scroll', progressBar);
+        function progressBar(e) {
+            let windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let per = windowScroll / windowHeight * 100;
+            progress.style.width = per + '%';
+         }
+     </script>            
