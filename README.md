@@ -4,6 +4,6 @@
 <a title="Twitter" href="https://twitter.com/siEcDal41krrZOe">Twitter</a> |
 <a title="Instagram" href="https://www.instagram.com/dmitriy_dovgal/?hl=ru">Instagram</a> |
 <a  title="Skype" href="skype:+380981180209?call">Skype</a> |
-
+<a title="Telegram" href="tg://resolve?domain=DovgalDmitriy">Telegram</a>
 https://dmitriy-1986.github.io/Dovgal_Dima/
 
