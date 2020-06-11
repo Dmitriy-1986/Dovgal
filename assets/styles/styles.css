@@ -33,6 +33,10 @@ a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, d
     vertical-align: baseline;
 }
 
+.o-hidden {
+    overflow: hidden;
+}
+
 /* header */
 header {
     display: -webkit-box;
