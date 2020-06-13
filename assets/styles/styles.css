@@ -283,7 +283,7 @@ particle {
 	        align-items: center;
     width: 100%;
     height: 100%;
-    background-color: rgb(176,224,230);
+    background-color: #cce5ff;
 }
 
 .skills-component-content {
@@ -302,13 +302,13 @@ particle {
                     align-items: flex-end;
     width: 1300px;
     height: 100%;
-    background-color: rgb(176,224,230);
+    background-color: #cce5ff;
 }
 
 .election-img-box {
     height: 600px;
     width: 600px;
-    background-image: url('../images/Dovgal.D.F..png');
+   linear-gradient(0deg, #cce5ff 0%, rgba(255, 255, 255, 0) 20%), url('../images/Dovgal_Dima.png');
     background-size: cover;
 }
 
