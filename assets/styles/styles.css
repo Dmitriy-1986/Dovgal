@@ -430,6 +430,10 @@ particle {
         transform: translateX(calc(-250px * 7));
    }
 }
+.vertical-margin {
+    margin: 50px 0;
+}
+
 .slider {
     background: #cce5ff;
     padding: 50px 0;
