@@ -246,7 +246,8 @@ a:hover {
     color:#4DE55C ;
     border:2px solid #4DE55C;
     line-height: 3.2em; 
-    outline: none
+    outline: none;
+    width: 120px;
 }
 
 particle {
