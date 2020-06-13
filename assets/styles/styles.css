@@ -432,7 +432,7 @@ particle {
 }
 .slider {
     background: #cce5ff;
-    /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125); */
+    padding: 50px 0;
     height: 100px;
     margin: auto;
     overflow: hidden;
