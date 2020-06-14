@@ -646,6 +646,12 @@ particle {
 	margin: 0;
 }
 
+
+@media (max-width: 530px) {
+    .social-container-boxs {
+        margin-top: 5px;
+      }
+}
 .social-icon {
      display: flex;
      justify-content: center;
