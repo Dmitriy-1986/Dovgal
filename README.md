@@ -1,4 +1,4 @@
-<h1><a title="Dovgal` Dima" href="http://dovgaldima.pp.ua">Dovgal` Dima</a> </h1>  <h4> tel: +380981180209<br> mailto: dovgal.dima.86@gmail.com</h4>   <br>
+<h1><a title="Dovgal Dima" href="http://dovgaldima.pp.ua">Dovgal` Dima</a> </h1>  <h4> tel: +380981180209<br> mailto: dovgal.dima.86@gmail.com</h4>   <br>
 <span> 
 <a title="Facebook" href="https://www.facebook.com/profile.php?id=100026817609832">Facebook</a> |
 <a title="Twitter" href="https://twitter.com/siEcDal41krrZOe">Twitter</a> |
