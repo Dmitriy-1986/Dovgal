@@ -658,6 +658,42 @@ particle {
     width: 120px;
 }
 
+.facebook:hover {
+     border-color:#4267b2;
+     box-shadow: 0px 0px 20px #4267b2;
+     color: #4267b2;
+}
+
+.instagram:hover {
+     border-color: #C13584;
+     box-shadow: 0px 0px 20px #C13584;
+     color: #C13584;
+}
+
+.linkedin:hover {
+     border-color: #2867B2;
+     box-shadow: 0px 0px 20px #2867B2;
+     color: #2867B2;
+}
+
+.twitter:hover {
+     border-color: #1DA1F2;
+     box-shadow: 0px 0px 20px #1DA1F2;
+     color: #1DA1F2;
+}
+
+.telegram:hover {
+     border-color: #0088cc;
+     box-shadow: 0px 0px 20px #0088cc;
+     color: #0088cc;
+}
+
+.skype:hover {
+     border-color: #00AFF0;
+     box-shadow: 0px 0px 20px #00AFF0;
+     color: #00AFF0;
+}
+
 /* footer*/
 footer {
     display: -webkit-box;
