@@ -639,6 +639,7 @@ particle {
             align-items: center;
     height: 40px;
     width: 180px;
+    margin-top: 10px;
 }
 
 .social-container-boxs a {
@@ -646,12 +647,6 @@ particle {
 	margin: 0;
 }
 
-
-@media (max-width: 530px) {
-    .social-container-boxs {
-        margin-top: 50px;
-      }
-}
 .social-icon {
      display: flex;
      justify-content: center;
