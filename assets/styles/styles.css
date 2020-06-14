@@ -641,7 +641,7 @@ particle {
     width: 180px;
 }
 
-.social-container-boxs-icon {
+.social-icon {
      display: flex;
      justify-content: center;
      align-items: center;
