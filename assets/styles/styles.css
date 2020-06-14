@@ -642,8 +642,14 @@ particle {
 }
 
 .social-container-boxs-icon {
-    height: 40px;
-    width: 40px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 3px solid #000;
+     border-radius: 50%;
+     height: 50px;
+     width: 50px;
+     font-size: 20px;
 }
 
 .social-container-boxs-logotype {
