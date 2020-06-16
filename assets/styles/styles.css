@@ -307,6 +307,8 @@ particle {
 .election-img-box {
     height: 600px;
     width: 600px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#cce5ff), color-stop(20%, rgba(255, 255, 255, 0))), url('../images/Dovgal_Dima.png');
+    background-image: -o-linear-gradient(bottom, #cce5ff 0%, rgba(255, 255, 255, 0) 20%), url('../images/Dovgal_Dima.png');
     background-image: linear-gradient(0deg, #cce5ff 0%, rgba(255, 255, 255, 0) 20%), url('../images/Dovgal_Dima.png');
     background-size: cover;
 }
@@ -337,7 +339,8 @@ particle {
     color: #004085;
     font-size: 38px;
     font-weight: 700;
-    animation: pulsate 10.0s linear infinite;
+    -webkit-animation: pulsate 10.0s linear infinite;
+            animation: pulsate 10.0s linear infinite;
 }
 
 @-webkit-keyframes pulsate {
@@ -394,7 +397,8 @@ particle {
     text-align: center;
     color: #004085;
     background-color: #cce5ff;
-    animation: pulsate 10.0s linear infinite;
+    -webkit-animation: pulsate 10.0s linear infinite;
+            animation: pulsate 10.0s linear infinite;
 }
 
 .about-me {
@@ -422,12 +426,24 @@ particle {
 }
 
 /* interests */
-@keyframes scroll {
+@-webkit-keyframes scroll {
     0% {
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
    }
     100% {
-        transform: translateX(calc(-250px * 7));
+        -webkit-transform: translateX(calc(-250px * 7));
+                transform: translateX(calc(-250px * 7));
+   }
+}
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+   }
+    100% {
+        -webkit-transform: translateX(calc(-250px * 7));
+                transform: translateX(calc(-250px * 7));
    }
 }
 .vertical-margin {
@@ -467,8 +483,9 @@ particle {
     .slider {width: 300px;}
     .slider::before, .slider::after {background: linear-gradient(to right, #cce5ff 0%, rgba(255, 255, 255, 0) 50%);
 }
-
 .slider::before, .slider::after {
+    background: -webkit-gradient(linear, left top, right top, from(#cce5ff), to(rgba(255, 255, 255, 0)));
+    background: -o-linear-gradient(left, #cce5ff 0%, rgba(255, 255, 255, 0) 100%);
     background: linear-gradient(to right, #cce5ff 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
     height: 100px;
@@ -479,14 +496,19 @@ particle {
 .slider::after {
     right: 0;
     top: 0;
-    transform: rotateZ(180deg);
+    -webkit-transform: rotateZ(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotateZ(180deg);
 }
 .slider::before {
     left: 0;
     top: 0;
 }
 .slider .slide-track {
-    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+            animation: scroll 40s linear infinite;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: calc(250px * 14);
 }
@@ -544,7 +566,8 @@ particle {
     padding-bottom: 20px;
     text-align: center;
     color: #004085;
-    animation: pulsate 10.0s linear infinite;
+    -webkit-animation: pulsate 10.0s linear infinite;
+            animation: pulsate 10.0s linear infinite;
 }
 
 .gallery-component-images {
@@ -649,9 +672,15 @@ particle {
 }
 
 .social-icon {
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
-     justify-content: center;
-     align-items: center;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
      border: 3px solid #000;
      border-radius: 50%;
      height: 50px;
@@ -667,37 +696,43 @@ particle {
 
 .facebook:hover {
      border-color:#4267b2;
-     box-shadow: 0px 0px 20px #4267b2;
+     -webkit-box-shadow: 0px 0px 20px #4267b2;
+             box-shadow: 0px 0px 20px #4267b2;
      color: #4267b2;
 }
 
 .instagram:hover {
      border-color: #C13584;
-     box-shadow: 0px 0px 20px #C13584;
+     -webkit-box-shadow: 0px 0px 20px #C13584;
+             box-shadow: 0px 0px 20px #C13584;
      color: #C13584;
 }
 
 .linkedin:hover {
      border-color: #2867B2;
-     box-shadow: 0px 0px 20px #2867B2;
+     -webkit-box-shadow: 0px 0px 20px #2867B2;
+             box-shadow: 0px 0px 20px #2867B2;
      color: #2867B2;
 }
 
 .twitter:hover {
      border-color: #1DA1F2;
-     box-shadow: 0px 0px 20px #1DA1F2;
+     -webkit-box-shadow: 0px 0px 20px #1DA1F2;
+             box-shadow: 0px 0px 20px #1DA1F2;
      color: #1DA1F2;
 }
 
 .telegram:hover {
      border-color: #0088cc;
-     box-shadow: 0px 0px 20px #0088cc;
+     -webkit-box-shadow: 0px 0px 20px #0088cc;
+             box-shadow: 0px 0px 20px #0088cc;
      color: #0088cc;
 }
 
 .skype:hover {
      border-color: #00AFF0;
-     box-shadow: 0px 0px 20px #00AFF0;
+     -webkit-box-shadow: 0px 0px 20px #00AFF0;
+             box-shadow: 0px 0px 20px #00AFF0;
      color: #00AFF0;
 }
 
