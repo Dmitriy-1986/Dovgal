@@ -481,7 +481,7 @@ particle {
 
 @media (max-width: 430px) {
     .slider {width: 300px;}
-    .slider::before, .slider::after {background: linear-gradient(to right, #cce5ff 0%, rgba(255, 255, 255, 0) 50%);
+    .slider::before, .slider::after {background: linear-gradient(to right, #cce5ff 0%, rgba(255, 255, 255, 0) 100%);
 }
 .slider::before, .slider::after {
     background: -webkit-gradient(linear, left top, right top, from(#cce5ff), to(rgba(255, 255, 255, 0)));
