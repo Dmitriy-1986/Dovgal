@@ -52,7 +52,6 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-
     height: 100%;
     width: 100%;
     background-color: #87CEEB;
@@ -75,7 +74,6 @@ address {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-
     width: 100%;
     background-color: #f9fafe;
 }
@@ -113,7 +111,6 @@ address {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; 
-
     color: #000;
     font-size: 14px;
 }
@@ -131,7 +128,6 @@ address {
     white-space: nowrap;
     margin-right: 3px;
     direction: ltr;
-  
     -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
@@ -195,8 +191,7 @@ a:hover {
     margin: 0;
     padding: 0;
     color: rgb(255, 255, 255);
-	
-  font-size: 6em;
+    font-size: 6em;
     font-family: Antonella script X Bold;
     text-shadow: rgb(100, 100, 100) 5px 0 5px,
     rgb(100, 100, 100) 0 1px 0px,
@@ -384,7 +379,6 @@ particle {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    
     width: 100%;
     background-color: #cce5ff;
 }
