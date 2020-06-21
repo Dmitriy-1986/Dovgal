@@ -11,9 +11,9 @@
 }
     
 @media (max-width: 650px) {
-    .social-component {width: 400px; height: 300px; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly;}
+    .social-component {width: 400px; height: 350px; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly;}
     /*.social-container-boxs { padding-top: 50px; }*/
-    .social-icon { padding-top: 50px; }
+    
 }
     
 @media (max-width: 450px) {
