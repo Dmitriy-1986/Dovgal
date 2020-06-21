@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="./assets/styles/fonts.css">
     <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="./assets/styles/form-style.css">
     <link rel="stylesheet" href="./assets/styles/media-header.css">
     <link rel="stylesheet" href="./assets/styles/media-skills.css">
     <link rel="stylesheet" href="./assets/styles/media-social.css">
@@ -350,6 +351,25 @@
         </div>
     </div>
 
+    <div class="contact-form"style="margin: 2rem 0;">
+
+        <form  id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/dovgal.dima.86@gmail.com" method="post">
+            <fieldset id="fs-frm-inputs">
+                <label for="full-name">ФИО</label>
+                <input type="text" name="name" id="full-name" placeholder="ФИО" required="">
+                <label for="email-address">Адрес электронной почты</label>
+                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                <label for="telephone">Номер телефона</label>
+                <input type="telephone" name="telephone" id="telephone" placeholder="Номер телефона" required="">
+                <label for="complaint">Сообщение</label>
+                <textarea rows="6" name="complaint" id="complaint" placeholder="Введите сообщение" required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+            </fieldset>
+            <input type="submit" value="Отправить">
+        </form>
+ 
+    </div>
+    
     <footer class="o-hidden">
         <div class="footer-component">
             <div class="footer-text-widget wow animate__animated animate__lightSpeedInLeft o-hidden" data-wow-offset = "100" data-wow-duration = "2s">
