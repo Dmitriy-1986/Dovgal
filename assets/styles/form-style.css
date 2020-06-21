@@ -29,14 +29,11 @@
   align-items: baseline;
 }
 
-/* border, padding, margin, width */
-/* #fs-frm {
-   margin-right:2rem; 
+.contact-form {
+  margin: 2rem 0;
 }
-textarea {
-    resize: none;
-} */
 
+/* border, padding, margin, width */
 #fs-frm input,
 #fs-frm select,
 #fs-frm textarea,
