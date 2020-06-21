@@ -651,7 +651,7 @@ particle {
     padding-top: 50px;
     text-align: center;
     color: #004085;
-    background-color: #cce5ff;
+    background-color: #fff;
     -webkit-animation: pulsate-black 10.0s linear infinite;
             animation: pulsate-black 10.0s linear infinite;
 }
