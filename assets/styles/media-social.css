@@ -12,7 +12,7 @@
     
 @media (max-width: 650px) {
     .social-component {width: 400px; height: 300px; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly;}
-    .social-container-boxs { margin-top: 10px; }
+    .social-container-boxs { margin-top: 50px; }
 }
     
 @media (max-width: 450px) {
