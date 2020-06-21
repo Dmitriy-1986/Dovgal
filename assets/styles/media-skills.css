@@ -22,7 +22,7 @@
     @media (max-width: 550px) {
         .election-img-box{display: none;}
        /*  .skills-component {height: 450px;} */
-        .election-box {display: flex; flex-direction: column; justify-content: flex-start; align-items: center;/*  height: 600px; */}
+        .election-box {display: flex; flex-direction: column; justify-content: flex-start; align-items: center;/*  height: 600px; */ padding-bottom: 50px;}
         .skills-component-content {display: flex; flex-direction: row; justify-content: center; align-items: flex-start; width: 1300px; height: 100%;}
         /* .election-table-box {margin-top: 10px; width: 400px;} */
         /* .spoiler-links {font-size: 12px;} */
