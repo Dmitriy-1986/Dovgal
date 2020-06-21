@@ -358,25 +358,6 @@ particle {
     }
 }
 
-@-webkit-keyframes pulsate-black {
-    50% { 
-        color: #ffffff;
-        text-shadow: rgb(0, 0, 0) 5px 0 5px,
-        rgb(0, 0, 0) 0 1px 0px,
-        rgb(0, 0, 0) -1px 0 0px,
-        rgb(0, 0, 0) 0 -1px 0px; 
-    }
-}
-
-@keyframes pulsate-black {
-    50% { 
-        color: #ffffff;
-        text-shadow: rgb(0, 0, 0) 5px 0 5px,
-        rgb(0, 0, 0) 0 1px 0px,
-        rgb(0, 0, 0) -1px 0 0px,
-        rgb(0, 0, 0) 0 -1px 0px; 
-    }
-}
 
 .election-table-box {
     margin-top: 40px;
@@ -650,10 +631,10 @@ particle {
     font-weight: 700;
     padding-top: 50px;
     text-align: center;
-    color: #004085;
+    color: black;
     background-color: #fff;
-    -webkit-animation: pulsate-black 10.0s linear infinite;
-            animation: pulsate-black 10.0s linear infinite;
+    -webkit-animation: pulsate 10.0s linear infinite;
+            animation: pulsate 10.0s linear infinite;
 }
 
 
