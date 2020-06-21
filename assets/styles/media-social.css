@@ -16,5 +16,6 @@
     
 @media (max-width: 450px) {
     .social-component {width: 250px; height: 350px; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly; padding: 50px 0 30px;}
+    .social-container-boxs { margin-top: 10px; }
 }
     
