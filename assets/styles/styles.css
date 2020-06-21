@@ -409,7 +409,8 @@ particle {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
+    text-align: justify;
+    text-indent: 20px;
     line-height: 1.85714285714286;
     width: 800px;
     height: 100%;
