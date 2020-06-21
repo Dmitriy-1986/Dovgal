@@ -192,7 +192,7 @@ a:hover {
     padding: 0;
     color: rgb(255, 255, 255);
     font-size: 6em;
-    font-family: Antonella script X Bold;
+    /*font-family: Antonella script X Bold;*/
     text-shadow: rgb(100, 100, 100) 5px 0 5px,
     rgb(100, 100, 100) 0 1px 0px,
     rgb(100, 100, 100) -1px 0 0px,
