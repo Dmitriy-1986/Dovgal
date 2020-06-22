@@ -3,6 +3,14 @@
    /*  width: 500px; */ 
    width: 370px;
 }
+
+@media (max-width: 720px) {
+     .accordion-group { 
+        width: 370px;
+     }
+}
+
+
 .accordion-body {
     display: none;
     padding: 14px 20px;
