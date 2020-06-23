@@ -1,1 +1,12 @@
 dovgaldima.pp.ua
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- created with www.majento.ru -->
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+	<loc>https://dovgaldima.pp.ua/</loc>
+	<lastmod>2020-06-23T19:49:38+03:00</lastmod>
+	<priority>1.0</priority>
+	<changefreq>weekly</changefreq>
+</url>
+</urlset>
