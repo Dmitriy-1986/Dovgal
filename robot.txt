@@ -1,3 +1,3 @@
 Host: https://Dmitriy-1986.github.io/Dovgal-Dima/
-Sitemap: http://https://github.com/Dmitriy-1986/Dovgal-Dima/blob/master/sitemap.xml
+Sitemap: https://github.com/Dmitriy-1986/Dovgal-Dima/blob/master/sitemap.xml
 User-agent: *
