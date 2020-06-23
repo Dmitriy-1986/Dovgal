@@ -12,12 +12,3 @@
 <h4>Спасибо за внимание. Пока!</h4>  
 <h6> 2020&nbsp;<a title="Координаты" href="https://goo.gl/maps/AtiAA68ZdduyRFQv5">47°50′16″N 35°08′18″E &nbsp;ZP, UA </a></h6> <br><br>  
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170469006-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-170469006-1');
-    </script>
