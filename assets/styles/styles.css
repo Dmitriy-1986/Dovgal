@@ -306,6 +306,7 @@ particle {
     background-image: -o-linear-gradient(bottom, #cce5ff 0%, rgba(255, 255, 255, 0) 20%), url('../images/Dovgal_Dima.png');
     background-image: linear-gradient(0deg, #cce5ff 0%, rgba(255, 255, 255, 0) 20%), url('../images/Dovgal_Dima.png');
     background-size: cover;
+    margin-top:70px;
 }
 
 .election-box {
