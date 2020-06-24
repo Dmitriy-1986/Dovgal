@@ -190,12 +190,12 @@ a:hover {
 .surname-and-name{
     margin: 0;
     padding: 0;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);	
+    font-size: 6em;
+    font-family: Antonella script X Bold;
+    /*font-size: 1.5em;
+    font-family: 'Notable', sans-serif;*/
 	
-   /* font-size: 6em;
-    font-family: Antonella script X Bold;*/
-    font-size: 1.5em;
-    font-family: 'Notable', sans-serif;
     text-shadow: rgb(100, 100, 100) 5px 0 5px,
     rgb(100, 100, 100) 0 1px 0px,
     rgb(100, 100, 100) -1px 0 0px,
