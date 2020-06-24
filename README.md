@@ -12,4 +12,4 @@
 <h4>Спасибо за внимание. Пока!</h4>  
 <h6> 2020&nbsp;<a title="Координаты" href="https://goo.gl/maps/AtiAA68ZdduyRFQv5">47°50′16″N 35°08′18″E &nbsp;ZP, UA </a></h6> <br><br>  
 
-<a href="dmitriy-1986.github.io/Dovgal/">Dovgal D.</a>
+<a href="https://dmitriy-1986.github.io/Dovgal/">Dovgal D.</a>
