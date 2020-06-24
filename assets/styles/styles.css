@@ -426,6 +426,7 @@ particle {
      margin: 0;
      color: #004085;
      text-indent: none;
+     text-align: justify;
 }
 
 /* interests */
