@@ -421,6 +421,12 @@ particle {
     margin-bottom: 55px;
 }
 
+.about-me a {
+     padding: 0;
+     margin: 0;
+     color: #cce55ff;
+}
+
 /* interests */
 @-webkit-keyframes scroll {
     0% {
