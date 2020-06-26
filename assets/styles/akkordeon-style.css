@@ -36,6 +36,7 @@
     border-radius: 5px;
     position: relative;
     font-size: 15px;
+    text-align: center;
 }
 .accordion-header::after {
     content: "+";
