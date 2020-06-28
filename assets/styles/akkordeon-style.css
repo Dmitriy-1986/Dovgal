@@ -1,13 +1,13 @@
 .accordion-group { 
     margin: 16px 0;
    /*  width: 500px; */ 
-   width: 400px;
-   /* width: 100%;*/
+   /*width: 400px;*/
+    width: 90%;
 }
 
 @media (max-width: 720px) {
      .accordion-group { 
-        width: 370px;
+       /* width: 370px;*/
      }
 }
 
