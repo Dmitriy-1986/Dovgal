@@ -373,20 +373,30 @@
          </div>
        </div>
 
-      <div class="contact-form wow animate__animated animate__zoomIn" data-wow-duration = "1s">
+      <div class="contact-form">
         <form  id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/dovgal.dima.86@gmail.com" method="post">
             <fieldset id="fs-frm-inputs">
+               <div class="wow animate__animated animate__zoomIn">
                 <label for="full-name">ФИО</label>
                 <input type="text" name="name" id="full-name" placeholder="ФИО" required="">
+               </div>
+               <div class="wow animate__animated animate__zoomIn">
                 <label for="email-address">Адрес электронной почты</label>
                 <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+               </div>
+               <div class="wow animate__animated animate__zoomIn">
                 <label for="telephone">Номер телефона</label>
                 <input type="telephone" name="telephone" id="telephone" placeholder="Номер телефона" required="">
+               </div>
+               <div class="wow animate__animated animate__zoomIn">
                 <label for="complaint">Сообщение</label>
                 <textarea rows="6" name="complaint" id="complaint" placeholder="Введите сообщение" required=""></textarea>
+               </div>
                <!-- <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">-->
             </fieldset>
+           <div class="wow animate__animated animate__zoomIn">
             <input type="submit" value="Отправить">
+           </div>
         </form>
       </div>
   </section>
