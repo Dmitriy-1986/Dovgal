@@ -106,7 +106,8 @@
 #fs-frm fieldset.locale input[name="postal-code"] {
   width: 50%;
 }
+/*
 #fs-frm fieldset.locale input[name="city"],
 #fs-frm fieldset.locale select[name="state"] {
   margin-right: 3%;
-}
+}*/
