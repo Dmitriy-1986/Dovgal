@@ -77,7 +77,7 @@
 #fs-frm select {
   text-transform: none;
 }
-
+/*
 #fs-frm [type="checkbox"] {
   -webkit-appearance: checkbox;
   -moz-appearance: checkbox;
@@ -91,7 +91,7 @@
   -webkit-appearance: radio;
   -moz-appearance: radio;
   appearance: radio;
-}
+}*/
 
 /* address, locale */
 #fs-frm fieldset.locale input[name="city"],
