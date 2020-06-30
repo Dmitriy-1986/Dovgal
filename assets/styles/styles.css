@@ -75,7 +75,8 @@ address {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    background-color: #f9fafe;
+	background-color: #337AB7;
+   /* background-color: #f9fafe;*/
 }
 
 .adress-content {
