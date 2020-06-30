@@ -75,7 +75,7 @@ address {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-	background-color: #337AB7;
+	background-color: #4ba3c7;
    /* background-color: #f9fafe;*/
 }
 
@@ -96,7 +96,7 @@ address {
     width: 90%;
     height: 42px;
     padding-bottom: 5px;
-	background-color: #337AB7;
+	background-color: #4ba3c7;
 }
 
 .adress-content-flex {
@@ -129,7 +129,6 @@ address {
     word-wrap: normal;
     white-space: nowrap;
     margin-right: 3px;
-	color: #fff;
     direction: ltr;
     -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
