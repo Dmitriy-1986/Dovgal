@@ -96,6 +96,7 @@ address {
     width: 90%;
     height: 42px;
     padding-bottom: 5px;
+	background-color: #337AB7;
 }
 
 .adress-content-flex {
