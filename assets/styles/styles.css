@@ -137,6 +137,10 @@ address {
                 font-feature-settings: 'liga';
 }
 
+.adress-color-a {
+	color: #fff;
+}
+
 a {
     text-decoration: none;
     padding: 0 1em;
