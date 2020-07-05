@@ -737,7 +737,8 @@ particle {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 1300px;
+   /*width: 1300px;*/
+	width: 100%;
 }
 
 .facebook:hover {
