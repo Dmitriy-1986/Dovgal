@@ -76,6 +76,11 @@
      </script>
      <!-- /Yandex.Metrika counter -->
     
+    <!-- formspree type="text" -->
+    <script>UPLOADCARE_PUBLIC_KEY = "demopublickey";</script>
+    <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js" charset="utf-8"></script>
+    <!-- end formspree type="text" -->
+    
 </head>
 <body>
    <a href="https://github.com/Dmitriy-1986/Dovgal/blob/master/sitemap.xml"></a>
@@ -444,6 +449,7 @@
                 <textarea rows="6" name="complaint" id="complaint" placeholder="Введите сообщение" required></textarea>
                </div>
                <div class="wow animate__animated animate__zoomIn">
+                <input type="hidden" role="uploadcare-uploader" name="my_file" />
                 <input type = "file" name = "attachment" accept = "image / png, image / jpeg">
                </div>
             </fieldset>
