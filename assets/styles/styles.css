@@ -37,6 +37,17 @@ a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, d
     overflow: hidden;
 }
 
+/* progress */
+ .progress {
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 0%;
+     height: 4px;
+     background-color: tomato;
+     z-index:20;
+}
+
 /* header */
 header {
     display: -webkit-box;
@@ -931,6 +942,7 @@ footer {
   
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
+	
     /* Support for Safari and Chrome. */
     text-rendering: optimizeLegibility;
   
