@@ -322,8 +322,8 @@ particle {
 .election-img-box {
     height: 600px;
     width: 600px;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#cce5ff), color-stop(20%, rgba(255, 255, 255, 0))), url('../images/Dovgal_Dima.png');
     background-image: -o-linear-gradient(bottom, #cce5ff 0%, rgba(255, 255, 255, 0) 20%), url('../images/Dovgal_Dima.png');
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#cce5ff), color-stop(20%, rgba(255, 255, 255, 0))), url('../images/Dovgal_Dima.png');
     background-image: linear-gradient(0deg, #cce5ff 0%, rgba(255, 255, 255, 0) 20%), url('../images/Dovgal_Dima.png');
     background-size: cover;
     margin-top:70px;
@@ -507,11 +507,11 @@ particle {
 
 @media (max-width: 430px) {
     .slider {width: 300px;}
-    .slider::before, .slider::after {background: linear-gradient(to right, #cce5ff 0%, rgba(255, 255, 255, 0) 30%)};
+    .slider::before, .slider::after {background: -webkit-gradient(linear, left top, right top, from(#cce5ff), color-stop(30%, rgba(255, 255, 255, 0)));background: -o-linear-gradient(left, #cce5ff 0%, rgba(255, 255, 255, 0) 30%);background: linear-gradient(to right, #cce5ff 0%, rgba(255, 255, 255, 0) 30%)};
 }
 .slider::before, .slider::after {
-    background: -webkit-gradient(linear, left top, right top, from(#cce5ff), to(rgba(255, 255, 255, 0)));
     background: -o-linear-gradient(left, #cce5ff 0%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#cce5ff), to(rgba(255, 255, 255, 0)));
     background: linear-gradient(to right, #cce5ff 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
     height: 100px;
