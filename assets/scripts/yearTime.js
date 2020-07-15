@@ -14,7 +14,7 @@ function printTime(){
     yearTime.innerHTML = day + ". " +  month + ". " + year + ", " + hours + ":" + mins + ", ";*/
     
      let yearTime = document.getElementsByClassName("realTimeAndYear")[0];
-     yearTime.innerHTML = moment().format('L, LT');
+     yearTime.innerHTML = moment().format('MMMM Do YYYY, h:mm:ss');
     
 }
 setInterval(printTime, 1000);
