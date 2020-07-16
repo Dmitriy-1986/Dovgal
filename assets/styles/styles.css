@@ -790,6 +790,9 @@ particle {
      -webkit-box-shadow: 0px 0px 20px #4267b2;
              box-shadow: 0px 0px 20px #4267b2;
      color: #4267b2;
+     -webkit-transition-duration: .8s;
+     -o-transition-duration: .8s;
+     transition-duration: .8s;
 }
 
 .instagram:hover {
@@ -797,6 +800,9 @@ particle {
      -webkit-box-shadow: 0px 0px 20px #C13584;
              box-shadow: 0px 0px 20px #C13584;
      color: #C13584;
+     -webkit-transition-duration: .8s;
+     -o-transition-duration: .8s;
+     transition-duration: .8s;
 }
 
 .linkedin:hover {
@@ -804,6 +810,9 @@ particle {
      -webkit-box-shadow: 0px 0px 20px #2867B2;
              box-shadow: 0px 0px 20px #2867B2;
      color: #2867B2;
+     -webkit-transition-duration: .8s;
+     -o-transition-duration: .8s;
+     transition-duration: .8s;
 }
 
 .twitter:hover {
@@ -811,6 +820,9 @@ particle {
      -webkit-box-shadow: 0px 0px 20px #1DA1F2;
              box-shadow: 0px 0px 20px #1DA1F2;
      color: #1DA1F2;
+     -webkit-transition-duration: .8s;
+     -o-transition-duration: .8s;
+     transition-duration: .8s;
 }
 
 .telegram:hover {
@@ -818,6 +830,9 @@ particle {
      -webkit-box-shadow: 0px 0px 20px #0088cc;
              box-shadow: 0px 0px 20px #0088cc;
      color: #0088cc;
+     -webkit-transition-duration: .8s;
+     -o-transition-duration: .8s;
+     transition-duration: .8s;
 }
 
 .skype:hover {
@@ -825,36 +840,57 @@ particle {
      -webkit-box-shadow: 0px 0px 20px #00AFF0;
              box-shadow: 0px 0px 20px #00AFF0;
      color: #00AFF0;
+     -webkit-transition-duration: .8s;
+     -o-transition-duration: .8s;
+     transition-duration: .8s;
 }
 
 .facebook-link:hover {
 	text-shadow: 0px 0px 20px #4267b2;
         color: #4267b2;
+	-webkit-transition-duration: .8s;
+        -o-transition-duration: .8s;
+        transition-duration: .8s;
 }
 
 .telegram-link:hover {
         text-shadow: 0px 0px 20px #0088cc;
         color: #0088cc;
+        -webkit-transition-duration: .8s;
+        -o-transition-duration: .8s;
+        transition-duration: .8s;
 }
 
 .twitter-link:hover {
         text-shadow: 0px 0px 20px #1DA1F2;
         color: #1DA1F2;
+	-webkit-transition-duration: .8s;
+        -o-transition-duration: .8s;
+        transition-duration: .8s;
 }
 
 .linkedin-link:hover {
         text-shadow: 0px 0px 20px #2867B2;
         color: #2867B2;
+        -webkit-transition-duration: .8s;
+        -o-transition-duration: .8s;
+        transition-duration: .8s;
 }
 
 .instagram-link:hover {
        text-shadow: 0px 0px 20px #C13584;
        color: #C13584;
+       -webkit-transition-duration: .8s;
+       -o-transition-duration: .8s;
+       transition-duration: .8s;
 }
 
 .skype-link:hover {
         text-shadow: 0px 0px 20px #00AFF0;
         color: #00AFF0;
+	-webkit-transition-duration: .8s;
+        -o-transition-duration: .8s;
+        transition-duration: .8s;
 }
 
 /* footer*/
