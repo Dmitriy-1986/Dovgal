@@ -13,11 +13,11 @@
 .accordion-body {
     display: none;
     padding: 14px 20px;
-    background-color: #cce5ff;
+    background-color: #efefef;
     color: #004085;
     border-radius: 5px;
     margin: 8px 0;
-    border: 2px solid #BFE2FF; 
+    border: 2px solid #757575; 
     text-align: center;   
 }
 .accordion-body > * > .accordion-body {
@@ -25,7 +25,7 @@
     margin: 0;
 }
 .accordion-header {
-    background-color: #337AB7;
+    background-color: #757575;
     color: #fff;
     box-shadow: 0px 0px 7px 0px rgba(255,255,255,0.75);
     padding: 15px 40px 15px 20px;
@@ -47,7 +47,7 @@
     position: absolute;
 }
 .accordion-header.open {
-    background: #337AB7;
+    background: #757575;
     color: #fff;
     font-weight: bold
 }
