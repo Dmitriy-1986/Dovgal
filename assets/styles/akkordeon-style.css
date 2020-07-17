@@ -47,7 +47,7 @@
     position: absolute;
 }
 .accordion-header.open {
-    background: #757575;
+    background-color: #757575;
     color: #fff;
     font-weight: bold
 }
