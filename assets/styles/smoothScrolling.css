@@ -43,7 +43,7 @@
     background-color: #e8e8e8;
 }
 .top-link:hover svg {
-    fill: black;
+    fill: #494949;
 }
 .screen-reader-text {
     position: absolute;
