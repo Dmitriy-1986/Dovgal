@@ -388,7 +388,7 @@ particle {
     height: 42px;
     padding-top: 50px;
     text-transform: uppercase;
-    color: #004085;
+    color: #757575;
     font-size: 38px;
     font-weight: 700;
     -webkit-animation: pulsate 10.0s linear infinite;
@@ -446,7 +446,7 @@ particle {
     font-weight: 700;
     padding-top: 50px;
     text-align: center;
-    color: #004085;
+    color: #757575;
     background-color: #efefef;
     -webkit-animation: pulsate 10.0s linear infinite;
             animation: pulsate 10.0s linear infinite;
@@ -626,7 +626,7 @@ particle {
     padding-top: 50px;
     padding-bottom: 20px;
     text-align: center;
-    color: #004085;
+    color: #757575;
     -webkit-animation: pulsate 10.0s linear infinite;
             animation: pulsate 10.0s linear infinite;
 }
@@ -696,7 +696,7 @@ particle {
     font-weight: 700;
     padding-top: 50px;
     text-align: center;
-    color: black;
+    color: #757575;
     background-color: #fff;
     -webkit-animation: pulsate 10.0s linear infinite;
             animation: pulsate 10.0s linear infinite;
