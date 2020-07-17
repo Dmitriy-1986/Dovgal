@@ -122,7 +122,7 @@ address {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-	background-color: #4ba3c7;
+	background-color: #494949;
    /* background-color: #f9fafe;*/
 }
 
@@ -143,7 +143,7 @@ address {
     width: 90%;
     height: 42px;
     padding-bottom: 5px;
-	background-color: #4ba3c7;
+	background-color: #494949;
 }
 
 .adress-content-flex {
@@ -220,7 +220,7 @@ a:hover {
             align-items: center;
 	width: 90%;
 	height: 100%;
-    background-color: #87CEEB;
+    background-color: #757575;
 	padding: 20px 0;
 }
    
@@ -333,7 +333,7 @@ particle {
 	        align-items: center;
     width: 100%;
     height: 100%;
-    background-color: #cce5ff;
+    background-color: #efefef;
 }
 
 .skills-component-content {
@@ -352,7 +352,7 @@ particle {
                     align-items: flex-end;
     width: 1300px;
     height: 100%;
-    background-color: #cce5ff;
+    background-color: #efefef;
 }
 
 .election-img-box {
@@ -360,7 +360,7 @@ particle {
     width: 600px;
     background-image: -o-linear-gradient(bottom, #cce5ff 0%, rgba(255, 255, 255, 0) 20%), url('../images/Dovgal_Dima.png');
     background-image: -webkit-gradient(linear, left bottom, left top, from(#cce5ff), color-stop(20%, rgba(255, 255, 255, 0))), url('../images/Dovgal_Dima.png');
-    background-image: linear-gradient(0deg, #cce5ff 0%, rgba(255, 255, 255, 0) 20%), url('../images/Dovgal_Dima.png');
+    background-image: linear-gradient(0deg, #cce5ff 0%, rgba(255, 255, 255, 0) 20%), url('https://ibb.co/7vGHKxB');
     background-size: cover;
     margin-top:70px;
 }
@@ -438,7 +438,7 @@ particle {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    background-color: #cce5ff;
+    background-color: #efefef;
 }
 
 .about-me-title {
@@ -448,7 +448,7 @@ particle {
     padding-top: 50px;
     text-align: center;
     color: #004085;
-    background-color: #cce5ff;
+    background-color: #efefef;
     -webkit-animation: pulsate 10.0s linear infinite;
             animation: pulsate 10.0s linear infinite;
 }
@@ -473,7 +473,7 @@ particle {
     width: 800px;
     height: 100%;
     font-weight: bold;
-    background-color: #cce5ff;
+    background-color: #efefef;
     color: #004085;
     margin-bottom: 55px;
 }
@@ -513,7 +513,7 @@ particle {
 }
 
 .slider {
-    background: #cce5ff;
+    background: #efefef;
     height: 100px;
     margin: auto;
     overflow: hidden;
@@ -597,7 +597,7 @@ particle {
     width:100%;
     height:100%;
     padding: 10px 0 50px;
-    background-color: #cce5ff;
+    background-color: #efefef;
 }
 
 .gallery-component-size {
@@ -617,7 +617,7 @@ particle {
     width: 1300px;
     height:100%;
     padding: 10px 0 50px;
-    background-color: #cce5ff;
+    background-color: #efefef;
 }
 
 .gallery-component-title {
