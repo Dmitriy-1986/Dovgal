@@ -9,7 +9,6 @@
      }
 }
 
-
 .accordion-body {
     display: none;
     padding: 14px 20px;
@@ -21,7 +20,7 @@
     text-align: center;   
 }
 .accordion-body > * > .accordion-body {
-    background: #FFF;
+    background-color: #efefef;
     margin: 0;
 }
 .accordion-header {
