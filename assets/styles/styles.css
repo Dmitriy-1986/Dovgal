@@ -123,7 +123,6 @@ address {
             align-items: center;
     width: 100%;
 	background-color: #24292d;
-   /* background-color: #f9fafe;*/
 }
 
 .adress-content {
@@ -246,9 +245,6 @@ a:hover {
     color: rgb(255, 255, 255);	
     font-size: 6em;
     font-family: Antonella script X Bold;
-    /*font-size: 1.5em;
-    font-family: 'Notable', sans-serif;*/
-	
     text-shadow: rgb(100, 100, 100) 5px 0 5px,
     rgb(100, 100, 100) 0 1px 0px,
     rgb(100, 100, 100) -1px 0 0px,
@@ -388,7 +384,7 @@ particle {
     height: 42px;
     padding-top: 50px;
     text-transform: uppercase;
-    color: #757575;
+    color: #66696c;
     font-size: 38px;
     font-weight: 700;
     -webkit-animation: pulsate 10.0s linear infinite;
@@ -446,7 +442,7 @@ particle {
     font-weight: 700;
     padding-top: 50px;
     text-align: center;
-    color: #757575;
+    color: #66696c;
     background-color: #fff;
     -webkit-animation: pulsate 10.0s linear infinite;
             animation: pulsate 10.0s linear infinite;
@@ -473,14 +469,14 @@ particle {
     height: 100%;
     font-weight: bold;
     background-color: #fff;
-    color: #004085;
+    color: #66696c;
     margin-bottom: 55px;
 }
 
 .about-me-a {
      padding: 0;
      margin: 0;
-     color: #004085;
+     color: #66696c;
      text-indent: none;
      text-align: justify;
      text-decoration: underline;
@@ -512,7 +508,7 @@ particle {
 }
 
 .slider {
-    background: #000;
+    background: #fff;
     height: 100px;
     margin: auto;
     overflow: hidden;
@@ -542,7 +538,7 @@ particle {
 
 @media (max-width: 430px) {
     .slider {width: 300px;}
-    .slider::before, .slider::after {background: -webkit-gradient(linear, left top, right top, from(#cce5ff), color-stop(30%, rgba(255, 255, 255, 0)));background: -o-linear-gradient(left, #cce5ff 0%, rgba(255, 255, 255, 0) 30%);background: linear-gradient(to right, #cce5ff 0%, rgba(255, 255, 255, 0) 30%)};
+    .slider::before, .slider::after {background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(30%, rgba(255, 255, 255, 0)));background: -o-linear-gradient(left, #cce5ff 0%, rgba(255, 255, 255, 0) 30%);background: linear-gradient(to right, #cce5ff 0%, rgba(255, 255, 255, 0) 30%)};
 }
 .slider::before, .slider::after {
     background: -o-linear-gradient(left, #fff; 0%, rgba(255, 255, 255, 0) 100%);
@@ -616,7 +612,7 @@ particle {
     width: 1300px;
     height:100%;
     padding: 10px 0 50px;
-    background-color: #000;
+    background-color: #fff;
 }
 
 .gallery-component-title {
@@ -626,7 +622,7 @@ particle {
     padding-top: 50px;
     padding-bottom: 20px;
     text-align: center;
-    color: #757575;
+    color: #66696c;
     -webkit-animation: pulsate 10.0s linear infinite;
             animation: pulsate 10.0s linear infinite;
 }
@@ -696,7 +692,7 @@ particle {
     font-weight: 700;
     padding-top: 50px;
     text-align: center;
-    color: #757575;
+    color: #66696c;
     background-color: #fff;
     -webkit-animation: pulsate 10.0s linear infinite;
             animation: pulsate 10.0s linear infinite;
@@ -755,7 +751,7 @@ particle {
      -webkit-box-align: center;
          -ms-flex-align: center;
              align-items: center;
-     border: 3px solid #000;
+     border: 3px solid #66696c;
      border-radius: 50%;
      height: 50px;
      width: 50px;
@@ -783,7 +779,6 @@ particle {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-   /*width: 1300px;*/
 	width: 100%;
 }
 
@@ -955,7 +950,7 @@ footer {
     width: 300px;
     height: 260px;
     font-size: 12px; 
-    color: #000;
+    color: #66696c;
 }
 
 .footer-contacts-info {
@@ -977,7 +972,7 @@ footer {
     background-color: #f9fafe;
     width: 270px;
     height: 260px;
-    color: #000;
+    color: #66696c;
     font-size: 14px;
 }
 
