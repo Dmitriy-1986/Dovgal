@@ -12,7 +12,7 @@
 ::-webkit-scrollbar-thumb {
     border-width:1px 1px 1px 2px;
     border-color: #777;
-    background-color: #494949;
+    background-color: #1e2327;
     opacity: 1;
     border-radius: 10px;
     height: 300px;
@@ -21,7 +21,7 @@
 ::-webkit-scrollbar-thumb:hover {
     border-width: 1px 1px 1px 2px;
     border-color: #555;
-    background-color: #757575;
+    background-color: #24292d;
     opacity: 0;
     -webkit-transition-duration: .8s;
     -o-transition-duration: .8s;
@@ -80,7 +80,7 @@ a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, d
      top: 0;
      width: 0%;
      height: 4px;
-     background-color: #494949;
+     background-color: #1e2327;
      z-index:20;
 }
 
@@ -293,8 +293,8 @@ a:hover {
     padding-right:20px ;
     font-weight: bold;
     font-size:13px;
-    color:#4DE55C ;
-    border:2px solid #4DE55C;
+    color:#4de55c ;
+    border:2px solid #4de55c;
     line-height: 3.2em; 
     outline: none;
     width: 120px;
@@ -312,7 +312,7 @@ particle {
 
 .header-contact-call:hover {
     color: white;
-    background-color:#4DE55C ;
+    background-color: #4de55c ;
     border:2px solid rgb(255, 255, 255);
 }
 
@@ -333,7 +333,7 @@ particle {
 	        align-items: center;
     width: 100%;
     height: 100%;
-    background-color: #efefef;
+    background-color: #fff;
 }
 
 .skills-component-content {
@@ -352,15 +352,15 @@ particle {
                     align-items: flex-end;
     width: 1300px;
     height: 100%;
-    background-color: #efefef;
+    background-color: #fff;
 }
 
 .election-img-box {
     height: 600px;
     width: 600px;
-    background-image: -o-linear-gradient(bottom, #efefef 0%, rgba(255, 255, 255, 0) 20%), url('../images/my-photo/DovgalD-img-backgr.png');
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#efefef), color-stop(20%, rgba(255, 255, 255, 0))), url('../images/my-photo/DovgalD-img-backgr.png');
-    background-image: linear-gradient(0deg, #efefef 0%, rgba(255, 255, 255, 0) 20%), url('../images/my-photo/DovgalD-img-backgr.png');
+    background-image: -o-linear-gradient(bottom, #fff; 0%, rgba(255, 255, 255, 0) 20%), url('../images/my-photo/DovgalD-img-backgr.png');
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#fff;), color-stop(20%, rgba(255, 255, 255, 0))), url('../images/my-photo/DovgalD-img-backgr.png');
+    background-image: linear-gradient(0deg, #fff; 0%, rgba(255, 255, 255, 0) 20%), url('../images/my-photo/DovgalD-img-backgr.png');
     background-size: cover;
     margin-top:70px;
 }
@@ -437,7 +437,7 @@ particle {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    background-color: #efefef;
+    background-color: #fff;
 }
 
 .about-me-title {
@@ -447,7 +447,7 @@ particle {
     padding-top: 50px;
     text-align: center;
     color: #757575;
-    background-color: #efefef;
+    background-color: #fff;
     -webkit-animation: pulsate 10.0s linear infinite;
             animation: pulsate 10.0s linear infinite;
 }
@@ -472,7 +472,7 @@ particle {
     width: 800px;
     height: 100%;
     font-weight: bold;
-    background-color: #efefef;
+    background-color: #fff;
     color: #004085;
     margin-bottom: 55px;
 }
@@ -512,7 +512,7 @@ particle {
 }
 
 .slider {
-    background: #efefef;
+    background: #000;
     height: 100px;
     margin: auto;
     overflow: hidden;
@@ -545,9 +545,9 @@ particle {
     .slider::before, .slider::after {background: -webkit-gradient(linear, left top, right top, from(#cce5ff), color-stop(30%, rgba(255, 255, 255, 0)));background: -o-linear-gradient(left, #cce5ff 0%, rgba(255, 255, 255, 0) 30%);background: linear-gradient(to right, #cce5ff 0%, rgba(255, 255, 255, 0) 30%)};
 }
 .slider::before, .slider::after {
-    background: -o-linear-gradient(left, #efefef 0%, rgba(255, 255, 255, 0) 100%);
-    background: -webkit-gradient(linear, left top, right top, from(#cce5ff), to(rgba(255, 255, 255, 0)));
-    background: linear-gradient(to right, #efefef 0%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(left, #fff; 0%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#fff;), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to right, #fff; 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
     height: 100px;
     position: absolute;
@@ -596,7 +596,7 @@ particle {
     width:100%;
     height:100%;
     padding: 10px 0 50px;
-    background-color: #efefef;
+    background-color: #fff;
 }
 
 .gallery-component-size {
@@ -616,7 +616,7 @@ particle {
     width: 1300px;
     height:100%;
     padding: 10px 0 50px;
-    background-color: #efefef;
+    background-color: #000;
 }
 
 .gallery-component-title {
