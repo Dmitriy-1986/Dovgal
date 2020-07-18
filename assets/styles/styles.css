@@ -540,6 +540,7 @@ particle {
     .slider {width: 300px;}
     .slider::before, .slider::after {background: -webkit-gradient(linear, left top, right top, from(#fafafa), color-stop(30%, rgba(255, 255, 255, 0)));background: -o-linear-gradient(left, #cce5ff 0%, rgba(255, 255, 255, 0) 30%);background: linear-gradient(to right, #cce5ff 0%, rgba(255, 255, 255, 0) 30%)};
 }
+
 .slider::before, .slider::after {
     background: -o-linear-gradient(left, #fafafa, 0%, rgba(255, 255, 255, 0) 100%);
     background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(rgba(255, 255, 255, 0)));
@@ -550,6 +551,7 @@ particle {
     width: 200px;
     z-index: 2;
 }
+
 .slider::after {
     right: 0;
     top: 0;
@@ -557,10 +559,12 @@ particle {
         -ms-transform: rotate(180deg);
             transform: rotateZ(180deg);
 }
+
 .slider::before {
     left: 0;
     top: 0;
 }
+
 .slider .slide-track {
     -webkit-animation: scroll 40s linear infinite;
             animation: scroll 40s linear infinite;
@@ -569,6 +573,7 @@ particle {
     display: flex;
     width: calc(250px * 14);
 }
+
 .slider .slide {
     height: 100px;
     width: 250px;
@@ -763,7 +768,6 @@ particle {
     height: 17px;
     width: 120px;
 }
-
 
 .contact-component {
     display: -webkit-box;
