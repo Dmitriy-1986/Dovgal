@@ -539,13 +539,19 @@ particle {
 
 @media (max-width: 430px) {
     .slider {width: 300px;}
-    .slider::before, .slider::after {background: -webkit-gradient(linear, left top, right top, from(#fafafa), color-stop(30%, rgba(255, 255, 255, 0)));background: -o-linear-gradient(left, #cce5ff 0%, rgba(255, 255, 255, 0) 30%);background: linear-gradient(to right, #cce5ff 0%, rgba(255, 255, 255, 0) 30%)};
 }
 
 .slider::before, .slider::after {
-    background: -o-linear-gradient(left, #fafafa, 0%, rgba(255, 255, 255, 0) 100%);
-    background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(rgba(255, 255, 255, 0)));
-    background: linear-gradient(to right, #fafafa, 0%, rgba(255, 255, 255, 0) 100%);
+    /* right */
+    -webkit-box-shadow: inset -200px -34px 70px -124px rgba(255,255,255,1);
+    -moz-box-shadow: inset -200px -34px 70px -124px rgba(255,255,255,1);
+    box-shadow: inset -200px -34px 70px -124px rgba(255,255,255,1);
+
+    /* left */
+    -webkit-box-shadow: inset 200px -34px 70px -124px rgba(255,255,255,1);
+    -moz-box-shadow: inset 200px -34px 70px -124px rgba(255,255,255,1);
+    box-shadow: inset 200px -34px 70px -124px rgba(255,255,255,1);
+	
     content: "";
     height: 100px;
     position: absolute;
