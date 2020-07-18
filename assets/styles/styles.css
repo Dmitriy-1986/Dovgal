@@ -538,12 +538,12 @@ particle {
 
 @media (max-width: 430px) {
     .slider {width: 300px;}
-    .slider::before, .slider::after {background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(30%, rgba(255, 255, 255, 0)));background: -o-linear-gradient(left, #cce5ff 0%, rgba(255, 255, 255, 0) 30%);background: linear-gradient(to right, #cce5ff 0%, rgba(255, 255, 255, 0) 30%)};
+    .slider::before, .slider::after {background: -webkit-gradient(linear, left top, right top, from(#fafafa), color-stop(30%, rgba(255, 255, 255, 0)));background: -o-linear-gradient(left, #cce5ff 0%, rgba(255, 255, 255, 0) 30%);background: linear-gradient(to right, #cce5ff 0%, rgba(255, 255, 255, 0) 30%)};
 }
 .slider::before, .slider::after {
-    background: -o-linear-gradient(left, #fff; 0%, rgba(255, 255, 255, 0) 100%);
-    background: -webkit-gradient(linear, left top, right top, from(#fff;), to(rgba(255, 255, 255, 0)));
-    background: linear-gradient(to right, #fff; 0%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(left, #fafafa, 0%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#fafafa), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to right, #fafafa, 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
     height: 100px;
     position: absolute;
