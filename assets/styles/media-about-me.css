@@ -2,7 +2,7 @@
 	.about-me {width: 1100px;}
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1210px) {
 	.about-me {width: 700px; /* height: 850px; */}
 }
 @media (max-width: 800px) {
