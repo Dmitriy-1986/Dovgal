@@ -354,9 +354,9 @@ particle {
 .election-img-box {
     height: 600px;
     width: 600px;
-    background-image: -o-linear-gradient(bottom, #fff; 0%, rgba(255, 255, 255, 0) 20%), url('../images/my-photo/DovgalD-img-backgr.png');
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#fff;), color-stop(20%, rgba(255, 255, 255, 0))), url('../images/my-photo/DovgalD-img-backgr.png');
-    background-image: linear-gradient(0deg, #fff; 0%, rgba(255, 255, 255, 0) 20%), url('../images/my-photo/DovgalD-img-backgr.png');
+    background-image: -o-linear-gradient(bottom, #fff; 0%, rgba(255, 255, 255, 0) 20%), url('../images/DovgalD-img-backgr.png');
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#fff;), color-stop(20%, rgba(255, 255, 255, 0))), url('../images/DovgalD-img-backgr.png');
+    background-image: linear-gradient(0deg, #fff; 0%, rgba(255, 255, 255, 0) 20%), url('../images/DovgalD-img-backgr.png');
     background-size: cover;
     margin-top:70px;
 }
