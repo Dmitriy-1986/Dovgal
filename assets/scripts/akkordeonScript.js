@@ -1,3 +1,4 @@
+
 (function ($, window, document, undefined) {
     "use strict";
     var pluginName = 'simpleAccordion',
@@ -74,10 +75,27 @@
                 $.data(this, 'plugin_' + pluginName,
                 new Accordion(this, options));
             }
-        });
-    };
-}(jQuery, window, document));
+         });
+        };
+    } (jQuery, window, document)
+);
 
-$(function() {
-    $('.accordion-group').simpleAccordion();
+(function ($) {
+//setting.js
+$('.accordion-group').simpleAccordion({
+    
+    multiple: false, // возможность открытия одной вкладки или всех
+    speedOpen: 300, // скорость открытия вкладки
+    speedClose: 150, // скорость закрытия вкладки
+    easingOpen: null, // эффект плавности открытия вкладки
+    easingClose: null, // эффект плавности закрытия вкладки
+    headClass: 'accordion-header', // класс для заголовка вкладки
+    bodyClass: 'accordion-body', // класс для тела вкладки
+    openClass: 'open',  // класс для открытой вкладки, применяется к accordion-header
+    defaultOpenClass: 'default-open', // класс для открытой вкладки по умолчанию
+    cbClose: null, // callback-функция при закрытии вкладки - function (e, $this) {},
+    cbOpen: null // callback-функция при открытии вкладки - function (e, $this) {}
+    
 });
+
+}(jQuery));
