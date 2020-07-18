@@ -1,4 +1,4 @@
-.accordion-group { 
+/*.accordion-group { 
     margin: 16px 0;
     width: 400px; 
 }
@@ -25,9 +25,9 @@
 }
 .accordion-header {
     background-color: #2c3137;
-    color: #fff;
+    color: #fff; */
    /* box-shadow: 0px 0px 7px 0px rgba(255,255,255,0.75);*/
-    padding: 15px 40px 15px 20px;
+   /* padding: 15px 40px 15px 20px;
     margin: 8px 0;
     cursor: pointer;
     border-radius: 5px;
@@ -53,4 +53,58 @@
 .accordion-header.open::after {
     content: "-";
     color: #fff;    
+}
+*/
+
+.accordion-group { 
+    margin: 16px 0;
+    width: 400px; 
+}
+
+@media (max-width: 720px) {
+     .accordion-group { 
+        width: 340px;
+     }
+}
+
+.accordion-body {
+    display: none;
+    padding: 14px 20px;
+    background: #FFF;
+    border-radius: 5px;
+    margin: 8px 0;
+    border: 2px solid #BFE2FF;  
+    text-align: center;   
+}
+.accordion-body > * > .accordion-body {
+    background: #FFF;
+    margin: 0;
+}
+.accordion-header {
+    background: #BFE2FF;
+    margin: 8px 0;
+    color: #000;
+    padding: 8px 40px 8px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+}
+.accordion-header::after {
+    content: "+";
+    right: 16px;
+    font-family: Courier;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #337AB7;
+    position: absolute;
+}
+.accordion-header.open {
+    background: #337AB7;
+    color: #fff;
+    font-weight: bold
+}
+.accordion-header.open::after {
+    content: "-";
+    color: #FFF;    
 }
