@@ -3,7 +3,7 @@
 }
 
 @media (max-width: 1210px) {
-	.about-me {width: 700px; /* height: 850px; */}
+	.about-me {width: 700px;}
 }
 @media (max-width: 800px) {
 	h2 {font-size: 28px;}
