@@ -1,6 +1,6 @@
 .accordion-group { 
     margin: 16px 0;
-    width: 400px; 
+    width: 100%; 
 }
 
 .accordion-body {
