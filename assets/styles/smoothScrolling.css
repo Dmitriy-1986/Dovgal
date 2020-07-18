@@ -35,7 +35,7 @@
     opacity: 0;
 }
 .top-link svg {
-    fill: #757575;
+    fill: #1e2327;
     width: 14px;
     height: 12px;
 }
@@ -43,7 +43,7 @@
     background-color: #e8e8e8;
 }
 .top-link:hover svg {
-    fill: #494949;
+    fill: #24292d;
 }
 .screen-reader-text {
     position: absolute;
