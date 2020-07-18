@@ -1,35 +1,13 @@
-    /*@media (max-width: 1250px) {
-    .election-img-box{display: none;}
-    .election-box {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; padding-top: 50px; padding-bottom: 50px;}
-    .skills-component-content {display: flex; flex-direction: row; justify-content: center; align-items: flex-start;}
-    }
-    
-    @media (max-width: 720px) {
-      .accordion-group { 
-        width: 340px;
-      }
-    } 
-
-    @media (max-width: 800px) {
-        .element-elections-title {font-size: 28px;}
-        .election-table-box {margin-top: 0;}
-         h3 {font-size: 15px;}
-         p {font-size: 13px;}
-    }
-
-    @media (max-width: 550px) {
+     @media (max-width: 1250px) {
         .election-img-box{display: none;}
-        .election-box {display: flex; flex-direction: column; justify-content: flex-start; align-items: center;}
-        .skills-component-content {display: flex; flex-direction: row; justify-content: center; align-items: flex-start;  height: 100%;}
-        .element-elections-title {font-size: 16px;}
-    }*/
+        .election-box {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; padding-top: 50px; padding-bottom: 50px;}
+        .skills-component-content {display: flex; flex-direction: row; justify-content: center; align-items: flex-start;}
+        .election-table-box {width: 800px;}
+    }
 
-   @media (max-width: 1250px) {
-    .election-img-box{display: none;}
-    .election-box {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; padding-top: 50px; padding-bottom: 50px;}
-    .skills-component-content {display: flex; flex-direction: row; justify-content: center; align-items: flex-start;}
-    .election-table-box {width: 700px;}
-  }
+    @media (max-width: 1150px) {
+        .election-table-box {width: 700px;}
+    }
     
     @media (max-width: 800px) {
         .element-elections-title {font-size: 28px;}
@@ -39,7 +17,7 @@
     }
 
     @media (max-width: 720px) {
-      .election-table-box {width: 340px;}
+        .election-table-box {width: 340px;}
     } 
 
     @media (max-width: 550px) {
