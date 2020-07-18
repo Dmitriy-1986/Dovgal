@@ -354,11 +354,12 @@ particle {
 .election-img-box {
     height: 600px;
     width: 600px;
-    background-image: -o-linear-gradient(bottom, #fff; 0%, rgba(255, 255, 255, 0) 20%), url('../images/imgBackgr.png');
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#fff;), color-stop(20%, rgba(255, 255, 255, 0))), url('../images/imgBackgr.png');
-    background-image: linear-gradient(0deg, #fff; 0%, rgba(255, 255, 255, 0) 20%), url('../images/imgBackgr.png');
+    background-image:  url('../images/imgBackgr.png');
+    -webkit-box-shadow: inset -30px -200px 70px -107px rgba(255,255,255,1);
+    -moz-box-shadow: inset -30px -200px 70px -107px rgba(255,255,255,1);
+    box-shadow: inset -30px -200px 70px -107px rgba(255,255,255,1);
     background-size: cover;
-    margin-top:70px;
+    margin-top: 70px;
 }
 
 .election-box {
