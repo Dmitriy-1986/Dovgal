@@ -706,6 +706,7 @@ particle {
     font-size: 38px;
     font-weight: 700;
     padding-top: 50px;
+    padding-bottom: 10px;
     text-align: center;
     color: #66696c;
     background-color: #fff;
