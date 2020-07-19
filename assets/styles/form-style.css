@@ -126,3 +126,15 @@
      width: 300px;
   }
 }
+
+@media (max-width: 360px) {
+  #fs-frm input,
+  #fs-frm select,
+  #fs-frm textarea,
+  #fs-frm fieldset,
+  #fs-frm optgroup,
+  #fs-frm label,
+  #fs-frm #card-element:disabled {
+     width: 266px;
+  }
+}
