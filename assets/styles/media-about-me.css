@@ -13,7 +13,7 @@
 
 @media (max-width: 550px) {
 	.about-me-title {font-size: 16px;}
-	.about-me {width: 300px;}
+	.about-me {width: 300px; margin-bottom: 0;}
 }
 
 /*@media (max-width: 360px) {
