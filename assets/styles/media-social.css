@@ -15,5 +15,6 @@
 }
 
 @media (max-width: 550px) {
-    .social-component {width: 300px;}
+    .social-component {padding-top: 20px; width: 300px;}
+    .social-two-el {padding: 0px; display: flex; flex-direction: column;  align-items: center;}
 }
