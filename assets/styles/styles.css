@@ -467,7 +467,7 @@ particle {
             align-items: center;
     text-align: justify;
     text-indent: 20px;
-    line-height: 1.85714285714286;
+    line-height: 3;
     width: 800px;
     height: 100%;
     font-weight: normal;
