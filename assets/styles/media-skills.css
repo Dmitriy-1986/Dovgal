@@ -21,7 +21,7 @@
     } 
 
     @media (max-width: 550px) {
-        .election-table-box {width: 300px;}
+        .election-table-box {width: 260px;}
         .election-box {display: flex; flex-direction: column; justify-content: flex-start; align-items: center;}
         .element-elections-title {font-size: 16px;}
     }
