@@ -470,7 +470,7 @@ particle {
     line-height: 1.85714285714286;
     width: 800px;
     height: 100%;
-    font-weight: bold;
+    font-weight: normal;
     background-color: #fff;
     color: #66696c;
     margin-bottom: 55px;
