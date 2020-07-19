@@ -21,10 +21,8 @@
     } 
 
     @media (max-width: 550px) {
-        .accordion-group {width: 320px;}
-        .election-img-box{display: none;}
+        .election-table-box {width: 300px;}
         .election-box {display: flex; flex-direction: column; justify-content: flex-start; align-items: center;}
-        .skills-component-content {display: flex; flex-direction: row; justify-content: center; align-items: flex-start;  height: 100%;}
         .element-elections-title {font-size: 16px;}
     }
     
