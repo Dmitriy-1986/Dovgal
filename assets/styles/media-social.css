@@ -1,5 +1,5 @@
 @media (max-width: 1370px) {
-    .social-component {width: 900px;}
+    .social-component {/*width: 900px;*/ width: 700px;}
 }
     
 @media (max-width: 1250px) {
