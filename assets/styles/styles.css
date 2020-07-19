@@ -730,6 +730,7 @@ particle {
             align-items: center;
     width: 1300px;
    height: 100px;
+   margin: 0 auto;
 }
 
 .social-two-el {
