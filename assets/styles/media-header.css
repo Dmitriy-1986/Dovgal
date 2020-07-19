@@ -1,4 +1,4 @@
-@media (max-width: 700px) {
+@media (max-width: 970px) {
     .header-name {height: 70px;}
     .surname-and-name {font-size: 5em;}
     .heading-content  {flex-direction: column; justify-content: space-evenly; height: 200px;}
