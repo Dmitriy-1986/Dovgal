@@ -13,11 +13,11 @@
 
 @media (max-width: 550px) {
 	.about-me-title {font-size: 16px;}
-	.about-me {width: 340px;}
+	.about-me {width: 300px;}
 }
 
-@media (max-width: 350px) {
+/*@media (max-width: 360px) {
 	.about-me-title {font-size: 12px;}
 	.about-me {width: 210px; font-size: 10px; font-weight: normal;}
-}
+}*/
 
