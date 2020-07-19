@@ -361,6 +361,7 @@ particle {
     box-shadow: inset -30px -200px 70px -107px rgba(255,255,255,1);
     background-size: cover;
     margin-top: 70px;
+    padding-left: 100px;
 }
 
 .election-box {
