@@ -87,6 +87,8 @@
 #fs-frm [type="reset"] {
   margin-bottom: 0;
   margin-right: 0;
+  padding: 6px 22px;
+  border-radius: 5px;
 }
 
 #fs-frm select {
