@@ -814,6 +814,7 @@ particle {
         -ms-flex-align: center;
             align-items: center;
 	width: 100%;
+	padding-bottom: 100px;
 }
 
 .facebook:hover {
