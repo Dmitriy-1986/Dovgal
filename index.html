@@ -21,10 +21,11 @@
 
     <title>Dovgal Dima</title>
 
-    <link rel="canonical" href="https://dovgaldima.pp.ua" />
+    <link rel="canonical" href="https://dovgaldima.pp.ua">
     <link rel="stylesheet" href="./assets/styles/fonts.css">
     <link rel="stylesheet" href="./assets/styles/styles.css">
     <link rel="stylesheet" href="./assets/styles/form-style.css">
+    <link rel="stylesheet" href="./assets/styles/dataTables.css">
     <link rel="stylesheet" href="./assets/styles/media-header.css">
     <link rel="stylesheet" href="./assets/styles/media-skills.css">
     <link rel="stylesheet" href="./assets/styles/media-social.css">
@@ -36,8 +37,8 @@
     <link rel="stylesheet" href="./assets/styles/akkordeon-style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link rel="shortcut icon" href="./assets/images/baseline_perm_identity_black_18dp.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 
     <!-- WOW.js -->
     <script src="./assets/scripts/wow.min.js"></script>
@@ -611,14 +612,27 @@
     <script src="./assets/scripts/buttonAnimation.js"></script>
     <script src="./assets/scripts/akkordeonScript.js"></script>
     <script src="./assets/scripts/smoothScrolling.js"></script>
-
-    <!-- script galeri -->
+    
+    <!-- Datatables.net -->
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+    <!-- End Datatables.net -->
+    <script>
+        /* Datatables.net */
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+    <!-- End Datatables.net -->
+    
+    <!-- Script Galeri -->
     <script src="./assets/scripts/jssor.slider-28.0.0.min.js"></script>
     <script src="./assets/scripts/photoGallery.js"></script>
     <script>jssor_1_slider_init();</script>
     <script src="https://kit.fontawesome.com/8e05867fdd.js" crossorigin="anonymous"></script>
-    <!-- end script galeri -->
-    <!-- script progress scroll -->
+    <!-- End script Galeri -->
+    
+    <!-- Script Progress Scroll -->
     <script>
         const progress = document.querySelector('.progress');
         window.addEventListener('scroll', progressBar);
@@ -630,7 +644,7 @@
         }
 
     </script>
-    <!-- end script progress scroll -->
+    <!-- End script Progress Scroll -->
 </body>
 
 </html>
