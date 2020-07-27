@@ -717,37 +717,37 @@ particle {
 }
 
 @media (max-width: 1350px) {
-     .calendar {
+     .calendar iframe {
           width: 1100px;
      }
 }
 
 @media (max-width: 1150px) {
-       .calendar {
+       .calendar iframe {
            width: 700px;
       }
 }
 
 @media (max-width: 750px) {
-        .calendar {
+        .calendar iframe {
             width: 550px;
          }
 }
 
 @media (max-width: 600px) {
-         .calendar {
+         .calendar iframe {
             width: 450px;
          }
 }
 
 @media (max-width: 500px) {
-         .calendar {
+         .calendar iframe {
              width: 350px;
         }
 }
 
 @media (max-width: 400px) {
-       .calendar {
+       .calendar iframe {
             width: 280px;
         }
 }
