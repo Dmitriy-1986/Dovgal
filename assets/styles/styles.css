@@ -702,6 +702,7 @@ particle {
 /* calendar */
 .calendar {
     margin: 0 auto;
+    padding-bottom: 100px;
 }
 
 /*@media (max-width: 1350px) {
