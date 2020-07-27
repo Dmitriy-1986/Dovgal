@@ -705,6 +705,10 @@ particle {
     padding-bottom: 100px;
 }
 
+.width-iframe {
+	width: 975px;
+}
+
 /*@media (max-width: 1350px) {
      .calendar {
           width: 1100px;
@@ -712,33 +716,28 @@ particle {
 }*/
 
 @media (max-width: 1150px) {
-       .calendar {
-           width: 700px;
-      }
+       .calendar {width: 700px;}
+       .width-iframe {width: 700px;}
 }
 
 @media (max-width: 750px) {
-        .calendar {
-            width: 550px;
-         }
+        .calendar {width: 550px;}
+	.width-iframe {width: 550px;}
 }
 
 @media (max-width: 600px) {
-         .calendar {
-            width: 450px;
-         }
+         .calendar {width: 450px;}
+	 .width-iframe {width: 450px;}
 }
 
 @media (max-width: 500px) {
-         .calendar {
-             width: 350px;
-        }
+         .calendar {width: 350px;}
+	 .width-iframe {width: 350px;}
 }
 
 @media (max-width: 400px) {
-       .calendar {
-            width: 280px;
-        }
+       .calendar {width: 280px;}
+       .width-iframe {width: 280px;}
 }
 
 /* social */
