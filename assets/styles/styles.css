@@ -716,6 +716,42 @@ particle {
             align-items: center;
 }
 
+@media (max-width: 1350px) {
+     .calendar {
+          width: 1100px;
+     }
+}
+
+@media (max-width: 1150px) {
+       .calendar {
+           width: 700px;
+      }
+}
+
+@media (max-width: 750px) {
+        .calendar {
+            width: 550px;
+         }
+}
+
+@media (max-width: 600px) {
+         .calendar {
+            width: 450px;
+         }
+}
+
+@media (max-width: 500px) {
+         .calendar {
+             width: 350px;
+        }
+}
+
+@media (max-width: 400px) {
+       .calendar {
+            width: 280px;
+        }
+}
+
 /* social */
 .social-title {
     text-transform: uppercase;
