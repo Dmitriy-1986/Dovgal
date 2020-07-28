@@ -378,7 +378,8 @@ particle {
         -ms-flex-align: center;
             align-items: center;
    height: 100%;
-   padding: 50px 0 115px;
+  /* padding: 50px 0 115px;*/
+   padding: 185px 0 115px;
 }
 
 .element-elections-title {
