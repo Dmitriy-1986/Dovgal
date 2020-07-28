@@ -16,6 +16,11 @@
      */
   }
   .favorite-books {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     width:72%;
     margin: 0 auto;
     padding-bottom: 60px;
