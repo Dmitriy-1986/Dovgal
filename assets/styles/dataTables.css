@@ -487,6 +487,15 @@
 
 @media (max-width: 600px) {
   .favorite-books {width: 450px;}
+  table.dataTable,
+  .reed-book,
+  .dataTables_wrapper .dataTables_paginate,
+  .dataTables_wrapper .dataTables_paginate .paginate_button, 
+  .dataTables_wrapper .dataTables_length,
+  .dataTables_wrapper .dataTables_filter,
+  .dataTables_wrapper .dataTables_info,
+  .dataTables_wrapper .dataTables_processing,
+  .dataTables_wrapper .dataTables_paginate {font-size: 2vw;}
 }
 
 @media (max-width: 500px) {
@@ -495,5 +504,14 @@
 
 @media (max-width: 400px) {
   .favorite-books {width: 280px;}
+ table.dataTable,
+.reed-book,
+.dataTables_wrapper .dataTables_paginate,
+.dataTables_wrapper .dataTables_paginate .paginate_button, 
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {font-size: 1vw;}
 }
 /* End @media favorite-books */
