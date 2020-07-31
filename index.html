@@ -919,8 +919,9 @@
     <script src="https://kit.fontawesome.com/8e05867fdd.js" crossorigin="anonymous"></script>
     <!-- End script Galeri -->
     
-    <!-- Script Progress Scroll -->
+   
     <script>
+          /* - Script Progress Scroll - */
         const progress = document.querySelector('.progress');
         window.addEventListener('scroll', progressBar);
         function progressBar(e) {
@@ -929,8 +930,18 @@
             let per = windowScroll / windowHeight * 100;
             progress.style.width = per + '%';
         }
+        /* -  End script Progress Scroll - */
+        
+        /* - Smooth page scrolling to anchor - */
+        $("body").on('click', '[href*="#"]', function (e) {
+            var fixed_offset = 0;/*запас отступа для фиксированного меню */
+            $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+            e.preventDefault();
+        });
+        /* - End Smooth page scrolling to anchor - */
+        
     </script>
-    <!-- End script Progress Scroll -->
+    
 </body>
 
 </html>
