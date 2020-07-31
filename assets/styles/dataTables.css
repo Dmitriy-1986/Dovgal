@@ -38,7 +38,7 @@
     border: 1px solid #007bff;
   }
 
-  select {font-size: 1vw;}
+  select {font-size: 100%;}
 
   table.dataTable thead th,
   table.dataTable tfoot th {
