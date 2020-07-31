@@ -87,9 +87,10 @@
 </head>
 
     <style>
+        /*
         .uploadcare--widget__button_type_open:after {
             content: 'fvnfjdknvf';
-        }
+        }/*
     </style>
     
     
@@ -801,7 +802,7 @@
                             required></textarea>
                     </div>
                     <div style="margin-bottom: 20px; width:90px;">
-                        <input type="hidden" role="uploadcare-uploader" name="my_file" placeholder="Выберите файл"/>
+                        <input type="hidden" role="uploadcare-uploader" name="my_file"/>
                     </div>
                 </fieldset>
                 <div>
@@ -936,6 +937,10 @@
             let per = windowScroll / windowHeight * 100;
             progress.style.width = per + '%';
         }
+        
+        /* inner html*/
+        let chooseFile = document.querySelector('.uploadcare--widget__button_type_open');
+            chooseFile.innerHTML = 'Выберите файл';
     </script>
     <!-- End script Progress Scroll -->
 </body>
