@@ -96,8 +96,10 @@
         float: none;
         display: block;
         background-color: #2c3137;
-        border-top: 2px solid #FFF;
-        border-bottom: 2px solid #FFF;
+    }
+    
+     .menu > ul > li:hover {
+        background-color: #24292d;
     }
 
     .menu > ul > li a {
