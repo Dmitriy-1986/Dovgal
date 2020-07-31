@@ -486,14 +486,17 @@
 }
 
 @media (max-width: 600px) {
+  table.dataTable {width: 450px;}
   .favorite-books {width: 450px;}
 }
 
 @media (max-width: 500px) {
+   table.dataTable {width: 350px;}
   .favorite-books  {width: 350px;}
 }
 
 @media (max-width: 400px) {
+  table.dataTable {width: 250px;}
   .favorite-books {width: 280px;}
 }
 /* End @media favorite-books */
