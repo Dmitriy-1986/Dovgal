@@ -408,7 +408,8 @@
         </div>
     </section>
     
-    <section id="books" class="favorite-books">
+    <section id="books" class="component">
+      <div class="favorite-books">
         <hgroup class="gallery-component-title">
             <h2 class="wow animate__animated animate__fadeInDown" data-wow-offset="100">Книги</h2>
         </hgroup>
@@ -682,10 +683,11 @@
                 </tr>
             </tfoot>
         </table>
+      </div>
     </section>
     
     <!-- Google calendar-->
-    <section id="calendar">
+    <section id="calendar"  class="component">
          <hgroup class="social-title">
             <h2 class="wow animate__animated animate__fadeInDown">КАЛЕНДАРЬ</h2>
         </hgroup>
@@ -697,7 +699,7 @@
     </section>
 
     
-    <section  id="contacts">
+    <section  id="contacts"  class="component">
         <hgroup class="social-title">
             <h2 class="wow animate__animated animate__fadeInDown">КОНТАКТЫ</h2>
         </hgroup>
@@ -779,112 +781,116 @@
         </div> <!-- end social component -->
     </section>
 
-    <div class="contact-component">
-        <div class="contact-form">
-            <form id="fs-frm" name="complaint-form" accept-charset="utf-8"
-                action="https://formspree.io/dovgal.dima.86@gmail.com" method="post">
-                <fieldset id="fs-frm-inputs">
+    <div id="site-content" class="component">
+        <div class="contact-component">
+            <div class="contact-form">
+                <form id="fs-frm" name="complaint-form" accept-charset="utf-8"
+                    action="https://formspree.io/dovgal.dima.86@gmail.com" method="post">
+                    <fieldset id="fs-frm-inputs">
+                        <div>
+                            <label for="full-name">Full Name</label>
+                            <input type="text" name="name" id="full-name" placeholder="Full Name" required>
+                        </div>
+                        <div>
+                            <label for="email-address">Your Email:</label>
+                            <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required>
+                        </div>
+                        <div>
+                            <label>Telephone Number </label>
+                            <input type="tel" name="telephone" id="telephone" placeholder="Phone: +380..." required>
+                        </div>
+                        <div>
+                            <label for="complaint">Message</label>
+                            <textarea rows="6" name="complaint" id="complaint" placeholder="Enter your message"
+                                required></textarea>
+                        </div>
+                        <div style="margin-bottom: 20px; width:90px;">
+                            <input type="hidden" role="uploadcare-uploader" name="my_file"/>
+                        </div>
+                    </fieldset>
                     <div>
-                        <label for="full-name">Full Name</label>
-                        <input type="text" name="name" id="full-name" placeholder="Full Name" required>
+                        <input type="submit" value="Submit">
                     </div>
-                    <div>
-                        <label for="email-address">Your Email:</label>
-                        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required>
-                    </div>
-                    <div>
-                        <label>Telephone Number </label>
-                        <input type="tel" name="telephone" id="telephone" placeholder="Phone: +380..." required>
-                    </div>
-                    <div>
-                        <label for="complaint">Message</label>
-                        <textarea rows="6" name="complaint" id="complaint" placeholder="Enter your message"
-                            required></textarea>
-                    </div>
-                    <div style="margin-bottom: 20px; width:90px;">
-                        <input type="hidden" role="uploadcare-uploader" name="my_file"/>
-                    </div>
-                </fieldset>
-                <div>
-                    <input type="submit" value="Submit">
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 
-    <footer class="o-hidden">
-        <div class="footer-component">
-            <div class="footer-text-widget o-hidden">
-                <p>Я начинающий веб-разработчик <br>и мне нравиться делать привлекательный внешний вид веб-сайта.</p>
-                <p> Нацелен на сотрудничество и превосходную работу.</p>
-            </div>
+    <div id="site-footer">
+        <footer class="o-hidden">
+            <div class="footer-component">
+                <div class="footer-text-widget o-hidden">
+                    <p>Я начинающий веб-разработчик <br>и мне нравиться делать привлекательный внешний вид веб-сайта.</p>
+                    <p> Нацелен на сотрудничество и превосходную работу.</p>
+                </div>
 
-            <div class="footer-contacts-info o-hidden">
-                <div id="hcard-Dima-Dovgal" class="vcard">
-                    <div class="contact-container  notranslate">
-                        <div class="icon">
-                            <i class="material-icons">
-                                portrait
-                            </i>
+                <div class="footer-contacts-info o-hidden">
+                    <div id="hcard-Dima-Dovgal" class="vcard">
+                        <div class="contact-container  notranslate">
+                            <div class="icon">
+                                <i class="material-icons">
+                                    portrait
+                                </i>
+                            </div>
+                            <a class="url fn" href="https://dovgaldima.pp.ua" title="Дима Довгаль"><span
+                                    class="value">Dovgal Dima</span></a>
                         </div>
-                        <a class="url fn" href="https://dovgaldima.pp.ua" title="Дима Довгаль"><span
-                                class="value">Dovgal Dima</span></a>
-                    </div>
-                    <div class="contact-container  notranslate">
-                        <div class="icon">
-                            <i class="material-icons">
-                                mail
-                            </i>
-                        </div>
+                        <div class="contact-container  notranslate">
+                            <div class="icon">
+                                <i class="material-icons">
+                                    mail
+                                </i>
+                            </div>
 
-                        <a class="email" title="Электронная почта" href="mailto:dovgal.dima.86@gmail.com"><span
-                                class="value">dovgal.dima.86@gmail.com</span></a>
-                    </div>
-                    <div class="contact-container">
-                        <div class="icon">
-                            <i class="material-icons notranslate">
-                                call
-                            </i>
+                            <a class="email" title="Электронная почта" href="mailto:dovgal.dima.86@gmail.com"><span
+                                    class="value">dovgal.dima.86@gmail.com</span></a>
                         </div>
+                        <div class="contact-container">
+                            <div class="icon">
+                                <i class="material-icons notranslate">
+                                    call
+                                </i>
+                            </div>
 
-                        <a class="tel" title="Номер телефона" href="tel:+380981180209"><span class="tel value">+38 098
-                                118 0209</span></a>
+                            <a class="tel" title="Номер телефона" href="tel:+380981180209"><span class="tel value">+38 098
+                                    118 0209</span></a>
 
-                    </div>
-                    <div class="contact-container">
-                        <div class="icon">
-                            <i class="material-icons notranslate">
-                                place
-                            </i>
                         </div>
+                        <div class="contact-container">
+                            <div class="icon">
+                                <i class="material-icons notranslate">
+                                    place
+                                </i>
+                            </div>
 
-                        <a class="locality" title="Координаты" href="https://goo.gl/maps/AtiAA68ZdduyRFQv5">47°50′16″N
-                            35°08′18″E</a>
-                    </div>
-                    <div class="contact-container">
-                        <div class="icon">
-                            <i class="material-icons notranslate">
-                                flag
-                            </i>
+                            <a class="locality" title="Координаты" href="https://goo.gl/maps/AtiAA68ZdduyRFQv5">47°50′16″N
+                                35°08′18″E</a>
                         </div>
-                        <a class="locality" title="Координаты" href="https://goo.gl/maps/AtiAA68ZdduyRFQv5">
-                            <span class="locality country">&nbsp;Zaporizhzhya,</span>
-                            <span class="postal-code"> 69000, </span>
-                            <span class="country-name">Ukraine</span>
-                        </a>
+                        <div class="contact-container">
+                            <div class="icon">
+                                <i class="material-icons notranslate">
+                                    flag
+                                </i>
+                            </div>
+                            <a class="locality" title="Координаты" href="https://goo.gl/maps/AtiAA68ZdduyRFQv5">
+                                <span class="locality country">&nbsp;Zaporizhzhya,</span>
+                                <span class="postal-code"> 69000, </span>
+                                <span class="country-name">Ukraine</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-end">
-            <span>Спасибо за внимание. Пока!</span>
-            <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
-                <span class="realTimeAndYear"></span>
-                <span>&nbsp;&nbsp; Dovgal Dima</span>
+            <div class="footer-end">
+                <span>Спасибо за внимание. Пока!</span>
+                <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                    <span class="realTimeAndYear"></span>
+                    <span>&nbsp;&nbsp; Dovgal Dima</span>
+                </div>
             </div>
-        </div>
-    </footer>
-
+        </footer>
+    </div>
+    
     <div>
         <a class="top-link hide" href="" id="js-top">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
