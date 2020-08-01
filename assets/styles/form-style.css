@@ -125,6 +125,7 @@
   #fs-frm fieldset,
   #fs-frm optgroup,
   #fs-frm label,
+  #fs-frm [type="text"], #fs-frm [type="email"],
   #fs-frm #card-element:disabled {width: 700px;}
 }
 
@@ -135,6 +136,7 @@
   #fs-frm fieldset,
   #fs-frm optgroup,
   #fs-frm label,
+  #fs-frm [type="text"], #fs-frm [type="email"],
   #fs-frm #card-element:disabled {width: 550px;}
 }
 
@@ -145,6 +147,7 @@
   #fs-frm fieldset,
   #fs-frm optgroup,
   #fs-frm label,
+  #fs-frm [type="text"], #fs-frm [type="email"],
   #fs-frm #card-element:disabled {width: 450px;}
 }
 
@@ -155,6 +158,7 @@
   #fs-frm fieldset,
   #fs-frm optgroup,
   #fs-frm label,
+  #fs-frm [type="text"], #fs-frm [type="email"],
   #fs-frm #card-element:disabled {width: 350px;}
 }
 
@@ -165,6 +169,7 @@
   #fs-frm fieldset,
   #fs-frm optgroup,
   #fs-frm label,
+  #fs-frm [type="text"], #fs-frm [type="email"],
   #fs-frm #card-element:disabled {width: 280px;}
 }
 
