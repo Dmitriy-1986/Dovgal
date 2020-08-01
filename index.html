@@ -942,7 +942,7 @@
         
         /* - Smooth page scrolling to anchor - */
         $("body").on('click', '[href*="#"]', function (e) {
-            var fixed_offset = 66;/*запас отступа для фиксированного меню */
+            var fixed_offset = 60;/*запас отступа для фиксированного меню */
             $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
             e.preventDefault();
         });
