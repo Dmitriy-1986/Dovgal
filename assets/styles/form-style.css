@@ -126,7 +126,7 @@
   #fs-frm optgroup,
   #fs-frm label,
   #fs-frm [type="text"], #fs-frm [type="email"],
-  #fs-frm #card-element:disabled {width: 700px;}
+  #fs-frm #card-element:disabled {width: 770px;}
 }
 
 @media (max-width: 750px) {
@@ -137,7 +137,7 @@
   #fs-frm optgroup,
   #fs-frm label,
   #fs-frm [type="text"], #fs-frm [type="email"],
-  #fs-frm #card-element:disabled {width: 550px;}
+  #fs-frm #card-element:disabled {width: 520px;}
 }
 
 @media (max-width: 600px) {
@@ -148,7 +148,7 @@
   #fs-frm optgroup,
   #fs-frm label,
   #fs-frm [type="text"], #fs-frm [type="email"],
-  #fs-frm #card-element:disabled {width: 450px;}
+  #fs-frm #card-element:disabled {width: 420px;}
 }
 
 @media (max-width: 500px) {
@@ -159,7 +159,7 @@
   #fs-frm optgroup,
   #fs-frm label,
   #fs-frm [type="text"], #fs-frm [type="email"],
-  #fs-frm #card-element:disabled {width: 350px;}
+  #fs-frm #card-element:disabled {width: 320px;}
 }
 
 @media (max-width: 400px) {
@@ -170,7 +170,7 @@
   #fs-frm optgroup,
   #fs-frm label,
   #fs-frm [type="text"], #fs-frm [type="email"],
-  #fs-frm #card-element:disabled {width: 280px;}
+  #fs-frm #card-element:disabled {width: 250px;}
 }
 
 /*
