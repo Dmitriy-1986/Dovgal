@@ -126,7 +126,7 @@
   #fs-frm optgroup,
   #fs-frm label,
   #fs-frm [type="text"], #fs-frm [type="email"],
-  #fs-frm #card-element:disabled {width: 770px;}
+  #fs-frm #card-element:disabled {width: 670px;}
 }
 
 @media (max-width: 750px) {
