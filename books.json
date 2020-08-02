@@ -4,181 +4,181 @@
             "direction": "PHP",
             "nameAndYear": "AJAX и PHP, разработка динамических веб-приложений, 2006",
             "author": "Кристиан Дари",
-            "link": "./assets/book/AJAX and PHP.pdf"
+            "links": "./assets/book/AJAX and PHP.pdf"
         },
         {
             "direction": "PHP",
             "nameAndYear": "Самоучитель PHP5/6, 2009",
             "author": "Кузнецов М.",
-            "link": "./assets/book/PHP 5-6.pdf"
+            "links": "./assets/book/PHP 5-6.pdf"
         },
         {
             "direction": "PHP",
             "nameAndYear": "Джентельменский набор Web-мастера, 2015",
             "author": "Прохоренок Н.",
-            "link": "./assets/book/PHP, MySQL, JS, CSS, HTML.pdf"
+            "links": "./assets/book/PHP, MySQL, JS, CSS, HTML.pdf"
         },
         {
             "direction": "PHP",
             "nameAndYear": "Создаем динамические веб-сайты PHP, MySQL, JavaScript, CSS, HTML5, 2015",
             "author": "Робин Никсон",
-            "link": "./assets/book/PHP, MySQL, JS, CSS, HTML.pdf"
+            "links": "./assets/book/PHP, MySQL, JS, CSS, HTML.pdf"
         },
         {
             "direction": "PHP",
             "nameAndYear": "Сборник рецептов PHP, 2005",
             "author": "Дэвид Скляр",
-            "link": "./assets/book/PHP, MySQL, javascript, CSS и HTML5.pdf"
+            "links": "./assets/book/PHP, MySQL, javascript, CSS и HTML5.pdf"
         },
         {
             "direction": "PHP",
             "nameAndYear": "PHP быстрый старт, 2014",
             "author": "Каллум Хопкинс",
-            "link": "./assets/book/PHP start.pdf"
+            "links": "./assets/book/PHP start.pdf"
         },
         {
             "direction": "SQL",
             "nameAndYear": "Изучаем SQL, 2012",
             "author": "Линн Бейли",
-            "link": "./assets/book/Head First SQL.pdf"
+            "links": "./assets/book/Head First SQL.pdf"
         },
         {
             "direction": "PHP",
             "nameAndYear": "Изучаем PHP7 руководство по созданию интерактивных веб-сайтов, 2018",
             "author": "Дэвид Скляр",
-            "link": "./assets/book/php7-studying.pdf"
+            "links": "./assets/book/php7-studying.pdf"
         },
         {
             "direction": "JavaScript",
             "nameAndYear": "Самоучитель JavaScript, 2005",
             "author": "Вадим Дунаев",
-            "link": "./assets/book/javascript - Samouchitel JavaScript.pdf"
+            "links": "./assets/book/javascript - Samouchitel JavaScript.pdf"
         },
         {
             "direction": "JavaScript",
             "nameAndYear": "JavaScript подробное руководство, 2012",
             "author": "Дэвид Флэнаган",
-            "link": "./assets/book/javascript- 6.pdf"
+            "links": "./assets/book/javascript- 6.pdf"
         },
         {
             "direction": "JavaScript",
             "nameAndYear": "Выразительный JavaScript",
             "author": "Марейн Хавербек",
-            "link": "./assets/book/javascript-expressive.pdf"
+            "links": "./assets/book/javascript-expressive.pdf"
         },
         {
             "direction": "JavaScript",
             "nameAndYear": "JavaScript для детей, 2016",
             "author": "Ник Морган",
-            "link": "./assets/book/JavaScript-for children.pdf"
+            "links": "./assets/book/JavaScript-for children.pdf"
         },
         {
             "direction": "JavaScript",
             "nameAndYear": "JavaScript карманный справочник, 2013",
             "author": "Дэвид Флэнаган",
-            "link": "./assets/book/JavaScript-reference book.pdf"
+            "links": "./assets/book/JavaScript-reference book.pdf"
         },
         {
             "direction": "JavaScript",
             "nameAndYear": "JavaScript ниндзя, 2015",
             "author": "Джон Резиг",
-            "link": "./assets/book/javascript-ninja.pdf"
+            "links": "./assets/book/javascript-ninja.pdf"
         },
         {
             "direction": "JavaScript",
             "nameAndYear": "JavaScript на примерах, 2017",
             "author": "Никольский А.П.",
-            "link": "./assets/book/JavaScript - by examples.pdf"
+            "links": "./assets/book/JavaScript - by examples.pdf"
         },
         {
             "direction": "JavaScript",
             "nameAndYear": "Веб-приложения на JavaScript, 2012",
             "author": "Алекс Маккоу",
-            "link": "./assets/book/web-programming-JavaScript-2012.pdf"
+            "links": "./assets/book/web-programming-JavaScript-2012.pdf"
         },
         {
             "direction": "JavaScript",
             "nameAndYear": "Изучаем Node.js, 2014",
             "author": "Шелли Пауэрс",
-            "link": "./assets/book/Node_js-Izuchaem.pdf"
+            "links": "./assets/book/Node_js-Izuchaem.pdf"
         },
         {
             "direction": "JavaScript",
             "nameAndYear": "jQuery новый стиль программирования на JavaScript, 2010",
             "author": "Прохоренок Н.А.",
-            "link": "./assets/book/jQuery new style  javascript.pdf"
+            "links": "./assets/book/jQuery new style  javascript.pdf"
         },
         {
             "direction": "JavaScript",
             "nameAndYear": "Как устроен JavaScript, 2019",
             "author": "Дуглас Крокфорд",
-            "link": "./assets/book/JavaScript-how it works.pdf"
+            "links": "./assets/book/JavaScript-how it works.pdf"
         },
         {
             "direction": "JavaScript",
             "nameAndYear": "ES6 и не только, вы не знаете JavaScript, 2017",
             "author": "Кайл Симпсон",
-            "link": "./assets/book/javascript-ES6.pdf"
+            "links": "./assets/book/javascript-ES6.pdf"
         },
         {
             "direction": "JavaScript",
             "nameAndYear": "JavaScript оптимизация производительности, 2012",
             "author": "Николас Закас",
-            "link": "./assets/book/javascript-optimization.pdf"
+            "links": "./assets/book/javascript-optimization.pdf"
         },
         {
             "direction": "CSS",
             "nameAndYear": "CSS для профи, 2019",
             "author": "Кит Грант",
-            "link": "./assets/book/CSS - dlya_profi.pdf"
+            "links": "./assets/book/CSS - dlya_profi.pdf"
         },
         {
             "direction": "SQL",
             "nameAndYear": "Освой самостоятельно SQL за 10 минут, 2014",
             "author": "Бен Форта",
-            "link": "./assets/book/SQL-10min.pdf"
+            "links": "./assets/book/SQL-10min.pdf"
         },
         {
             "direction": "CSS",
             "nameAndYear": "CSS карманный справочник, 2016",
             "author": "Эрик А.Мейер",
-            "link": "./assets/book/CSS -directory.pdf"
+            "links": "./assets/book/CSS -directory.pdf"
         },
         {
             "direction": "CSS",
             "nameAndYear": "CSS каскадные таблицы стилей, 2008",
             "author": "Эрик А.Мейер",
-            "link": "./assets/book/CSS -cascade table style.pdf"
+            "links": "./assets/book/CSS -cascade table style.pdf"
         },
         {
             "direction": "SQL",
             "nameAndYear": "SQL справочник, 2010",
             "author": "Кевин Е. Кляйн",
-            "link": "./assets/book/SQL-directory.pdf"
+            "links": "./assets/book/SQL-directory.pdf"
         },
         {
             "direction": "HTML",
             "nameAndYear": "HTML5 карманный справочник, 2015",
             "author": "Дженнифер Роббинс",
-            "link": "./assets/book/HTML5- directory.pdf"
+            "links": "./assets/book/HTML5- directory.pdf"
         },
         {
             "direction": "HTML",
             "nameAndYear": "HTML5 подробное руководство, 2008",
             "author": "Чак Муссиано",
-            "link": "./assets/book/HTML5.pdf"
+            "links": "./assets/book/HTML5.pdf"
         },
         {
             "direction": "HTML",
             "nameAndYear": "Изучаем HTML5, 2008",
             "author": "Б. Лоусон, Р. Шарп",
-            "link": "./assets/book/HTML 5 - studying.pdf"
+            "links": "./assets/book/HTML 5 - studying.pdf"
         },
         {
             "direction": "SQL",
             "nameAndYear": "Введение в SQL",
             "author": "М. Грабер",
-            "link": "./assets/book/SQL.pdf"
+            "links": "./assets/book/SQL.pdf"
         }
     ]
 }
