@@ -862,7 +862,6 @@ particle {
             align-items: center;
 	width: 100%;
 	padding-bottom: 100px;
-border-bottom: 1px solid grey;
 }
 
 .facebook:hover {
@@ -1010,7 +1009,7 @@ footer {
             align-items: center;
     background-color: #f9fafe;
     width: 70%;
-    height: 600px;
+    height: 400px;
 }
 
 .footer-text-widget {
