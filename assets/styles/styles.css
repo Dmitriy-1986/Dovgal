@@ -1010,6 +1010,7 @@ footer {
     background-color: #f9fafe;
     width: 70%;
     height: 400px;
+    border-top: 1px solid grey;
 }
 
 .footer-text-widget {
