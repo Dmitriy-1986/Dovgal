@@ -22,7 +22,7 @@ $(document).ready(function() {
 		console.log('Footer Width = ' + siteFooterWidth + 'px');
 
 		siteContent.css({
-			"margin-bottom" : siteFooterHeight + 50
+			"margin-bottom" : siteFooterHeight; // + 50
 		});
 	};
 });
