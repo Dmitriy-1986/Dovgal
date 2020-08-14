@@ -5,7 +5,7 @@ function printed_el_text( el ){
 			i++;
 			if( i <= text.length ){
 				el.innerHTML = text.substr(0, i);
-				setTimeout( __print, 100 );
+				setTimeout( __print, 300 );
 			}
 		};
 		__print();
