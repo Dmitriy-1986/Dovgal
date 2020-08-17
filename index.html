@@ -195,7 +195,7 @@
         </div>
     </div>
     
-    <section id="skills" class="skills-component o-hidden full-screen">
+    <section id="skills" class="skills-component o-hidden">
         <div class="skills-component-content">
             <div class="election-box">
                 <hgroup class="element-elections-title">
@@ -251,7 +251,7 @@
         </div>
     </section>
 
-    <div class="about-me-size full-screen">
+    <div class="about-me-size">
         <div class="vertical-margin">
             <div class="slider">
                 <div class="slide-track">
@@ -293,7 +293,7 @@
         </div>
     </div>
 
-    <section id="about-me" class="about-me-size full-screen">
+    <section id="about-me" class="about-me-size">
         <hgroup class="about-me-title">
             <h2 class="wow animate__animated animate__fadeInDown">Обо мне</h2>
         </hgroup>
@@ -346,7 +346,7 @@
         </div>
     </section>
 
-    <section id="gallery" class="gallery-component full-screen">
+    <section id="gallery" class="gallery-component">
         <div class="gallery-component-size">
             <hgroup class="gallery-component-title">
                 <h2 class="wow animate__animated animate__fadeInDown" data-wow-offset="100">Галерея</h2>
@@ -465,7 +465,7 @@
         </div>
     </section>
     
-    <section id="books" class="component full-screen">
+    <section id="books" class="component">
       <div class="favorite-books">
         <hgroup class="gallery-component-title">
             <h2 class="wow animate__animated animate__fadeInDown" data-wow-offset="100">Книги</h2>
@@ -755,7 +755,7 @@
     </section>
 
     
-    <section  id="contacts"  class="component full-screen">
+    <section  id="contacts"  class="component">
         <hgroup class="social-title">
             <h2 class="wow animate__animated animate__fadeInDown">КОНТАКТЫ</h2>
         </hgroup>
@@ -1019,18 +1019,7 @@
                 document.body.classList.remove('loaded_hiding');
             }, 500);
         }
-        
-          /* In full screen */
-        function alturaMaxima() {
-            var altura = $(window).height();
-            $(".full-screen").css('min-height', altura);
-        }
-
-        $(document).ready(function () {
-            alturaMaxima();
-            $(window).bind('resize', alturaMaxima);
-        });
-        /* End full screen */
+       
 
     </script>
     
