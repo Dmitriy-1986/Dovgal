@@ -10,7 +10,8 @@
     border-radius: 5px;
     margin: 8px 0;
     border: 2px solid #BFE2FF;  
-    text-align: center;   
+    /*text-align: center;*/
+    text-indent: 1.5em;
 }
 .accordion-body > * > .accordion-body {
     background: #FFF;
