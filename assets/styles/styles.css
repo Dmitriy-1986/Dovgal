@@ -298,6 +298,7 @@ a:hover {
     line-height: 3.2em; 
     outline: none;
     width: 120px;
+    transition: 1s;
 }
 
 particle {
