@@ -276,16 +276,16 @@ telegram.onmouseout = function () {
 /* Linkedin */
 linkedinLink.onmouseover = function () {
     let blok = document.getElementById('linkedin');
-    blok.style.borderColor = "#2867B2";
-    blok.style.boxShadow = "0px 0px 20px #2867B2";
-    blok.style.textShadow = "0px 0px 20px #2867B2";
-    blok.style.color = "#2867B2";
+    blok.style.borderColor = "#7360f2";
+    blok.style.boxShadow = "0px 0px 20px #7360f2";
+    blok.style.textShadow = "0px 0px 20px #7360f2";
+    blok.style.color = "#7360f2";
     
     blok.style.transition = '2s';
 
     let black = document.getElementById('linkedinLink');
     black.style.textShadow = "0px 0px 20px #2867B2";
-    black.style.color = "#2867B2";
+    black.style.color = "#7360f2";
 }
 
 linkedinLink.onmouseout = function () {
@@ -303,16 +303,16 @@ linkedinLink.onmouseout = function () {
 
 linkedin.onmouseover = function () {
     let blok = document.getElementById('linkedin');
-    blok.style.borderColor = "#2867B2";
-    blok.style.boxShadow = "0px 0px 20px #2867B2";
-    blok.style.textShadow = "0px 0px 20px #2867B2";
-    blok.style.color = "#2867B2";
+    blok.style.borderColor = "#7360f2";
+    blok.style.boxShadow = "0px 0px 20px #7360f2";
+    blok.style.textShadow = "0px 0px 20px #7360f2";
+    blok.style.color = "#7360f2";
 
     blok.style.transition = '2s';
 
     let black = document.getElementById('linkedinLink');
     black.style.textShadow = "0px 0px 20px#2867B2";
-    black.style.color = "#2867B2";
+    black.style.color = "#7360f2";
 }
 
 linkedin.onmouseout = function () {
