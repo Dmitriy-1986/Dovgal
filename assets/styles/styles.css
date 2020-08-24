@@ -1021,9 +1021,9 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
+    /*-webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
+            align-items: center;*/
     text-align: left;
     line-height: 1.85714285714286;
     background-color: #f9fafe;
