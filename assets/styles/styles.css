@@ -316,6 +316,7 @@ particle {
     background-color: #4de55c ;
     border:2px solid rgb(255, 255, 255);
 }
+
 /* Menu  */
 
 .menu-container {
@@ -325,6 +326,7 @@ particle {
     margin: 0 auto;
     background-color: #2c3137;
 }
+
 .menu-mobile:after {
     content: "\f0c9";
     font-family: "FontAwesome";
@@ -336,6 +338,7 @@ particle {
     position: relative;
     transform: translateY(-25%);
 }
+
 .menu-dropdown-icon:before {
     content: "\f078";
     display: none;
@@ -347,6 +350,7 @@ particle {
     color: #FFF;
     font-size: 20px;
 }
+
 .menu > ul {
     margin: 0 auto;
     width: 100%;
@@ -355,6 +359,7 @@ particle {
     position: relative;
     box-sizing: border-box;
 }
+
 .menu > ul:before,
 .menu > ul:after {
     content: "";
