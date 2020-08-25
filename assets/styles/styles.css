@@ -317,6 +317,13 @@ particle {
     border:2px solid rgb(255, 255, 255);
 }
 
+/*header menu*/
+.sticky {
+     position: sticky;
+     top: 0;
+     z-index: 19;
+}
+
 /* skills */
 .skills-component {
     display: -webkit-box;
