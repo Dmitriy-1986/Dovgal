@@ -1,89 +1,55 @@
-/*Header*/
+@media (max-width: 1370px) {
+    .social-component {width: 900px;}
+}
+
+@media (max-width: 1350px) {
+	.gallery-component-size {width: 1100px;}
+}
+
+@media (max-width: 1250px) {
+	.election-img-box{display: none;}
+	.election-box {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; padding-top: 50px; padding-bottom: 50px;}
+	.skills-component-content {display: flex; flex-direction: row; justify-content: center; align-items: flex-start;}
+	.election-table-box {width: 800px;}
+}
+
+@media (max-width: 1150px) {
+	.election-table-box {width: 700px;}
+	.about-me {width: 700px; }
+	.gallery-component-size {width: 700px;}
+	.gallery-component-images{width: 700px;}
+	.gallery-component-images-box img {height: 100px; width: 100px;}
+	.container {width:450px; height:450px;}
+	.container-image {height: 450px; width: 450px;}
+	.social-component {flex-direction: column; height: 100%; justify-content: space-between; align-items: center;}
+    .social-two-el {padding: 30px 0px 30px 25px; justify-content: space-between; align-items: center;}
+}
+
 @media (max-width: 970px) {
     .header-name {height: 70px;}
     .surname-and-name {font-size: 5em;}
     .heading-content  {flex-direction: column; justify-content: space-evenly; height: 200px;}
 }  
 
-@media (max-width: 550px) {
-    .adress-content {flex-direction: column; justify-content: space-evenly; align-items: center;height: 54px;}
-    .surname-and-name {font-size: 3em;}
-    .heading-content {height: 150px;}
-    .header-name {height: 50px;}
-    .header-contact-call {height:35px; }
-} 
-
-@media (max-width: 550px) {
-    .header-name {width: 300px;}
-} 
-
-@media (max-width: 350px) {
-    .header-name {width: 150px; height: 70px;}
-    .header-contact-call {line-height: 2.6em; }
+@media (max-width: 900px) {
+	.social-component {width: 800px;}
+	.footer-text-widget {display: none;}
+	.footer-component {justify-content: center;}
 }
-/*End Header*/
-
-/*Slills*/
-@media (max-width: 1250px) {
-        .election-img-box{display: none;}
-        .election-box {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; padding-top: 50px; padding-bottom: 50px;}
-        .skills-component-content {display: flex; flex-direction: row; justify-content: center; align-items: flex-start;}
-        .election-table-box {width: 800px;}
-    }
-
-    @media (max-width: 1150px) {
-        .election-table-box {width: 700px;}
-    }
-    
-    @media (max-width: 800px) {
-        .element-elections-title {font-size: 28px;}
-        .election-table-box {margin-top: 0; width: 500px;}
-         h3 {font-size: 15px;}
-         p {font-size: 13px;}
-    }
-
-    @media (max-width: 720px) {
-        .election-table-box {width: 340px;}
-    } 
-
-    @media (max-width: 550px) {
-        .election-table-box {width: 300px;}
-        .election-box {display: flex; flex-direction: column; justify-content: flex-start; align-items: center;}
-        .element-elections-title {font-size: 16px;}
-    }
-/*End Skills*/
-
-/*About me*/
-@media (max-width: 1150px) {
-	.about-me {width: 700px; }
-}
+ 
 @media (max-width: 800px) {
+    .element-elections-title {font-size: 28px;}
+    .election-table-box {margin-top: 0; width: 500px;}
+    h3 {font-size: 15px;}
+	p {font-size: 13px;}
 	h2 {font-size: 28px;}
 	.about-me-title {font-size: 18px;}
 	.about-me {width: 500px;}
 	p {font-size: 14px;}
 }
-@media (max-width: 720px) {
-	.about-me {width: 340px; font-size: 12px;}
-}
 
-@media (max-width: 550px) {
-	.about-me-title {font-size: 16px;}
-	.about-me {width: 300px; margin-bottom: 0;}
-}
-/*End About me*/
-
-/*Gallery*/
-@media (max-width: 1350px) {
-	.gallery-component-size {width: 1100px;}
-}
-
-@media (max-width: 1150px) {
-	.gallery-component-size {width: 700px;}
-	.gallery-component-images{width: 700px;}
-	.gallery-component-images-box img {height: 100px; width: 100px;}
-	.container {width:450px; height:450px;}
-	.container-image {height: 450px; width: 450px;}
+@media (max-width: 770px) {
+    .social-component {width: 600px;}
 }
 
 @media (max-width: 750px) {
@@ -95,6 +61,15 @@
 	.gallery-component-title {font-size: 18px;}
 }
 
+@media (max-width: 720px) {
+	.election-table-box {width: 340px;}
+	.about-me {width: 340px; font-size: 12px;}
+} 
+
+@media (max-width: 670px) {
+    .social-component {width: 400px;}
+}
+
 @media (max-width: 600px) {
 	.gallery-component-size {width: 450px;}
 	.gallery-component-images{width: 450px;}
@@ -103,7 +78,26 @@
 	.container-image {height: 350px; width: 350px;}
 }
 
+@media (max-width: 550px) {
+    .social-component {padding-top: 20px; width: 300px; height: 440px;}
+    .social-two-el {padding: 0px; display: flex; flex-direction: column;  align-items: center; height: 200px;}
+	.media-550-mg-bm {padding-bottom: 20px;}
+	.adress-content {flex-direction: column; justify-content: space-evenly; align-items: center;height: 54px;}
+    .surname-and-name {font-size: 3em;}
+    .heading-content {height: 150px;}
+    .header-name {height: 50px; width: 300px;}
+	.header-contact-call {height:35px; }
+	.about-me-title {font-size: 16px;}
+	.about-me {width: 300px; margin-bottom: 0;}
+	.election-table-box {width: 300px;}
+    .election-box {display: flex; flex-direction: column; justify-content: flex-start; align-items: center;}
+    .element-elections-title {font-size: 16px;}
+}
+
 @media (max-width: 500px) {
+	.footer-end {justify-content: center; font-size: 12px;}
+	.footer-contacts-info {font-size: 12px;}
+	.contact-container a {font-size: 12px;}
 	.gallery-component-size {width: 350px; height: 100%; padding: 10px 0 0px;}
 	.gallery-component-images{width: 350px; height: 100px;}
 	.gallery-component-images-box img {height: 60px; width: 60px;}
@@ -112,7 +106,7 @@
 	.gallery-component-title {font-size: 16px;}
 }
 
- @media (max-width: 400px) {
+@media (max-width: 400px) {
 	.gallery-component-size {width: 280px; height: 100%; padding: 10px 0 0px;}
 	.gallery-component-images{width: 280px; height: 100px;}
 	.gallery-component-images-box img {height: 50px; width: 50px;}
@@ -120,47 +114,8 @@
 	.container-image {height: 270px; width: 270px;}
 	.gallery-component-title {font-size: 12px;}
 } 
-/*End Gallery*/
 
-/*Social*/
-@media (max-width: 1370px) {
-    .social-component {width: 900px;}
+@media (max-width: 350px) {
+    .header-name {width: 150px; height: 70px;}
+    .header-contact-call {line-height: 2.6em; }
 }
-    
-@media (max-width: 1150px) {
-    .social-component {flex-direction: column; height: 100%; justify-content: space-between; align-items: center;}
-    .social-two-el {padding: 30px 0px 30px 25px; justify-content: space-between; align-items: center;}
-}
-
-media (max-width: 900px) .social-component {
-.social-component {width: 800px;}
-}
-
-@media (max-width: 770px) {
-    .social-component {width: 600px;}
-}
-
-@media (max-width: 670px) {
-    .social-component {width: 400px;}
-}
-
-@media (max-width: 550px) {
-    .social-component {padding-top: 20px; width: 300px; height: 440px;}
-    .social-two-el {padding: 0px; display: flex; flex-direction: column;  align-items: center; height: 200px;}
-    .media-550-mg-bm {padding-bottom: 20px;}
-}
-/*End Social*/
-
-/*Footer*/
-@media (max-width: 900px) {
-	.footer-text-widget {display: none;}
-	.footer-component {justify-content: center;}
-	
-}
-
-@media (max-width: 500px) {
-	.footer-end {justify-content: center; font-size: 12px;}
-	.footer-contacts-info {font-size: 12px;}
-	.contact-container a {font-size: 12px;}
-}
-/*End Footer*/
