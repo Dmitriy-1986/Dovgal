@@ -110,7 +110,7 @@
         </address>
         <div class="heading-content">
             <h1 class="surname-and-name">Dovgal Dima</h1>
-            <div class="header-contact">
+            <div class="header-contact" id="hideBlock">
                 <div>
                     <a href="tel:+380981180209" >
                        <span data-type="line" class=" header-contact-call notranslate o-hidden">
@@ -124,6 +124,13 @@
             </div>
         </div>
     </header>
+    
+    <script>
+        setTimeout(function () {
+            document.getElementById('hideBlock').style.display = 'flex';
+        }, 4000);
+    </script>
+
     <div class="menu-container sticky">
         <div class="menu">
             <ul>
