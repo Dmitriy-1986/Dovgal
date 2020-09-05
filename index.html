@@ -916,19 +916,26 @@
     
     <!-- Datatables.net CDN-->
     <script type="text/javascript" charset="utf8"
-        src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+        src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>  
+    <script type="text/javascript" charset="utf8"
+        src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/rowreorder/1.2.7/js/dataTables.rowReorder.min.js"></script>
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/responsive/2.2.5/js/dataTables.responsive.min.js"></script>
     <!-- End Datatables.net CDN-->
     <script>
         /* Datatables.net script*/
         $(document).ready(function () {
-            $('#example').DataTable(
+            var table = $('#example').DataTable(
                rowReorder: {
                   selector: 'td:nth-child(2)'
                },
               responsive: true
-              }
-           );
-        });
+            } );
+        } );
         /* End Datatables.net script*/
     </script>
    
