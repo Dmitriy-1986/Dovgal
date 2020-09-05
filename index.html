@@ -921,7 +921,13 @@
     <script>
         /* Datatables.net script*/
         $(document).ready(function () {
-            $('#example').DataTable();
+            $('#example').DataTable(
+               rowReorder: {
+                  selector: 'td:nth-child(2)'
+               },
+              responsive: true
+              }
+           );
         });
         /* End Datatables.net script*/
     </script>
