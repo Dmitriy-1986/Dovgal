@@ -33,16 +33,14 @@
     <link rel="stylesheet" href="./assets/styles/media-header.css">
     <link rel="stylesheet" href="./assets/styles/media-skills.css">
     <link rel="stylesheet" href="./assets/styles/media-social.css">
+<!--<link rel="stylesheet" href="./assets/styles/media-footer.css">-->
     <link rel="stylesheet" href="./assets/styles/media-gallery.css">
     <link rel="stylesheet" href="./assets/styles/media-about-me.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link rel="shortcut icon" href="./assets/images/baseline_perm_identity_black_18dp.png" type="image/png">
-    <link rel="stylesheet" href="./assets/styles/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="./assets/styles/rowReorder.dataTables.min.css">
-    <link rel="stylesheet" href="./assets/styles/responsive.dataTables.min.css">
-    
+
     <!-- WOW.js -->
     <script src="./assets/scripts/wow.min.js"></script>
     <script>
@@ -137,7 +135,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#about-me">About me</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-              <!--  <li><a href="#books">Books</a></li>-->
+                <li><a href="#books">Books</a></li>
              <!--   <li><a href="#calendar">Calendar</a></li> -->
                 <li><a href="#contacts">Contacts</a></li>
             </ul>
@@ -309,7 +307,6 @@
                 </div>
                 <div data-u="slides"
                     style="cursor:default;position:relative;top:0px;left:240px;width:720px;height:480px;overflow:hidden;">
-                    <!-- Image size: 99x66 and 720x480; -->
                    <div>
                         <img data-u="image" src="./assets/images/my_photo/photo-Dovgal_Dima (1).jpg" title="Dovgal Dima" alt="Dovgal Dima" /> <!-- 720-480-->
                         <img data-u="thumb" src="./assets/images/my_photo/photo-Dovgal_Dima (1).jpg" title="Dovgal Dima" alt="Dovgal Dima" /> <!-- 99-66 -->
@@ -367,12 +364,12 @@
                         <img data-u="thumb" src="./assets/images/my_photo/photo-Dovgal_Dima (14).jpg" title="Dovgal Dima" alt="Dovgal Dima" />
                     </div>
                     <div>
-                        <img data-u="image" src="./assets/images/my_photo/photo-Dovgal_Dima (15).jpg" title="Dovgal Dima" alt="Dovgal Dima" /> 
-                        <img data-u="thumb" src="./assets/images/my_photo/photo-Dovgal_Dima (15).jpg" title="Dovgal Dima" alt="Dovgal Dima" />
+                        <img data-u="image" src="./assets/images/my_photo/photo-Dovgal_Dima (15).jpg" title="Dovgal Dima" alt="Dovgal Dima" /> <!-- 720-480-->
+                        <img data-u="thumb" src="./assets/images/my_photo/photo-Dovgal_Dima (15).jpg" title="Dovgal Dima" alt="Dovgal Dima" /> <!-- 99-66 -->
                     </div>
                     <div>
-                        <img data-u="image" src="./assets/images/my_photo/photo-Dovgal_Dima (16).jpg" title="Dovgal Dima" alt="Dovgal Dima" />
-                        <img data-u="thumb" src="./assets/images/my_photo/photo-Dovgal_Dima (16).jpg" title="Dovgal Dima" alt="Dovgal Dima" />
+                        <img data-u="image" src="./assets/images/my_photo/photo-Dovgal_Dima (16).jpg" title="Dovgal Dima" alt="Dovgal Dima" /> <!--99x66 | 720x480-->
+                        <img data-u="thumb" src="./assets/images/my_photo/photo-Dovgal_Dima (16).jpg" title="Dovgal Dima" alt="Dovgal Dima" /> <!--  -->
                     </div>
                 </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">web
                     animation composer</a>
@@ -412,14 +409,14 @@
             <!-- #endregion Jssor Slider End -->
         </div>
     </section>
-    <!--
+    
     <section id="books" class="component">
       <div class="favorite-books">
         <hgroup class="gallery-component-title">
             <h2 class="wow animate__animated animate__fadeInDown" data-wow-offset="100">books</h2>
         </hgroup>
 
-        <table id="example" class="display  nowrap" style="width:100%; margin: 0 auto;">
+        <table id="example" class="display" style="width:100%; margin: 0 auto;">
             <thead>
                 <tr>
                     <th>Направление</th>
@@ -689,7 +686,7 @@
         </table>
       </div>
     </section>
-    -->
+    
     <!-- Google calendar-->
  <!--   <section id="calendar"  class="component">
          <hgroup class="social-title">
@@ -904,21 +901,8 @@
     </div>
     
     <!--Java Script -->
-    <!--<script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>-->
-    <script src="./assets/scripts/jquery-3.5.1.js"></script>
-    
-    <!-- Datatables.net CDN--> 
-    <script type="text/javascript" charset="utf8"
-        src="./assets/scripts/jquery.dataTables.min.js"></script>
-    
-    <script type="text/javascript" charset="utf8"
-        src="./assets/scripts/dataTables.rowReorder.min.js"></script>
-    
-    <script type="text/javascript" charset="utf8"
-        src="./assets/scripts/dataTables.responsive.min.js"></script>
-    <!-- End Datatables.net CDN-->
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
     <script src="./assets/scripts/buttonAnimation.js"></script>
     <script src="./assets/scripts/akkordeonScript.js"></script>
@@ -928,17 +912,16 @@
    <!-- <script src="./assets/scripts/textPrint.js"></script> -->
     <script src="./assets/scripts/yearTime.js"></script>
     <script src="./assets/scripts/menu.js"></script>
-     
+    
+    <!-- Datatables.net CDN-->
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+    <!-- End Datatables.net CDN-->
     <script>
         /* Datatables.net script*/
         $(document).ready(function () {
-            var table = $('#example').DataTable(
-               rowReorder: {
-                  selector: 'td:nth-child(2)'
-               },
-              responsive: true
-            } );
-        } );
+            $('#example').DataTable();
+        });
         /* End Datatables.net script*/
     </script>
    
@@ -950,7 +933,7 @@
     
     <!--Fontawesome CDN-->
     <script src="https://kit.fontawesome.com/8e05867fdd.js" crossorigin="anonymous"></script>
-    <!-- End script Galeri -->
+   
     
     <script>
           /* - Script Progress Scroll - */
