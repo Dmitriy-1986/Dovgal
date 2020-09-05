@@ -1030,6 +1030,25 @@ particle {
 }
 */
 
+/*
+ * Table styles 
+ */
+/*button reed book*/
+  .reed-book {
+    font-size: 1vw;
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    text-align: center; border-radius: .25rem; line-height: 1.5;
+  }
+  .reed-book:hover {
+    background-color: white;
+    border: 1px solid #007bff;
+  }
+/*
+ * End Table styles
+ */
+
 /* social */
 .social-title {
     text-transform: uppercase;
