@@ -995,7 +995,7 @@ particle {
 .jssort101 .pav .t, .jssort101 .p:hover .t{opacity:1;}
 
 /* calendar */
-.calendar {
+/*.calendar {
     margin: 0 auto;
     padding-bottom: 100px;
 }
@@ -1028,7 +1028,7 @@ particle {
        .calendar {width: 280px;}
        .width-iframe {width: 280px;}
 }
-
+*/
 
 /* social */
 .social-title {
