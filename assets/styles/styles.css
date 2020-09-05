@@ -883,7 +883,7 @@ particle {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 1300px;
+    max-width: 1300px;
     height:100%;
     padding: 10px 0 50px;
     background-color: #fff;
@@ -917,13 +917,13 @@ particle {
             align-items: center;
     padding: 10px 0 10px;
     margin-bottom: 10px;
-    width: 1000px;
+    max-width: 1000px;
     height: 150px;
 }
 
 .gallery-component-images-box img  {
-    height: 150px;
-    width: 150px;
+   max-height: 150px;
+    max-width: 150px;
 }
 
 .gallery-component-images-box {
@@ -945,8 +945,8 @@ particle {
 	margin-left: auto;
 	margin-right: auto;
         display: none;
-	width:700px;
-	height:700px;
+	max-width:700px;
+	max-height:700px;
 }
 
 .container-image {
