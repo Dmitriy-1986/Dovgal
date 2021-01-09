@@ -816,11 +816,26 @@
                     </div>
                 </form>
                 <!-- liq pay -->
-                <p> <i>Для платежных операций пройдите
-                  <a style="color: blue; text-decoration: underline;" href="https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiIwIiwiY3VycmVuY3kiOiJVQUgiLCJkZXNjcmlwdGlvbiI6ItCc0ZbQuSDRgtC+0LLQsNGAIiwicHVibGljX2tleSI6Imk3NDY1NDgzNTU1MiIsImxhbmd1YWdlIjoicnUifQ==&signature=1jfo1yBRXF5W7BftZuULOPnkzAU=">
-                     здесь
-                  </a>
-                 </i> </p>
+                <div id="liqpay_checkout"></div>
+<script>
+  window.LiqPayCheckoutCallback = function() {
+    LiqPayCheckout.init({
+      data: "eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOiIxIiwiY3VycmVuY3kiOiJVU0QiLCJkZXNjcmlwdGlvbiI6ItCg0LDQt9GA0LDQsdC+0YLQutCwINGB0LDQudGC0LAiLCJwdWJsaWNfa2V5IjoiaTc0NjU0ODM1NTUyIiwibGFuZ3VhZ2UiOiJydSJ9",
+      signature: "l1eYSpFISKx1cKhbohkEhEpi04Y=",
+      embedTo: "#liqpay_checkout",
+      mode: "embed" // embed || popup,
+        }).on("liqpay.callback", function(data){
+      console.log(data.status);
+      console.log(data);
+      }).on("liqpay.ready", function(data){
+        // ready
+      }).on("liqpay.close", function(data){
+        // close
+    });
+  };
+</script>
+<script src="//static.liqpay.ua/libjs/checkout.js" async></script>
+    
                 <!-- end liq pay -->
             </div>
         </div>
