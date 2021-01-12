@@ -1864,6 +1864,7 @@ footer {
 	width:100%;
     height:100%;
     padding: 10px 0 50px;
+    margin: 0;
     background-color: #f9fafe;
 }
 
@@ -2044,3 +2045,5 @@ footer {
 	.footer-contacts-info {font-size: 12px;}
 	.contact-container a {font-size: 12px;}
 }
+
+
