@@ -2020,7 +2020,7 @@ footer {
 }
 
 /* -- Footer Paralax effect-- */
-/*
+
 #site-content {
 	position: relative;
     z-index: 1;
@@ -2033,7 +2033,7 @@ footer {
 	right: 0;
 	bottom: 0;
 }
-*/
+
 @media (max-width: 900px) {
 	.footer-text-widget {display: none;}
 	.footer-component {justify-content: center;}
