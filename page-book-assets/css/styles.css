@@ -3,6 +3,11 @@
     src: url('../fonts/Antonella_script.ttf');
 }
 
+td {
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
 /* Scroll Bars */
 ::-webkit-scrollbar {
     width:12px;
