@@ -3,6 +3,10 @@
     src: url('../fonts/Antonella_script.ttf');
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* Scroll Bars */
 ::-webkit-scrollbar {
     width:12px;
