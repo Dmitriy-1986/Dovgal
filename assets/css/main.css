@@ -78,7 +78,7 @@ a:hover {
 
 /* //Carousel */
 
-/* About Me */
+/* Content */
 .content {
     padding-top: 35px;
     padding-bottom: 5px;
@@ -89,9 +89,14 @@ a:hover {
     text-transform: uppercase;
     font-size: 1.5em;
 }
+
 .content p {
     color: #7C7C7C;
     
+}
+
+.list-group-item {
+    color: #7C7C7C;   
 }
 
 .content a {
@@ -103,7 +108,7 @@ a:hover {
     color: #3f3e3e;
     text-decoration: underline;
 }
-/* //About Me */
+/* //Content */
 
 /* Footer */
 .footer {
