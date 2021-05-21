@@ -141,9 +141,8 @@ a:hover {
     font-size: 20px;
 }
 
-@media (min-width: 991px) {
-    .email {
-        font-size: 12px;
-    }
+.email {
+    word-wrap: break-word;
 }
+
 /* //Footer */
