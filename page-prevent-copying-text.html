@@ -149,43 +149,7 @@
         </section>
     </footer>
     <!-- //Footer -->
-
   
-    
-    
-    
-    
-    
-    
-    -------------
-    <h2>Запретить возможность копировать текст сайта с помощью Java Script</h2>
-    
-    
-
-    <button id="copyCode">Копировать код</button>
-    <textarea wrap="off" id="code" class="code">
-    <script>       
-        document.ondragstart = prohibit; //запрещаем перетаскивание
-        document.onselectstart = prohibit; //запрещаем выделение
-        document.oncontextmenu = prohibit; //запрещаем клик правой кнопкой
-
-        function prohibit() {
-            return false; //предотвращает все эти события
-        }
-    </script>
-    </textarea>
-
-    <p>
-        Ссылки на <a href="https://developer.mozilla.org/">документацию MDN Web Docs</a>, событий Java Script:
-        <a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/API/GlobalEventHandlers/ondragstart">
-            ondragstart</a>,
-        <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onselectstart">
-            onselectstart</a>,
-        <a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/API/GlobalEventHandlers/oncontextmenu">
-            oncontextmenu</a>.
-    </p>
-
-    
     
      <!-- jQuery CDN https://code.jquery.com/ -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
