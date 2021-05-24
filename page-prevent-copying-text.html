@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Запретить возможность копировать текст сайта с помощью Java Script</h2>
+    
+    
+
+    <button id="copyCode">Копировать код</button>
+    <textarea wrap="off" id="code" class="code">
+    <script>       
+        document.ondragstart = prohibit; //запрещаем перетаскивание
+        document.onselectstart = prohibit; //запрещаем выделение
+        document.oncontextmenu = prohibit; //запрещаем клик правой кнопкой
+
+        function prohibit() {
+            return false; //предотвращает все эти события
+        }
+    </script>
+    </textarea>
+
+    <p>
+        Ссылки на <a href="https://developer.mozilla.org/">документацию MDN Web Docs</a>, событий Java Script:
+        <a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/API/GlobalEventHandlers/ondragstart">
+            ondragstart</a>,
+        <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onselectstart">
+            onselectstart</a>,
+        <a target="_blank" href="https://developer.mozilla.org/ru/docs/Web/API/GlobalEventHandlers/oncontextmenu">
+            oncontextmenu</a>.
+    </p>
+
+    <script>
+        let text = document.getElementById("code");
+        var btn = document.getElementById("copyCode");
+        btn.onclick = function () {
+            text.select();
+            document.execCommand("copy");
+        }
+    </script>
+</body>
+
+</html>
