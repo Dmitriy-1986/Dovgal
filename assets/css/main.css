@@ -95,6 +95,11 @@ a:hover {
     
 }
 
+.content span {
+    color: #7C7C7C;
+    
+}
+
 .list-group-item {
     color: #7C7C7C;   
 }
