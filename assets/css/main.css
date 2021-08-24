@@ -84,7 +84,7 @@ a:hover {
     padding-bottom: 5px;
 }
 
-.content h3 {
+.content h3, h4 {
     color: #4a5054;
     text-transform: uppercase;
     font-size: 1.5em;
