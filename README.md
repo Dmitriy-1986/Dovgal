@@ -4,7 +4,7 @@
   <a href="https://dovgaldima.pp.ua/page-website-creation.html">КАК НЕОБХОДИМО ВЕРСТАТЬ САЙТЫ</a><br>
   <a href="https://dovgaldima.pp.ua/page-prevent-copying-text.html">ЗАПРЕТИТЬ ВОЗМОЖНОСТЬ КОПИРОВАТЬ ТЕКСТ САЙТА</a><br>
   <a href="https://dovgaldima.pp.ua/page-Moving-a-site-element.html">ПЕРЕТАСКИВАНИЕ ЭЛЕМЕНТА САЙТА</a><br>
-  <a href="https://dovgaldima.pp.ua/page-Chrome-DevTools.html">СМОТРИМ КОД САЙТА С ПОМОЩЬЮ CHROME DEVTOOLS</a><br>
+  <a href="https://dovgaldima.pp.ua/page-Chrome-DevTools.html">СМОТРИМ КОД САЙТА С ПОМОЩЬЮ CHROME DEVTOOLS</a><br><br>
 <address>
 <a title="Facebook" href="https://www.facebook.com/profile.php?id=100026817609832">Facebook</a> |
 <a title="Twitter" href="https://twitter.com/siEcDal41krrZOe">Twitter</a> |
