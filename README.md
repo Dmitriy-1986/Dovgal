@@ -1,6 +1,7 @@
 
 <h1><a title="Dovgal Dima" href="http://dovgaldima.pp.ua">Dovgal Dima</a> </h1>  <h4> tel: +380981180209<br> mailto: dovgal.dima.86@gmail.com</h4>   <br>
 <span>
+  Мои статьи:<br>
   1. <a href="https://dovgaldima.pp.ua/page-website-creation.html">КАК НЕОБХОДИМО ВЕРСТАТЬ САЙТЫ</a><br>
   2. <a href="https://dovgaldima.pp.ua/page-prevent-copying-text.html">ЗАПРЕТИТЬ ВОЗМОЖНОСТЬ КОПИРОВАТЬ ТЕКСТ САЙТА</a><br>
   3. <a href="https://dovgaldima.pp.ua/page-Moving-a-site-element.html">ПЕРЕТАСКИВАНИЕ ЭЛЕМЕНТА САЙТА</a><br>
