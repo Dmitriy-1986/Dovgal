@@ -44,25 +44,26 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <style>
         /* style css */
+        
+        .list {
+            display: block;
+            padding: 20px;
+            list-style: none;
+            text-decoration: underline;
+
+        }
+        
         .nested-list {
             display: block;
             padding-left: 20px;
             border-left: 1px dashed #0d6efd;
         }
-
-        li {
-            display: block;
-            padding: 20px;
-            list-style: none;
-            text-decoration: underline;
-            color: #6c757d;
-        }
-
+        
        .li::before {
             content: '------';
             display: block;
             position: absolute;
-            color: #0d6efd;
+
             left: 105px;
              
         }
@@ -103,7 +104,7 @@
     <div class="container content">
         <div class="row">
             <ul>
-                <li>
+                <li class="list">
                     <h3>Блог</h3>
                 </li>
                 <ul class="nested-list">
