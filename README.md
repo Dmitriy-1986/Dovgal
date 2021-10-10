@@ -5,8 +5,8 @@
   1. <a href="https://dovgaldima.pp.ua/page-website-creation.html">КАК НЕОБХОДИМО ВЕРСТАТЬ САЙТЫ</a><br>
   2. <a href="https://dovgaldima.pp.ua/page-prevent-copying-text.html">ЗАПРЕТИТЬ ВОЗМОЖНОСТЬ КОПИРОВАТЬ ТЕКСТ САЙТА</a><br>
   3. <a href="https://dovgaldima.pp.ua/page-Moving-a-site-element.html">ПЕРЕТАСКИВАНИЕ ЭЛЕМЕНТА САЙТА</a><br>
-  4. <a href="https://dovgaldima.pp.ua/page-Chrome-DevTools.html">СМОТРИМ КОД САЙТА С ПОМОЩЬЮ CHROME DEVTOOLS</a><br><br>
-  5. <a href="https://dovgaldima.pp.ua/page-multiplication-table-js.html">ТАБЛИЦА УМНОЖЕНИЯ JAVA SCRIPT</a><br><br>
+  4. <a href="https://dovgaldima.pp.ua/page-Chrome-DevTools.html">СМОТРИМ КОД САЙТА С ПОМОЩЬЮ CHROME DEVTOOLS</a><br>
+  5. <a href="https://dovgaldima.pp.ua/page-multiplication-table-js.html">ТАБЛИЦА УМНОЖЕНИЯ JAVA SCRIPT</a><br><br><br>
   
 <address>
 <a title="Facebook" href="https://www.facebook.com/profile.php?id=100026817609832">Facebook</a> |
