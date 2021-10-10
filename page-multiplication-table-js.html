@@ -86,8 +86,8 @@
                  С помощью цикла for Java Script можно сделать таблицу умножения. 
               </p>
             <button  type="button" class="btn btn-outline-dark mb-2" id="copyCode">Копировать код</button>
-    <textarea wrap="off" id="code" class="code textarea-code rounded">
-    <script>       
+            <textarea wrap="off" id="code" class="code textarea-code rounded">
+            <script>       
         var str = '<table border="1px" width="50%">';
         for(var i = 1; i <= 10; i++) {
             str += '<tr>';
@@ -100,9 +100,24 @@
         }
         str += '</table>';
         document.write(str);
-    </script>
-    </textarea>
-           </div>
+         </script>
+         </textarea>
+              <h4>Демонстрация результата данного кода:</h4>
+              <script>       
+                  var str = '<table border="1px" width="50%">';
+                  for(var i = 1; i <= 10; i++) {
+                     str += '<tr>';
+                        for(var j = 1; j <= 10; j++) {
+                           str += '<td style="text-align: center; padding: 10px">';
+                                 str += i*j;
+                           str += '</td>';
+                         }
+                   str += '</tr>';
+                  }
+                  str += '</table>';
+                  document.write(str);
+         </script>
+         </div>
             
         </div>
     </div>
