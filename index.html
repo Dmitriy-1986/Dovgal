@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <a href="javascript:void(0)" class="link-image">
+            <img src="./assets/image/my-ava.jpg" alt="Dovgal Dima" class="image">
+            <span>
+                <strong>Dovgal Dima</strong>
+                <hr>
+                <small>Web Developer</small>
+            </span>
+        </a>
+        <h2 class="title">Dovgal Dima</h2>
+    </header>
+    <section>
+        <nav class="menu-nav">
+            <ul>
+                <li class="list" id="info-about-me" data-tab="0">Information</li>
+                <li class="list" id="info-my-project" data-tab="1">Project</li>
+                <li class="list" id="info-my-photo" data-tab="2">Photo</li>
+                <li class="list" id="info-my-video" data-tab="3">Video</li>
+                <li class="list" id="info-my-contact" data-tab="4">Contact</li>
+            </ul>
+        </nav>
+    </section>
+    <main class="main">
+        <p class="welcome-message">
+            Hello, welcome aboard!  Ask questions, share ideas and keep doing what you do.
+        </p>
+
+        <article id="about-me" class="tab page-none">
+            <h2>About Me</h2>
+            I am Full Stack Web - Developer
+        </article>
+        <article id="my-project" class="tab page-none">
+            <h2>My Project</h2>
+            No information!
+        </article>
+        <article id="my-photo" class="tab page-none">
+            <h2>My Photo</h2>
+            No information!
+        </article>
+        <article id="my-video" class="tab page-none">
+            <h2>My Video</h2>
+            No information!
+        </article>
+        <article id="my-contact" class="tab page-none">
+            <h2>My Contact</h2>
+            No information!
+        </article>
+    </main>
+    <footer>
+        <span class="footer-txt">2022 Dovgal Dima</span>
+    </footer>
+</div>
+
+<script>
+    let menuNav = document.querySelector('.menu-nav');
+
+    menuNav.addEventListener('click', tabs);
+
+    function tabs(event) {
+        if (event.target.className == 'list') {
+            let dataTab = event.target.getAttribute('data-tab');
+            let list = document.getElementsByClassName('list');
+            let welcomeMessage = document.querySelector('.welcome-message');
+            welcomeMessage.classList.add('page-none');
+
+            for (let i = 0; i < list.length; i++) {
+                list[i].classList.remove('active');
+            }
+
+            event.target.classList.add('active');
+            let tabBody = document.getElementsByClassName('tab');
+
+            for (let i = 0; i < tabBody.length; i++) {
+                if (dataTab == i) {
+                    tabBody[i].style.display = 'block';
+                } else {
+                    tabBody[i].style.display = 'none';
+                }
+            }
+        }
+    }
+
+
+</script>
+</body>
+</html>
