@@ -43,6 +43,6 @@
     opacity: 0;
 }
 
-.link-image span hr {
-    border: 1px solid #0d6efd;
+.link-image .hr {
+    border-bottom: 1px solid #0d6efd;
 }
