@@ -11,7 +11,7 @@ const dataProject = [
      },
     {
         images: './assets/image/flowchart.png',
-        title: 'Company Landing page',
+        title: 'Test Landing page',
         url: 'https://dmitriy-1986.github.io/LayoutLanding/'
     },
     // {
