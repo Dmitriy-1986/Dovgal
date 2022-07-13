@@ -5,8 +5,8 @@
 <address>
 <a title="Facebook" href="https://www.facebook.com/profile.php?id=100026817609832">Facebook</a> |
 <a title="Twitter" href="https://twitter.com/DovgalDmitriy">Twitter</a> |
-<a title="Instagram" href="https://www.instagram.com/dmitriy_dovgal/?hl=ru">Instagram</a> |
-<a title="Instagram" href="https://www.pinterest.com/DovgalDima/">Pinterest</a> 
+<a title="Instagram" href="https://www.instagram.com/dmitriy_dovgal">Instagram</a> |
+<a title="Instagram" href="https://www.pinterest.com/DovgalDima">Pinterest</a> 
 </address>
 </span>
 <br><br>
