@@ -1,0 +1,30 @@
+#my-project ul {
+    padding: 0;
+}
+
+.project-list {
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.project-cart-img {
+    width: 45px;
+}
+
+.project-link {
+   text-decoration: none;
+    margin: 0 5px;
+    color: #65676B;
+    transition-duration: 500ms;
+}
+
+.project-link:hover {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+.project-title{
+     display: inline-block;
+}
