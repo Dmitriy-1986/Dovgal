@@ -8,7 +8,12 @@ const dataProject = [
          images: './assets/image/flowchart.png',
          title: 'Shop Landing page',
          url: 'https://dmitriy-1986.github.io/ShopLayouts/'
-     }
+     },
+    {
+        images: './assets/image/flowchart.png',
+        title: 'Company Landing page',
+        url: 'https://dmitriy-1986.github.io/LayoutLanding/'
+    },
     // {
     //     images: './assets/image/flowchart.png',
     //     title: ' Title ',
