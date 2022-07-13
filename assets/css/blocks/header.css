@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+    padding: 20px;
+    background: #fff;
+    background-image: url('../../image/bootstrap-code-img.png');
+    background-size: cover;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+.title {
+    color: #ccc;
+}

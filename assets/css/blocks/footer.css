@@ -1,0 +1,11 @@
+footer {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-image: url('../../image/footer-bg.png');
+}
+
+.footer-txt {
+    color: #ccc;
+    padding: 0 15px;
+}

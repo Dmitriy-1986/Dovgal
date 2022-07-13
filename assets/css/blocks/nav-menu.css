@@ -1,0 +1,18 @@
+
+.menu-nav ul {
+    padding: 5px 15px;
+    margin: 0;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-nav ul li {
+    display: inline-block;
+}
+
+.list {
+    cursor: pointer;
+    padding: 5px;
+    color: #65676B;
+    font-weight: 600;
+}

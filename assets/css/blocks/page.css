@@ -1,0 +1,15 @@
+.main {
+    padding: 15px;
+    color: #65676B;
+    background: #fff;
+    min-height: calc(100vh - 400px);
+}
+
+.page-none {
+    display: none;
+}
+
+.active {
+    display: block;
+    color: #0d6efd;
+}
