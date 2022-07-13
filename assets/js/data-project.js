@@ -4,10 +4,15 @@ const dataProject = [
         title: 'Landing page',
         url: 'https://dmitriy-1986.github.io/layout-course/'
     },
+    {
+         images: './assets/image/flowchart.png',
+         title: 'Shop Landing page',
+         url: 'https://dmitriy-1986.github.io/ShopLayouts/'
+     }
     // {
     //     images: './assets/image/flowchart.png',
-    //     title: 'Landing page',
-    //     url: 'https://dmitriy-1986.github.io/layout-course/'
+    //     title: ' Title ',
+    //     url: 'javascript:void(0)'
     // }
 ];
 
