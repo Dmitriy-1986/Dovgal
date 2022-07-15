@@ -1,15 +1,18 @@
 let dataContact = {
   facebook: {
     title: 'Facebook',
-    url: 'https://www.facebook.com/dovgaldima'
+    url: 'javascript:void(0)'
+    //url: 'https://www.facebook.com/dovgaldima'
   },
   twitter: {
     title: 'Twitter',
-    url: 'https://twitter.com/DovgalDmitriy'
+    url: 'javascript:void(0)'
+    //url: 'https://twitter.com/DovgalDmitriy'
   },
   instagram: {
     title: 'Instagram',
-    url: 'https://www.instagram.com/dmitriy_dovgal'
+    url: 'javascript:void(0)'
+    //url: 'https://www.instagram.com/dmitriy_dovgal'
   },
 };
 
