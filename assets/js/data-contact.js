@@ -17,8 +17,8 @@ let dataContact = {
 };
 
 let myContact = document.querySelector('#my-contact');
-let socialMedia = document.createElement('ul');
-let socialMediaList = document.createElement('li');
+let socialMedia = document.createElement('div');
+let socialMediaList = document.createElement('p');
 myContact.append(socialMedia);
 socialMedia.append(socialMediaList);
 
