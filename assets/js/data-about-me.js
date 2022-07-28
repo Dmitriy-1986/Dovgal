@@ -1,7 +1,7 @@
 let stringsArray = [' JavaScript', ' React.js', ' Bootstrap', ' PHP', ' MySQL'];
 
 let showMessage = (name, courses, ...rest) => {
-    return `Hello, my name is ${name}. I finished ${courses}. I've learned ${rest}...`;       
+    return `My name is ${name}. I finished ${courses}. I've learned ${rest}...`;       
 }
 
 let aboutMe = document.querySelector('#about-me');
