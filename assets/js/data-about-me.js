@@ -12,5 +12,5 @@ aboutMe.append(p);
 let linkGitHub = document.createElement('a');
 linkGitHub.classList.add('social-media');
 linkGitHub.setAttribute('href', 'https://github.com/Dmitriy-1986');
-linkGithub.innerHTML = 'GitHub';
+linkGitHub.innerHTML = 'GitHub';
 aboutMe.append(linkGitHub);
