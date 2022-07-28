@@ -1,10 +1,16 @@
 let stringsArray = [' JavaScript', ' React.js', ' Bootstrap', ' PHP', ' MySQL'];
 
 let showMessage = (name, courses, ...rest) => {
-    let aboutMe = document.getElementById('#about-me');
-    let p = document.createElement('p');
-        p.innerHTML = `Hello, my name is ${name}. I finished ${courses}. I've learned ${rest}.`;
-        aboutMe.append(p);
+    return `Hello, my name is ${name}. I finished ${courses}. I've learned ${rest}.`;       
 }
 
-showMessage('Dima', 'ItStep', ...stringsArray);
+let aboutMe = document.getElementById('#about-me');
+let p = document.createElement('p');
+p.innerHTML = showMessage('Dima', 'ItStep', ...stringsArray);
+aboutMe.append(p);
+
+let linkGitHub = document.createElement('a');
+linkGitHub.classList.add('social-media');
+linkGitHub.setAttribute('href', 'https://github.com/Dmitriy-1986');
+linkGithub.innerHTML = 'GitHub';
+aboutMe.append(linkGitHub);
