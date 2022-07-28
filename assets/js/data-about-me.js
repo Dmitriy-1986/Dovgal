@@ -4,7 +4,7 @@ let showMessage = (name, courses, ...rest) => {
     return `Hello, my name is ${name}. I finished ${courses}. I've learned ${rest}.`;       
 }
 
-let aboutMe = document.getElementById('#about-me');
+let aboutMe = document.querySelector('#about-me');
 let p = document.createElement('p');
 p.innerHTML = showMessage('Dima', 'ItStep', ...stringsArray);
 aboutMe.append(p);
