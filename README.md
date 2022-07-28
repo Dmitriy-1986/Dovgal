@@ -1,13 +1,12 @@
 
-<h1><a title="Dovgal Dima" href="http://dovgaldima.pp.ua">Dovgal Dima</a> </h1>  <h4> tel: +380981180209<br> mailto: dovgal.dima.86@gmail.com</h4>   <br>
+<h1><a title="Dovgal Dima" href="http://dovgaldima.pp.ua">Dovgal Dima</a> </h1>  <h4> tel: +380981180209<br> mailto: dovgal.dima.86@gmail.com</h4><br>
 <span>
-
-<address>
-<a title="Facebook" href="https://www.facebook.com/dovgaldima">Facebook</a> |
-<a title="Twitter" href="https://twitter.com/DovgalDmitriy">Twitter</a> |
-<a title="Instagram" href="https://www.instagram.com/dmitriy_dovgal">Instagram</a> |
-<a title="Pinterest" href="https://www.pinterest.com/DovgalDima">Pinterest</a> 
-</address>
+  <address>
+    <a title="Facebook" href="https://www.facebook.com/dovgaldima">Facebook</a> |
+    <a title="Twitter" href="https://twitter.com/DovgalDmitriy">Twitter</a> |
+    <a title="Instagram" href="https://www.instagram.com/dmitriy_dovgal">Instagram</a> |
+    <a title="Pinterest" href="https://www.pinterest.com/DovgalDima">Pinterest</a> 
+  </address>
 </span>
 <br><br>
 
