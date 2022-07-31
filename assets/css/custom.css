@@ -2,7 +2,7 @@
     font-family: 'Tangerine';
     font-style: normal;
     font-weight: 400;
-    src: url('./fonts/Tangerine.woff2') format('woff2');
+    src: url('../fonts/Tangerine.woff2') format('woff2');
 }
 
 * {
