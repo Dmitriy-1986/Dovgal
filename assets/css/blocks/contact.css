@@ -57,7 +57,7 @@ button:focus:not(:focus-visible) {
     outline: 0;
 }
 
-.btn a[href^="mailto:"] {
+a[href^="mailto:"] .btn  {
     color: #000;
     text-decoration: none;
 }
