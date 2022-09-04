@@ -14,7 +14,7 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #000;
+    color: #65676B;
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
@@ -58,6 +58,6 @@ button:focus:not(:focus-visible) {
 }
 
 a[href^="mailto:"] .btn  {
-    color: #000;
+    color: #65676B;
     text-decoration: none;
 }
