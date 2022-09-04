@@ -5,7 +5,7 @@
 
 /* btn light mailto */
 
-a[href^="mailto:"] .btn  {
+a[href^="mailto:"]  {
     display: block;
     margin-top: 20px;
     color: #65676B;
