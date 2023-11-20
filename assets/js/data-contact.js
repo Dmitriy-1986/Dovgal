@@ -31,7 +31,7 @@ socialMediaList.innerHTML += `<a href="${dataContact.linkedin.url}" title="${dat
 socialMediaList.innerHTML += `<a href="https://ru.stackoverflow.com/users/441480/dovgal-dima">
                                 <img src="https://ru.stackoverflow.com/users/flair/441480.png?theme=dark" width="208" height="58" alt="Профиль участника Dovgal Dima на сайте &#171;Stack Overflow на русском&#187;, Вопросы и ответы для программистов" title="Профиль участника Dovgal Dima на сайте &#171;Stack Overflow на русском&#187;, Вопросы и ответы для программистов">
                               </a>`;
-socialMediaList.innerHTML += `<a href="mailto: dovgal.dima.86@gmail.com?subject=Feedback&body=Message:">
+socialMediaList.innerHTML += `<br><a href="mailto: dovgal.dima.86@gmail.com?subject=Feedback&body=Message:">
                                 <button type="button" class="btn btn-light">                     
                                   Send Feedback 
                                 </button>
