@@ -1,4 +1,4 @@
-const dataProject = [
+//const dataProject = [
      {}
      /*{
         images: './assets/image/flowchart.png',
@@ -20,9 +20,9 @@ const dataProject = [
     //     title: ' Title ',
     //     url: 'javascript:void(0)'
     // }
-];
+//];
 
-let myPoject = document.querySelector('#my-project');
+/*let myPoject = document.querySelector('#my-project');
 let ul = document.createElement('ul');
 myPoject.append(ul);
 
@@ -35,3 +35,4 @@ for (let i = 0; i < dataProject.length; i++) {
                               ${dataProject[i].title}</a></h3>`;
     ul.append(li);
 }
+*/
