@@ -3,13 +3,6 @@
     margin: 5px;
 }
 
-.social-links-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 .social-links-container a {
   margin-right: 10px;
   margin-bottom: 10px;
@@ -17,10 +10,17 @@
 }
 
 @media (max-width: 600px) {
-  .social-links-container a {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 10px;
+    .social-links-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+   .social-links-container a {
+     display: block;
+     margin-right: 0;
+     margin-bottom: 10px;
   }
 }
 
