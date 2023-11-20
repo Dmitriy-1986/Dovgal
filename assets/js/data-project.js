@@ -1,5 +1,6 @@
 const dataProject = [
-     {
+     {}
+     /*{
         images: './assets/image/flowchart.png',
         title: 'Landing page',
         url: 'https://dmitriy-1986.github.io/layout-course/'
@@ -13,7 +14,7 @@ const dataProject = [
         images: './assets/image/flowchart.png',
         title: 'Test Landing page',
         url: 'https://dmitriy-1986.github.io/LayoutLanding/'
-    },
+    },*/
     // {
     //     images: './assets/image/flowchart.png',
     //     title: ' Title ',
