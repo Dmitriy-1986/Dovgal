@@ -1,6 +1,5 @@
-//const dataProject = [
-     {}
-     /*{
+/*const dataProject = [
+     {
         images: './assets/image/flowchart.png',
         title: 'Landing page',
         url: 'https://dmitriy-1986.github.io/layout-course/'
@@ -14,14 +13,14 @@
         images: './assets/image/flowchart.png',
         title: 'Test Landing page',
         url: 'https://dmitriy-1986.github.io/LayoutLanding/'
-    },*/
+    },
     // {
     //     images: './assets/image/flowchart.png',
     //     title: ' Title ',
     //     url: 'javascript:void(0)'
     // }
 //];
-
+*/
 /*let myPoject = document.querySelector('#my-project');
 let ul = document.createElement('ul');
 myPoject.append(ul);
