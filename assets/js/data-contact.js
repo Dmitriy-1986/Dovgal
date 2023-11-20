@@ -20,6 +20,7 @@ let dataContact = {
 let myContact = document.querySelector('#my-contact');
 let socialMedia = document.createElement('div');
 let socialMediaList = document.createElement('p');
+socialMediaList.classList.add('social-links-container');
 myContact.append(socialMedia);
 socialMedia.append(socialMediaList);
 
