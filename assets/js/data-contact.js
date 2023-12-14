@@ -36,6 +36,8 @@ socialMediaList.innerHTML += `<a href="mailto: dovgal.dima.86@gmail.com?subject=
                                   Send Feedback 
                                 </button>
                               </a>`;
+socialMediaList.innerHTML += `<br><br><img src="https://www.codewars.com/users/Dovgal_Dima/badges/small" alt="Codewars Badge">`;
+
 
 
 
