@@ -17,7 +17,7 @@ let dataContact = {
   },
   linkedin: {
      title: 'LinkedIn',
-     url: 'https://www.linkedin.com/mwlite/in/dmitriy-dovgal-2672141a2'
+     url: 'https://www.linkedin.com/in/dmitriy-dovgal-2672141a2/'
   },
 };
 
