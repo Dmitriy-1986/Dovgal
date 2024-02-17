@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Leak of personal data on DarkNet -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph data-->
+    <meta property="og:title" content="Виток персональних данних у DarkNet / Утечка персональных данных в DarkNet">
+    <meta property="og:description" content="DovgalDima | Information | Project | Blog |Photo | Video | Contact ">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dovgaldima.pp.ua/leak-of-personal-data-on-darknet">
+    <meta property="og:image" content="https://dovgaldima.pp.ua/assets/image/ukraine-pii-600.png">
+
+    <title>Dovgal D.</title>
+
+    <link rel="icon" class="js-site-favicon" type="image/svg+xml"
+        href="https://github.githubassets.com/favicons/favicon.svg">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        .modal {
+            background-color: black;
+        }
+
+        header {
+            padding: 0px;
+        }
+
+        .my-img {
+            width: 100px;
+            border-radius: 50%;
+            margin: 7px 21px 7px 21px;
+        }
+
+        .my-name {
+            font-size: 37px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .my-title-page {
+            color: rgb(33, 37, 41);
+            font-size: 30px;
+            text-align: center;
+            margin-top: 33px;
+        }
+
+        .desc {
+            font-size: 18px;
+            line-height: 2em;
+            text-align: justify;
+        }
+
+        .img {
+            display: block;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        footer {
+            display: flex;
+            align-items: center;
+            height: 50px;
+            background-image: url(https://dovgaldima.pp.ua/assets/image/footer-bg.png);
+        }
+
+        .footer-txt {
+            color: #ccc;
+            padding: 0 15px;
+        }
+
+        @media (max-width: 600px) {
+            .img {
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="languageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Вибрати мову/Выбрать язык</h1>
+                </div>
+                <div class="modal-body">
+                    <button type="button" id="ua" class="btn btn-secondary">Українська</button>
+                    <button type="button" id="ru" class="btn btn-secondary">Русский</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Text content -->
+    <div id="textContent" class="container-fluid" style="display: none;">
+
+
+        <div class="row">
+            <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+                <div>
+                    <img src="https://dovgaldima.pp.ua/assets/image/my-ava.jpg" alt="my img" class="my-img">
+                    <a href="https://dovgaldima.pp.ua" class="my-name">Dovgal D. </a>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+
+                <h1 id="title-page" class="my-title-page"></h1>
+                <hr>
+                <div class="text-center"><span class="badge text-bg-dark m-2">17.02.2024</span></div>
+                <p id="p1" class="desc">
+
+                </p>
+
+                <p id="p2" class="desc">
+
+                </p>
+
+                <div class="alert alert-dark" role="alert">
+                    <div id="al" class="text-center">
+
+                    </div>
+                </div>
+
+                <p id="p3" class="desc">
+
+                </p>
+
+
+                <picture>
+                    <source media="(min-width: 800px)" srcset="https://dovgaldima.pp.ua/assets/image/ukraine-pii-800.png">
+                    <source media="(min-width: 600px)" srcset="https://dovgaldima.pp.ua/assets/image/ukraine-pii-600.png">
+                    <source media="(max-width: 600px)" srcset="https://dovgaldima.pp.ua/assets/image/ukraine-pii-600.png">
+                    <img src="small.jpg" alt="Ukraine_PII" class="img">
+                </picture>
+
+
+
+                <p id="p4" class="desc">
+
+                </p>
+
+                <p id="p5" class="desc">
+                    <b> </b>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <footer>
+                <span class="footer-txt">2024 Dovgal D.</span>
+            </footer>
+        </div>
+
+    </div>
+
+
+    <!-- Bootstrap JS (необходимы для Bootstrap модального окна) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const languageModal = new bootstrap.Modal(document.getElementById('languageModal'));
+
+            // Проверяем, есть ли данные о языке в localStorage
+            const selectedLanguage = localStorage.getItem('selectedLanguage');
+
+            // Если есть, выбираем язык и не показываем модальное окно
+            if (selectedLanguage) {
+                selectLanguage(selectedLanguage);
+            } else {
+                // Если данных нет, показываем модальное окно
+                languageModal.show();
+            }
+
+            // Назначаем обработчик события клика на кнопку Украинский
+            document.getElementById('ua').addEventListener('click', function () {
+                selectLanguage('Українська');
+                languageModal.hide();
+            });
+
+            // Назначаем обработчик события клика на кнопку Русский
+            document.getElementById('ru').addEventListener('click', function () {
+                selectLanguage('Русский');
+                languageModal.hide();
+            });
+        });
+
+        function selectLanguage(language) {
+            const titlePage = document.getElementById('title-page');
+            const p1 = document.getElementById('p1');
+            const p2 = document.getElementById('p2');
+            const p3 = document.getElementById('p3');
+            const p4 = document.getElementById('p4');
+            const p5 = document.getElementById('p5');
+            const al = document.getElementById('al');
+
+            if (language === 'Українська') {
+                titlePage.innerText = 'Виток персональних даних у DarkNet!';
+                p1.innerHTML = `У зв'язку з тим, що дізнався про виток своїх персональних даних за допомогою <a
+                    href="https://one.google.com/">Google One</a>, 
+                    вирішив трохи розібратися, що таке темна мережа, хто продає в ній персональні дані і за якою ціною. Як виявилося 
+                    станом на лютий 2024 року, я не перший хто дізнається про подібний факт. Згідно з інформацією Google, мою інформацію 
+                    було розкрито через порушення безпеки даних і виявлено в темній мережі (DarkNet) 15 травня 2023 року, витекли прізвище, 
+                    ім'я, по батькові, стать, дата народження, адреса проживання, електронна пошта та номер телефону.`;
+                p2.innerHTML = `
+                    Стало цікаво, що ж це за темна мережа і куди конкретно потекла інформація про мене. 
+                    <a target="_blank" href="https://support.google.com/googleone/answer/12262331?visit_id=638437717725122316-2491279492&p=what_is_dark_web&rd=1">
+                        Що таке DarkNet? 
+                    </a> Більшість активностей, 
+                    що відбуваються на просторах темної мережі, загрожує кримінальною відповідальністю оскільки він використовується для купівлі 
+                    та продажу незаконних товарів та послуг.`;
+                p3.innerHTML = `З даних від компанії Google видно, що виток інформації був у Ukraine PII. Персонально ідентифікована інформація (PII), 
+                    будь-які дані у цифровій чи нецифровій формі, які можуть бути використані для ідентифікації особи. По суті PII є важливим інструментом 
+                    для перевірки особистості та запобігання шахрайству. Однак важливо забезпечити її належний захист, оскільки він може бути легко 
+                    використаний або вкрадений у зловмисних цілях. Організації повинні мати добре розроблений план захисту PII, а також відповідні 
+                    процедури її утилізації.`;
+                p4.innerHTML = `Коли зайшов у DarkNet, то нічого цікавого та відповідного за своїми запитами пошуку не знайшов, 
+                    тому мною було поставлено питання до Google, з проханням допомогти розібратися кому потрапили в руки мої персональні дані, 
+                    тому що мені цікаво хто ними може торгувати, також мені цікаво знати який інтернет сервіс мав таку вразливість і припустився 
+                    витоку цієї інфи.`;
+                p5.innerHTML = `Далі буде...`;
+                al.innerHTML = `Інтернет та веб програми іноді можуть грати на темний бік, треба пам'ятати про це!`;
+            } else if (language === 'Русский') {
+                titlePage.innerText = 'Утечка персональных данных в DarkNet!';
+                al.innerHTML = `Интернет и веб приложения иногда могут играть на темную сторону, надо помнить об этом!`;
+                p1.innerHTML = `
+                    В связи с тем, что узнал об утечке своих персональных данных с помощью <a
+                    href="https://one.google.com/">Google One</a>, решил немного разобраться, что
+                    такое темная сеть, кто продает в ней персональные данные и по какой цене. Как оказалось по
+                    состоянию на февраль 2024 года я не первый кто узнает о подобном факте. Согласно информации Google
+                    мою информацию было раскрыто через нарушение безопасности данных и обнаружено в темной сети
+                    (DarkNet) 15 мая 2023 года, утекли фамилия, имя, отчество,
+                    пол, дата рождения, адрес проживания, электронная почта и номер телефона.
+                `;
+                p2.innerHTML = `
+                    Стало интересно, что же представляет собой темная сеть и куда конкретно потекла информация обо мне.
+                    <a target="_blank" href="https://support.google.com/googleone/answer/12262331?visit_id=638437717725122316-2491279492&p=what_is_dark_web&rd=1">
+                        Что такое DarkNet?
+                    </a>
+                    Большая часть активностей, происходящих на просторах темной сети, грозит уголовной ответственностью
+                    так как он используется для покупки и продажи незаконных товаров и услуг.
+                `;
+                p3.innerHTML = `
+                    Из данных от компании Google видно, что утечка информации была в Ukraine PII.
+                    Персонально идентифицируемая информация (PII), любые данные в цифровой или нецифровой форме,
+                    которые могут быть использованы для идентификации личности.
+                    По сути PII является важным инструментом для проверки личности и предотвращения мошенничества.
+                    Однако важно обеспечить ее надлежащую защиту, поскольку она может быть легко использована или
+                    украдена в злонамеренных целях. Организации должны иметь хорошо разработанный план защиты PII, а
+                    также соответствующие процедуры ее утилизации.
+                `;
+                p4.innerHTML = `
+                    Когда зашел в DarkNet, то ничего интересного и подходящего по своим запросам поиска не нашел,
+                    поэтому мной был задан вопрос к Google, с просьбой помочь разобраться кому попали в руки мои
+                    персональные данные, так как мне интересно кто ими может торговать, также мне интересно знать какой
+                    веб сервис имел такую уязвимость и допустил утечку этой инфы.
+                `;
+                p5.innerHTML = `Продолжение следует...`;
+            }
+
+            // Сохраняем выбранный язык в localStorage
+            localStorage.setItem('selectedLanguage', language);
+
+            // Показываем текст на странице
+            document.getElementById('textContent').style.display = 'block';
+        }
+    </script>
+
+</body>
+
+</html>
