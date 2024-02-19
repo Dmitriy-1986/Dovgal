@@ -7,6 +7,10 @@ let dataContact = {
     title: 'VK',
     url: 'https://m.vk.com/id790847045'
   },
+  ok: {
+    title: 'OK',
+    url: 'https://ok.ru/profile/582209131417'
+  },
   twitter: {
     title: 'Twitter',
     url: 'https://twitter.com/DovgalDmitriy'
@@ -30,6 +34,7 @@ socialMedia.append(socialMediaList);
 
 socialMediaList.innerHTML  = `<a href="${dataContact.facebook.url}" title="${dataContact.facebook.title}" class="social-media">${dataContact.facebook.title}</a>`;
 socialMediaList.innerHTML += `<a href="${dataContact.vk.url}" title="${dataContact.vk.title}" class="social-media">${dataContact.vk.title}</a>`;
+socialMediaList.innerHTML += `<a href="${dataContact.ok.url}" title="${dataContact.ok.title}" class="social-media">${dataContact.ok.title}</a>`;
 socialMediaList.innerHTML += `<a href="${dataContact.twitter.url}" title="${dataContact.twitter.title}" class="social-media">${dataContact.twitter.title}</a>`;
 socialMediaList.innerHTML += `<a href="${dataContact.instagram.url}" title="${dataContact.instagram.title}" class="social-media">${dataContact.instagram.title}</a>`;
 socialMediaList.innerHTML += `<a href="${dataContact.linkedin.url}" title="${dataContact.linkedin.title}" class="social-media">${dataContact.linkedin.title}</a>`;
