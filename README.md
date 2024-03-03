@@ -12,7 +12,7 @@
 <br>
 <a href="https://ru.stackoverflow.com/users/441480/dovgal-dima"><img src="https://ru.stackoverflow.com/users/flair/441480.png?theme=dark" width="208" height="58" alt="Профиль участника Dovgal Dima на сайте &#171;Stack Overflow на русском&#187;, Вопросы и ответы для программистов" title="Профиль участника Dovgal Dima на сайте &#171;Stack Overflow на русском&#187;, Вопросы и ответы для программистов"></a>
 <br>
-<img src="https://www.codewars.com/users/Dovgal_Dima/badges/small" alt="Codewars Badge">
+<p><a href="https://www.codewars.com/users/Dovgal_Dima"><img src="https://www.codewars.com/users/Dovgal_Dima/badges/small" alt="Codewars Badge"></a></p>
 
 <p align="justify">Интересуюсь разработкой веб-сайтов, нравиться работать с програмным кодом, творчески подхожу к работе. Создаю веб-страницы с выполнением элементов дизайна аналогично макету, в процессе верстки страниц учитываю необходимую разницу отображения элементов в различных браузерах и разницу в размерах рабочего пространства устройств.</p>
 <p align="justify">В процессе верстки страниц учитываю необходимую разницу  отображения элементов в различных браузерах и разницу в размерах рабочего пространства устройств.</p>
