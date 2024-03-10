@@ -45,9 +45,9 @@ socialMediaList.innerHTML += `<a href="${dataContact.instagram.url}" title="${da
 socialMediaList.innerHTML += `<a href="${dataContact.telegram.url}" title="${dataContact.telegram.title}" class="social-media">${dataContact.telegram.title}</a>`;
 socialMediaList.innerHTML += `<a href="${dataContact.linkedin.url}" title="${dataContact.linkedin.title}" class="social-media">${dataContact.linkedin.title}</a><br><br>`;
 socialMediaList.innerHTML += `</div><br>`;
-socialMediaList.innerHTML += `<div><a href="https://ru.stackoverflow.com/users/441480/dovgal-dima" style="margin-top: 10px; text-decoration: none;">
+socialMediaList.innerHTML += `<p><a href="https://ru.stackoverflow.com/users/441480/dovgal-dima" style="margin-top: 10px; text-decoration: none;">
                                 <img src="https://ru.stackoverflow.com/users/flair/441480.png?theme=dark" width="208" height="58" alt="Профиль участника Dovgal Dima на сайте &#171;Stack Overflow на русском&#187;, Вопросы и ответы для программистов" title="Профиль участника Dovgal Dima на сайте &#171;Stack Overflow на русском&#187;, Вопросы и ответы для программистов">
-                              </a></div>`;
+                              </a></p>`;
 socialMediaList.innerHTML += `<p><a href="https://www.codewars.com/users/Dovgal_Dima"><img src="https://www.codewars.com/users/Dovgal_Dima/badges/small" alt="Codewars Badge"></a></p>`;
 socialMediaList.innerHTML += `<a href="mailto: dovgal.dima.86@gmail.com?subject=Feedback&body=Message:">
                                 <button type="button" class="btn btn-light">                     
