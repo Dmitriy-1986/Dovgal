@@ -25,7 +25,7 @@
         },
         telegram: {
           title: 'Telegram',
-          url: 'https://t.me/DovgalDima'
+          url: 'https://t.me/Dovgal_Dima'
         },
         linkedin: {
           title: 'LinkedIn',
