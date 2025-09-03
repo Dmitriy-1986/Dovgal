@@ -364,7 +364,7 @@
 
         copyButtons.forEach((button, index) => {
             button.addEventListener("click", function() {
-                const textToCopy = copyableTexts[index].textContent;
+                const textToCopy = copyableTexts[index].textContent.trim();
                 
                 const tempInput = document.createElement("input");
                 tempInput.value = textToCopy;
