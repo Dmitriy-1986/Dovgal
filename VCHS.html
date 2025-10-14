@@ -1,1 +1,416 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ВЧС</title>
+    <link rel="icon" type="image/svg+xml" href='data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><circle cx="5" cy="5" r="5" fill="%234492f8"/></svg>'>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+        /* Градиент фона */
+        body {
+            margin: 0px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 591 412"><defs><linearGradient id="gradient_0" x1="0.854" y1="0.146" x2="0.146" y2="0.854"><stop offset="0.000" stop-color="rgb(130,205,224)"/><stop offset="0.167" stop-color="rgb(149,201,222)"/><stop offset="0.333" stop-color="rgb(174,200,216)"/><stop offset="0.500" stop-color="rgb(202,201,208)"/><stop offset="0.667" stop-color="rgb(232,206,199)"/><stop offset="0.833" stop-color="rgb(255,213,194)"/><stop offset="1.000" stop-color="rgb(255,221,192)"/></linearGradient></defs><rect width="100%" height="100%" fill="url(%23gradient_0)"/></svg>') no-repeat center center;
+            background-size: cover;
+        }
+        /* Контейнер */
+         .container {
+            margin: 0 auto;
+            max-width: 1000px;
+            background-color: rgba(255, 255, 255, 0.699);
+            padding: 0 10px;
+         }
+        /* Таблица */
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            
+        }
+        tr {
+            border-bottom: 1px solid #afafaf;
+        }
+        td {
+            text-align: left;
+            padding: 5px;
+        }
+        .td-btn {
+            width: 110px;
+        }
+        /* Поле ввода */
+        .text-input {
+            padding: 10px 5px;
+            width: 90%;
+        }
+        /* Градиент кнопки */
+        .btn-grad {background-image: linear-gradient(to right, #0575E6 0%, #021B79  51%, #0575E6  100%)}
+        .btn-grad {
+            padding: 10px 15px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border: none;
+            display: block;
+            min-width: auto;
+            cursor: pointer;
+        }
+        .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+        }
+        .btn-grad:focus {
+            outline: 3px solid rgb(11, 11, 221);
+             transition: 0s;
+        }
+        .copied-highlight {
+            background-color: rgba(255, 255, 0, 0.467);
+            transition: background-color 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <br>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" id="textInput" class="text-input" placeholder="Введіть текст для копіювання">
+                        </td>
+                        <td class="td-btn">
+                            <button id="copyBtn" class="btn-grad">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            БІЛИЙ Я.В.
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            13852301
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            41/32-02
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            2025
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            АЛДОШИН Д.А.
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            КРАСНІКОВА Д. О.
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            ФУРМАНОВ А. В.
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            АГАПЦЕВ В. В.
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            НАЗАРЕНКО А. С.
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            ОСОБА В РОЗШУКУ/ СЗЧ/ ДЕЗЕРТИР (ЗА УЧАСТЮ В/С ЗСУ)
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            ПОДІЯ ЗА УЧАСТІ ВІЙСЬКОВОСЛУЖБОВЦЯ НГУ
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            ОСОБА В РОЗШУКУ (УХИЛЯНТ)
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            Зв’язавшись із заявницею в телефонному режимі, остання повідомила про те, що потребують на місце події наряд патрульної поліції для оформлення ДТП.
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            Зв’язавшись із заявником в телефонному режимі, останній повідомив про те, що потребують на місце події наряд патрульної поліції для оформлення ДТП.
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            На місце події необхідно направити екіпаж патрульної поліції, так як водії не дійшли згоди скласти європротокол.
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            Зв’язавшись із заявником в телефонному режимі, останній повідомив, що виклик зробили поспішно, допомоги поліції не потребують, скарг та заяв не надходило.
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            Зв’язавшись із заявником гр. Скороходов Ігор Олегович, 16.09.1967 р.н., мешкає за адресою: м.Запоріжжя, проспект Інженера Преображенського, буд.25, кв.67, тел.0980973309, в телефонному режимі, останній повідомив про те, що вони з іншим водієм гр. Васкул Денис Олександрович, 26.09.2005 р.н., мешкає за адресою: м.Запоріжжя, вул. Каховська 48-а, тел.0962734367, виявили бажання скористатися своїм правом на підставі ст.33.2 ЗУ "про обов’язкове страхування цивільно-правової відповідальності наземних транспортних засобів" та вирішили скласти европротокол.
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            Попереднє ЄО 10745 УПП, виклик відпрацьовано на рядом ХИЖАК-0015.
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            Немає можливості відпрацювати даний  виклику дистанційно, у зв’зку з тим, що на всій території України по УПП не працює мобільний зв’язок. На місце події необхідно направити наряд патрульної поліції. 
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            Учасники ДТП прохають допомоги поліції, оскільки  не можуть дійти згоди, щодо складання евро протоколу
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            На м/п необхідно екіпаж поліції для оформлення матеріалів ДТП
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            Згідно "Методичних рекомендацій, щодо порядку відображення поліцейськими (працівниками поліції) в інформаційно – комунікаційній системі «ІПНПУ» стану дистанційного реагування на заяви і повідомлення про правопорушення або події» ВІДПРАЦЮВАТИ ВИКЛКИ ДИСТАНЦІЙНО НЕМОЖЛИВО, оскільки в переліку дистанційних відпрацювань відсутні данна категорія виклику, прохаємо призначити на виклик екіпаж ВМАЗ "Хижак 0015" після відпрацювання попереднього виклику ЄО № 909
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            Зв’язавшись із заявником в телефонному режимі, останній повідомив, що учасники ДТП прохають допомоги поліції, оскільки не вміють складати европротокол та не можуть дійти згоди, щодо складання европротоколу. 
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            Оператором 102 в фабулі зазначено: Ускладнення руху: незначне. Наявність страхового полісу ОСЦПВ на ТЗ: невідомо. Перебування учасників ДТП на місці події: так. Стан сп`яніння водіїв: невідомо, враховуючи дане згідно «Методичних рекомендацій, щодо порядку відображення поліцейськими (працівниками поліції) в інформаційно – комунікаційній системі «ІПНПУ» стану дистанційного реагування на заяви і повідомлення про правопорушення або події» відпрацювати виклик дистанційно неможливос
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            Відповідно п. п. 4 п.20 розділу ІІІ Інструкції з організації реагування на заяви та повідомлення про кримінальні, адміністративні правопорушення або події, затверджено наказом №357, в зв’язку з відсутністю «Вільного наряду», повідомлено оперативного чергового, для вжиття заходів щодо направлення на місце події додаткового наряду, або інших працівників поліції.
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            Встановлено, що виклик стосується перехрестя  пр. Соборний/вул. Поштова/ вул. Св. Миколая, дане перехрестя з жвавим рухом, і можливо потребує регулювання, але для перевірки інформації необхідно залучення екіпажу для встановлення доцільності в регулюванні руху, та вирішення питання щодо потреби в регулюванні руху, та уникнення в подальшому затору в русі
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            Вказану інформацію про непрацючий світлофор передано до КП «Міськсвітло». Знеструмлення по ЗМЕМ. Роботу світлофора буде відновлено після відновлення електроживлення. Скарг та заяв не надходило, письмової відповіді не потребують.
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            Вказану інформацію про непрацюючий світлофор передано до КП «Міськсвітло». Знеструмлення по ЗМЕМ. Роботу світлофорного об’єкту буде відновлено після відновлення електропостачання. Перехрестя в регулюванні не потребують, транспортні засоби роз'їжджається згідно встановлених на перехрестях знаків пріоритету та дорожньої розмітки, затору не має. Скарг та заяв не надходило, під час свого звернення на лінію 102 заявник не виявив бажання в отриманні письмової відповіді.
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            Вказану інформацію про непрацючий світлофор передано до КП «Міськсвітло». Роботу світлофора буде відновлено після відновлення електроживлення. Рух регулювання не потребує, розїзд здійснюється згідно з дорожньої розмітки та знаків.
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            ІНФОРМАЦІЯ ПОТРЕБУЄ ПЕРЕВІРКИ, чи є затор та необхідність в регулюванні, на даному перехресті жвавий рух, тому прохаємо ЗАЛУЧИТИ ЕКІПАЖ, для перевірки інформації, щодо потреби в регулюванні руху. Інформацію щодо несправності даного світлофорного об’єкту передано відповідним службам (КМ «Запоріжміськсвітло»), які повідомили, що для усунення несправності на даному світлофорному об’єкті  потрібні відповідні запчастини, які вийшли з ладу,  але на даний час їх немає в наявності, але їх постачання очікується найближчим часом. 
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            Водії дійшли згоди щодо складання євро протоколу, БЕЗ допомоги поліції, скарг та заяв не надійшло відповіді не потребує 
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            Інформацію буде передано розгляд до відділу БДР УПП в Запорізькій області для подальшого розгляду звернення та опрацювання, прийняття рішення згідно чинного законодавства України. 
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            Розпорядження ЗОВА № 472 від 04.07.24 р., а також п. 35 постанови КМУ № 879 від 27.06.2007 року
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="copyable-text">
+                            б/п: «З-01», «З-07», «З-08», «З-09», «З-12»; п/п «З-05»
+                        </td>
+                        <td class="td-btn">
+                            <button class="btn-grad copy-button">Копіювати</button>
+                        </td>
+                    </tr>
+                </table>
+                <br><br><br><br><br>
+            </div>
+        </div>
+    </div>
+    <script>
+        //Копирование текста из таблицы
+        const copyButtons = document.querySelectorAll(".copy-button");
+        const copytableTexts = document.querySelectorAll(".copyable-text");
 
+        // Получаем все кнопки "Копіювати"
+        copyButtons.forEach((button, index) => {           
+        // Назначаем обработчик события "click" для каждой кнопки
+        button.addEventListener("click", function() { 
+            // Получаем текст из соответствующей ячейки .copyable-text (по тому же индексу)
+            const textToCopy = copytableTexts[index].textContent;
+            // Создаём временное поле input для копирования текста
+            const tempInput = document.createElement("input");
+            // Записываем нужный текст в это поле
+            tempInput.value = textToCopy;
+            // Добавляем временное поле на страницу (в DOM)
+            document.body.appendChild(tempInput);
+            // Выделяем текст внутри input
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999); // Для совместимости с мобильными
+            // Выполняем команду копирования в буфер обмена
+            document.execCommand("copy");
+            // Удаляем временное поле с документа
+            document.body.removeChild(tempInput);
+            // Добавляем класс для визуального выделения текста (например, подсветка)
+            const textCell = copytableTexts[index];
+            textCell.classList.add("copied-highlight");
+                // Через 1.5 секунды убираем подсветку (удаляем класс)
+                setTimeout(() => {
+                    textCell.classList.remove("copied-highlight");
+                }, 1500);
+            });
+        });
+
+
+        //Копирование текста из поля input
+        const textInput = document.getElementById('textInput');
+        const copyBtnInput = document.getElementById('copyBtn');
+
+        copyBtnInput.addEventListener('click', () => {
+            // Выбираем текст в поле
+            textInput.select();
+            textInput.setSelectionRange(0, 99999); // Для мобильных устройств
+            // Копируем текст
+            navigator.clipboard.writeText(textInput.value)       
+        });
+    </script>       
+</body>
+</html>
