@@ -14,7 +14,6 @@
             margin: 0px;
             background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 591 412"><defs><linearGradient id="gradient_0" x1="0.854" y1="0.146" x2="0.146" y2="0.854"><stop offset="0.000" stop-color="rgb(130,205,224)"/><stop offset="0.167" stop-color="rgb(149,201,222)"/><stop offset="0.333" stop-color="rgb(174,200,216)"/><stop offset="0.500" stop-color="rgb(202,201,208)"/><stop offset="0.667" stop-color="rgb(232,206,199)"/><stop offset="0.833" stop-color="rgb(255,213,194)"/><stop offset="1.000" stop-color="rgb(255,221,192)"/></linearGradient></defs><rect width="100%" height="100%" fill="url(%23gradient_0)"/></svg>') no-repeat center center;
             background-size: cover;
-            background-attachment: fixed;
         }
         /* Контейнер */
          .container {
@@ -58,13 +57,21 @@
             border: none;
             display: block;
             min-width: auto;
+            cursor: pointer;
         }
         .btn-grad:hover {
             background-position: right center; /* change the direction of the change here */
             color: #fff;
             text-decoration: none;
         }
-         
+        .btn-grad:focus {
+            outline: 3px solid rgb(11, 11, 221);
+             transition: 0s;
+        }
+        .copied-highlight {
+            background-color: rgba(255, 255, 0, 0.467);
+            transition: background-color 0.5s ease;
+        }
     </style>
 </head>
 <body>
@@ -360,35 +367,4 @@
     </div>
     <script>
         //Копирование текста из таблицы
-        const copyButtons = document.querySelectorAll(".copy-button");
-        const copyableTexts = document.querySelectorAll(".copyable-text");
-
-        copyButtons.forEach((button, index) => {
-            button.addEventListener("click", function() {
-                const textToCopy = copyableTexts[index].textContent.trim();
-                
-                const tempInput = document.createElement("input");
-                tempInput.value = textToCopy;
-
-                document.body.appendChild(tempInput);
-                tempInput.select();
-                tempInput.setSelectionRange(0, 99999);
-                document.execCommand("copy");
-                document.body.removeChild(tempInput);
-            });
-        });
-
-        //Копирование текста из поля input
-        const textInput = document.getElementById('textInput');
-        const copyBtnInput = document.getElementById('copyBtn');
-
-        copyBtnInput.addEventListener('click', () => {
-            // Выбираем текст в поле
-            textInput.select();
-            textInput.setSelectionRange(0, 99999); // Для мобильных устройств
-            // Копируем текст
-            navigator.clipboard.writeText(textInput.value)       
-        });
-    </script>       
-</body>
-</html>
+        const copyButtons = document.querySel
