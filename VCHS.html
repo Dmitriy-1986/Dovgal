@@ -375,7 +375,7 @@
         // Назначаем обработчик события "click" для каждой кнопки
         button.addEventListener("click", function() { 
             // Получаем текст из соответствующей ячейки .copyable-text (по тому же индексу)
-            const textToCopy = copytableTexts[index].textContent;
+            const textToCopy = copytableTexts[index].textContent.trim();
             // Создаём временное поле input для копирования текста
             const tempInput = document.createElement("input");
             // Записываем нужный текст в это поле
