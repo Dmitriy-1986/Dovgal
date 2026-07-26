@@ -116,7 +116,14 @@
     <script src="./assets/js/data-about-me.js"></script>
 <script src="./assets/js/data-project.js"></script>
 <script src="./assets/js/data-contact.js"></script>
-   --> 
+   -->
+    
+<script>
+  if (top !== self) {
+    top.location.replace(self.location.href);
+  }
+</script>
+
 </body>
 </html>
 
