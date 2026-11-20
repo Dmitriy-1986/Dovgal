@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Базовый сброс отступов и единый расчёт размеров с учётом рамок и паддингов */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Центрируем карточку формы по вертикали и горизонтали на весь экран */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Ограничиваем максимальную ширину формы на больших экранах */
+        .feedback-wrapper {
+            width: 100%;
+            max-width: 480px;
+        }
+
+        /* Белая карточка с тенью и скруглёнными углами */
+        .feedback-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Отступ под заголовком и описанием формы */
+        .feedback-header {
+            margin-bottom: 24px;
+        }
+
+        .feedback-header h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 6px;
+        }
+
+        .feedback-header p {
+            font-size: 14px;
+            color: #6b7280;
+        }
+
+        /* Вертикальный отступ между полями ввода */
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        /* Размещаем лейбл и счётчик символов на одной строке по краям */
+        .label-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 6px;
+            color: #374151;
+        }
+
+        /* Красная звёздочка обязательного поля */
+        .required {
+            color: #ef4444;
+        }
+
+        /* Счётчик символов (0 / 500) */
+        .char-counter {
+            font-size: 12px;
+            color: #9ca3af;
+        }
+
+        /* Единое оформление текстовых полей и textarea */
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 11px 14px;
+            border: 1px solid #d1d5db;
+            border-radius: 10px;
+            font-size: 15px;
+            font-family: inherit;
+            color: #111827;
+            background-color: #f9fafb;
+            transition: all 0.2s ease;
+        }
+
+        /* Подсветка активного поля при фокусе */
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #2563eb;
+            background-color: #ffffff;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+        }
+
+        /* Позволяем растягивать поле сообщения только по вертикали */
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        /* Текст ошибки скрыт по умолчанию, показывается скриптом при невалидном вводе */
+        .error-msg {
+            display: none;
+            font-size: 12px;
+            color: #ef4444;
+            margin-top: 5px;
+        }
+
+        /* Подсветка поля с ошибкой (!important перебивает базовые стили поля) */
+        .input-error {
+            border-color: #ef4444 !important;
+            background-color: #fef2f2 !important;
+        }
+
+        /* Основная кнопка отправки */
+        .submit-btn {
+            width: 100%;
+            padding: 13px;
+            background-color: #2563eb;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            margin-top: 6px;
+        }
+
+        .submit-btn:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Вторичная кнопка (контурная) для возврата к форме */
+        .outline-btn {
+            background-color: transparent;
+            color: #2563eb;
+            border: 1px solid #2563eb;
+            margin-top: 20px;
+        }
+
+        .outline-btn:hover {
+            background-color: #eff6ff;
+        }
+
+        /* Утилита для скрытия/показа формы и экрана успеха */
+        .hidden {
+            display: none;
+        }
+
+        /* Стили экрана успешной отправки */
+        .success-screen {
+            text-align: center;
+            padding: 40px 32px;
+        }
+
+        /* Зелёный круг с галочкой */
+        .success-icon {
+            width: 56px;
+            height: 56px;
+            background-color: #dcfce7;
+            color: #16a34a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+
+        .success-screen h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .success-screen p {
+            font-size: 15px;
+            color: #374151;
+            margin-bottom: 8px;
+        }
+
+        .success-screen .sub-text {
+            font-size: 13px;
+            color: #6b7280;
+        }
+
+        /* Уменьшаем внутренние отступы карточки на узких экранах */
+        @media (max-width: 480px) {
+            .feedback-card {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="feedback-wrapper">
+        <div class="feedback-card" id="formContainer">
+            <div class="feedback-header">
+                <h2>Связаться с нами</h2>
+                <p>Оставьте сообщение, и мы ответим вам в ближайшее время</p>
+            </div>
+
+            <form id="feedbackForm" novalidate>
+                <!-- Имя -->
+                <div class="form-group">
+                    <label for="name">Ваше имя <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                    <span class="error-msg" id="nameError">Пожалуйста, введите ваше имя</span>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Электронная почта <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+                    <span class="error-msg" id="emailError">Введите корректный email</span>
+                </div>
+
+                <!-- Сообщение -->
+                <div class="form-group">
+                    <div class="label-row">
+                        <label for="message">Сообщение <span class="required">*</span></label>
+                        <span class="char-counter"><span id="charCount">0</span> / 500</span>
+                    </div>
+                    <textarea id="message" name="message" rows="4" maxlength="500"
+                        placeholder="Опишите ваш вопрос или предложение..." required></textarea>
+                    <span class="error-msg" id="messageError">Сообщение должно содержать минимум 10 символов</span>
+                </div>
+
+                <!-- Кнопка отправки -->
+                <button type="submit" class="submit-btn" id="submitBtn">Отправить сообщение</button>
+            </form>
+        </div>
+
+        <!-- Экран успешной отправки -->
+        <div class="feedback-card success-screen hidden" id="successScreen">
+            <div class="success-icon">✓</div>
+            <h2>Сообщение отправлено!</h2>
+            <p>Спасибо за обращение. Номер вашей заявки: <strong id="ticketNumber">#4829</strong></p>
+            <p class="sub-text">Мы свяжемся с вами по указанному email в течение рабочего дня.</p>
+            <button type="button" class="submit-btn outline-btn" id="resetBtn">Отправить ещё одно</button>
+        </div>
+    </div>
+
+    <script>
+        // URL вашего развёрнутого веб-приложения Google Apps Script
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby26y-fx5za7EHH14QqPxuKshMG67TXzmZxDrnDd8r9PnvWZLCJlgf2dM6vHM02rokA7g/exec';
+
+        const form = document.getElementById('feedbackForm');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const messageInput = document.getElementById('message');
+        const charCount = document.getElementById('charCount');
+        const formContainer = document.getElementById('formContainer');
+        const successScreen = document.getElementById('successScreen');
+        const ticketNumber = document.getElementById('ticketNumber');
+        const submitBtn = document.getElementById('submitBtn');
+        const resetBtn = document.getElementById('resetBtn');
+
+        // Живой счётчик символов
+        messageInput.addEventListener('input', () => {
+            charCount.textContent = messageInput.value.length;
+        });
+
+        // Проверка и отправка формы
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            let isValid = true;
+
+            // Проверка имени
+            if (nameInput.value.trim().length < 2) {
+                showError('nameError', nameInput);
+                isValid = false;
+            } else {
+                hideError('nameError', nameInput);
+            }
+
+            // Проверка email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailInput.value.trim())) {
+                showError('emailError', emailInput);
+                isValid = false;
+            } else {
+                hideError('emailError', emailInput);
+            }
+
+            // Проверка сообщения
+            if (messageInput.value.trim().length < 10) {
+                showError('messageError', messageInput);
+                isValid = false;
+            } else {
+                hideError('messageError', messageInput);
+            }
+
+            // Отправка данных в Google Таблицу при успешной валидации
+            if (isValid) {
+                const generatedTicket = '#' + Math.floor(1000 + Math.random() * 9000);
+
+                const formData = new FormData(form);
+                formData.append('ticket', generatedTicket);
+
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Отправка...';
+
+                try {
+                    await fetch(SCRIPT_URL, {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    ticketNumber.textContent = generatedTicket;
+                    formContainer.classList.add('hidden');
+                    successScreen.classList.remove('hidden');
+                } catch (error) {
+                    alert('Не удалось отправить сообщение. Проверьте подключение к интернету и попробуйте снова.');
+                    console.error('Ошибка отправки:', error);
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Отправить сообщение';
+                }
+            }
+        });
+
+        // Сброс формы для повторной отправки
+        resetBtn.addEventListener('click', () => {
+            form.reset();
+            charCount.textContent = '0';
+            hideError('nameError', nameInput);
+            hideError('emailError', emailInput);
+            hideError('messageError', messageInput);
+            successScreen.classList.add('hidden');
+            formContainer.classList.remove('hidden');
+        });
+
+        function showError(errorId, inputEl) {
+            document.getElementById(errorId).style.display = 'block';
+            inputEl.classList.add('input-error');
+        }
+
+        function hideError(errorId, inputEl) {
+            document.getElementById(errorId).style.display = 'none';
+            inputEl.classList.remove('input-error');
+        }
+    </script>
+
+<!-- 
+Ідентифікатор введення в дію 
+AKfycby26y-fx5za7EHH14QqPxuKshMG67TXzmZxDrnDd8r9PnvWZLCJlgf2dM6vHM02rokA7g
+
+Веб-додаток URL-адреса 
+https://script.google.com/macros/s/AKfycby26y-fx5za7EHH14QqPxuKshMG67TXzmZxDrnDd8r9PnvWZLCJlgf2dM6vHM02rokA7g/exec
+-->
+  
+</body>
+
+</html>
