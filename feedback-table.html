@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список заявок обратной связи</title>
+  <style>
+    :root {
+      --bg-color: #f4f6f9;
+      --card-bg: #ffffff;
+      --text-main: #1f2937;
+      --text-muted: #6b7280;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --border-color: #e5e7eb;
+      --badge-bg: #eff6ff;
+      --badge-text: #1d4ed8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      padding: 24px 16px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      padding: 24px;
+    }
+
+    .header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .header h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .search-input {
+      padding: 9px 14px;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      font-size: 0.95rem;
+      min-width: 240px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--primary);
+    }
+
+    .btn-refresh {
+      background-color: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 9px 16px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .btn-refresh:hover {
+      background-color: var(--primary-hover);
+    }
+
+    .btn-refresh:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .meta-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.92rem;
+    }
+
+    thead {
+      background-color: #f9fafb;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    th {
+      padding: 12px 14px;
+      font-weight: 600;
+      color: #374151;
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border-color);
+      vertical-align: top;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr:hover {
+      background-color: #f9fafb;
+    }
+
+    .col-date {
+      white-space: nowrap;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    .ticket-badge {
+      display: inline-block;
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      white-space: nowrap;
+    }
+
+    .col-name {
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .col-email a {
+      color: var(--primary);
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .col-email a:hover {
+      text-decoration: underline;
+    }
+
+    .col-message {
+      min-width: 260px;
+      max-width: 450px;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    .status-box {
+      text-align: center;
+      padding: 40px 16px;
+      color: var(--text-muted);
+    }
+
+    .error-text {
+      color: #dc2626;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>Заявки с формы обратной связи</h1>
+      <div class="controls">
+        <input 
+          type="text" 
+          id="searchInput" 
+          class="search-input" 
+          placeholder="Поиск по номеру, имени, email или тексту..."
+        >
+        <button id="refreshBtn" class="btn-refresh">Обновить</button>
+      </div>
+    </div>
+
+    <div class="meta-bar">
+      <span id="totalCount">Всего записей: 0</span>
+      <span id="lastUpdated"></span>
+    </div>
+
+    <div class="table-wrapper">
+      <table id="ticketsTable">
+        <thead>
+          <tr>
+            <th>Дата</th>
+            <th>Заявка</th>
+            <th>Имя</th>
+            <th>Email</th>
+            <th>Сообщение</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <tr>
+            <td colspan="5" class="status-box">Загрузка данных из таблицы...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    // Вставьте сюда ваш актуальный URL веб-приложения Google Apps Script (/exec)
+    const SCRIPT_URL = 'https://script.google.com/macros/s/ВСТАВЬТЕ_ВАШ_АКТУАЛЬНЫЙ_URL/exec';
+
+    const tableBody = document.getElementById('tableBody');
+    const searchInput = document.getElementById('searchInput');
+    const refreshBtn = document.getElementById('refreshBtn');
+    const totalCount = document.getElementById('totalCount');
+    const lastUpdated = document.getElementById('lastUpdated');
+
+    let allTickets = [];
+
+    // Экранирование спецсимволов HTML для безопасного вывода текста пользователей
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    // Отрисовка строк таблицы
+    function renderTable(items) {
+      totalCount.textContent = `Показано записей: ${items.length} из ${allTickets.length}`;
+
+      if (items.length === 0) {
+        tableBody.innerHTML = `
+          <tr>
+            <td colspan="5" class="status-box">Заявок не найдено</td>
+          </tr>
+        `;
+        return;
+      }
+
+      tableBody.innerHTML = items.map(item => `
+        <tr>
+          <td class="col-date">${escapeHtml(item.date)}</td>
+          <td><span class="ticket-badge">${escapeHtml(item.ticket)}</span></td>
+          <td class="col-name">${escapeHtml(item.name)}</td>
+          <td class="col-email"><a href="mailto:${escapeHtml(item.email)}">${escapeHtml(item.email)}</a></td>
+          <td class="col-message">${escapeHtml(item.message)}</td>
+        </tr>
+      `).join('');
+    }
+
+    // Загрузка данных из Google Apps Script (GET-запрос работает без mode: 'no-cors')
+    async function loadTickets() {
+      refreshBtn.disabled = true;
+      refreshBtn.textContent = 'Загрузка...';
+
+      try {
+        const response = await fetch(SCRIPT_URL);
+        if (!response.ok) {
+          throw new Error(`HTTP ошибка: ${response.status}`);
+        }
+
+        const data = await response.json();
+        if (data.error) {
+          throw new Error(data.error);
+        }
+
+        allTickets = data;
+        applyFilter();
+
+        const now = new Date().toLocaleTimeString('ru-RU');
+        lastUpdated.textContent = `Обновлено в ${now}`;
+      } catch (error) {
+        console.error('Ошибка загрузки:', error);
+        tableBody.innerHTML = `
+          <tr>
+            <td colspan="5" class="status-box error-text">
+              Не удалось загрузить данные. 
+            </td>
+          </tr>
+        `;
+      } finally {
+        refreshBtn.disabled = false;
+        refreshBtn.textContent = 'Обновить';
+      }
+    }
+
+    // Фильтрация по поисковому запросу
+    function applyFilter() {
+      const query = searchInput.value.trim().toLowerCase();
+      if (!query) {
+        renderTable(allTickets);
+        return;
+      }
+
+      const filtered = allTickets.filter(item =>
+        item.ticket.toLowerCase().includes(query) ||
+        item.name.toLowerCase().includes(query) ||
+        item.email.toLowerCase().includes(query) ||
+        item.message.toLowerCase().includes(query) ||
+        item.date.toLowerCase().includes(query)
+      );
+
+      renderTable(filtered);
+    }
+
+    searchInput.addEventListener('input', applyFilter);
+    refreshBtn.addEventListener('click', loadTickets);
+
+    // Загружаем данные сразу при открытии страницы
+    loadTickets();
+  </script>
+</body>
+</html>
